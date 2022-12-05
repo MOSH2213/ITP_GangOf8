@@ -742,6 +742,8 @@
   <script src="assets/js/core/bootstrap.min.js"></script>
   <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
   <script src="assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="assets/js/plugins/fullscren.js"></script>
+
   <script>
     var win = navigator.platform.indexOf('Win') > -1;
     if (win && document.querySelector('#sidenav-scrollbar')) {
@@ -751,37 +753,6 @@
       Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
     }
   </script>
-
-  <!-- Script for thwe full Screen -->
-
-  <script>
-    var elem = document.getElementById("full");
-    function openFullscreen() {
-      var fullbtn=document.getElementById("fullscrennbtn");
-
-      if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-        fullbtn.textContent = "Full Screen"
-      } else if (elem.webkitRequestFullscreen) { /* Safari */
-        elem.webkitRequestFullscreen();
-        fullbtn.textContent = "Full Screen"
-      } else if (elem.msRequestFullscreen) { /* IE11 */
-        elem.msRequestFullscreen();
-        fullbtn.textContent = "Full Screen"
-      }
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-        
-      } else if (document.webkitExitFullscreen) { /* Safari */
-        document.webkitExitFullscreen();
-       
-      } else if (document.msExitFullscreen) { /* IE11 */
-        document.msExitFullscreen();
-       
-      }
-    }
-    </script>
-    <!-- Script for thwe full Screen -->
   <!--  -->
   <!-- Github buttons -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
