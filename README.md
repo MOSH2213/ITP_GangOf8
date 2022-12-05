@@ -11,7 +11,7 @@ will be discussed about the Project of the Year 2 semester 2 ITP moduled Project
 
 ## Writings <img src="https://raw.githubusercontent.com/twitter/twemoji/ad3d3d669bb3697946577247ebb15818f09c6c91/assets/svg/270d.svg" width="20px"> 
 List Of The ITP Members Are As Follows <img src="https://raw.githubusercontent.com/twitter/twemoji/ad3d3d669bb3697946577247ebb15818f09c6c91/assets/svg/1f9d1-200d-1f393.svg" width="20px"> <img src="https://raw.githubusercontent.com/twitter/twemoji/ad3d3d669bb3697946577247ebb15818f09c6c91/assets/svg/1f9be.svg" width="20px"> 
-+ Dilshan Ranasinhge 
++ Dilshan Ranasinghe 
 + Vidhane
 + Jayasanka
 + Wayani
