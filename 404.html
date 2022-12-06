@@ -1,20 +1,35 @@
 <html lang="en" class="">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/preloader.css">
+
     <title>
         Argon Dashboard 2 PRO by Creative Tim
     </title>
     <style>
-        .blacky{
+        .blacky {
             color: black;
         }
     </style>
     <link id="pagestyle" href="assets/css/argon-dashboard.min.css?v=2.0.5" rel="stylesheet">
 </head>
+
 <body class="error-page" data-new-gr-c-s-check-loaded="14.1088.0" data-gr-ext-installed="" cz-shortcut-listen="true">
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="d-flex justify-content-center"
+            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
+            <div class="spinner-border text-dark align-content-center" style="width: 3rem; height: 3rem; "
+                role="status">
+                <span class="sr-only"></span>
+            </div>
+        </div>
+    </div>
+    <!-- ends herer -->
     <main class="main-content mt-0 ps">
         <div class="page-header min-vh-100" style="background-image: url('assets/img/illustrations/404il.jpg');">
             <div class="container">
@@ -35,6 +50,11 @@
             <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
         </div>
     </main>
+    <!-- required to the preloader -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/preloader.js"></script>
+    <!-- required to the preloader -->
 </body>
 <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
 </html>

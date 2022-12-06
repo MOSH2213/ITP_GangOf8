@@ -20,18 +20,29 @@
     <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
 
     <link id="pagestyle" href="assets/css/argon-dashboard.min.css?v=2.0.5" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/preloader.css">
 
     <style>
         .async-hide {
             opacity: 0 !important
         }
     </style>
-    
+
 
 </head>
 
 <body class="g-sidenav-show bg-gray-100">
-
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="d-flex justify-content-center"
+            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
+            <div class="spinner-border text-dark align-content-center" style="width: 3rem; height: 3rem; "
+                role="status">
+                <span class="sr-only"></span>
+            </div>
+        </div>
+    </div>
+    <!-- ends herer -->
 
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
@@ -45,25 +56,27 @@
         id="sidenav-main">
         <div class="sidenav-header">
             <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
-              aria-hidden="true" id="iconSidenav"></i>
-              <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/argon-dashboard/pages/dashboard.html "
-              target="_blank">
-              <!-- the image is hidden and this therby prevents darkmode violation -->
-              <img src="assets/img/logo-ct-dark.png" class="navbar-brand-img" style="display: none;" alt="">
-              <div style="
+                aria-hidden="true" id="iconSidenav"></i>
+            <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/argon-dashboard/pages/dashboard.html "
+                target="_blank">
+                <!-- the image is hidden and this therby prevents darkmode violation -->
+                <img src="assets/img/logo-ct-dark.png" class="navbar-brand-img" style="display: none;" alt="">
+                <div style="
                                   width: 50px;
                                   height: 50px;
                                   background-image: url('assets/img/team-1.jpg');  
                                   background-repeat: no-repeat;
                                   background-size: cover;
                                   border-radius: 200px;">
-      
-                  <span class="ms-1 font-weight-bold h5" style="position: relative; left:60px; top:-1px;">JohnDoe</span>
-                  <span class="ms-1 font-weight-bold" style="font-size: smaller; position: relative; left:-27px; top:20px;">admin</span>
-              </div>
-              
+
+                    <span class="ms-1 font-weight-bold h5"
+                        style="position: relative; left:60px; top:-1px;">JohnDoe</span>
+                    <span class="ms-1 font-weight-bold"
+                        style="font-size: smaller; position: relative; left:-27px; top:20px;">admin</span>
+                </div>
+
             </a>
-          </div>
+        </div>
         <hr class="horizontal dark mt-0">
         <div class="collapse navbar-collapse  w-auto h-auto" id="sidenav-collapse-main">
             <ul class="navbar-nav">
@@ -378,29 +391,25 @@
                                 <div class="collapse show" id="productsExample">
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link active"
-                                                href="pages/ecommerce/products/new-product.html">
+                                            <a class="nav-link active" href="pages/ecommerce/products/new-product.html">
                                                 <span class="sidenav-mini-icon text-xs"> N </span>
                                                 <span class="sidenav-normal"> New Product </span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link "
-                                                href="pages/ecommerce/products/edit-product.html">
+                                            <a class="nav-link " href="pages/ecommerce/products/edit-product.html">
                                                 <span class="sidenav-mini-icon text-xs"> E </span>
                                                 <span class="sidenav-normal"> Edit Product </span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link "
-                                                href="pages/ecommerce/products/product-page.html">
+                                            <a class="nav-link " href="pages/ecommerce/products/product-page.html">
                                                 <span class="sidenav-mini-icon text-xs"> P </span>
                                                 <span class="sidenav-normal"> Product Page </span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link "
-                                                href="pages/ecommerce/products/products-list.html">
+                                            <a class="nav-link " href="pages/ecommerce/products/products-list.html">
                                                 <span class="sidenav-mini-icon text-xs"> P </span>
                                                 <span class="sidenav-normal"> Products List </span>
                                             </a>
@@ -472,8 +481,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link "
-                                                href="pages/authentication/signin/illustration.html">
+                                            <a class="nav-link " href="pages/authentication/signin/illustration.html">
                                                 <span class="sidenav-mini-icon text-xs"> I </span>
                                                 <span class="sidenav-normal"> Illustration </span>
                                             </a>
@@ -502,8 +510,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link "
-                                                href="pages/authentication/signup/illustration.html">
+                                            <a class="nav-link " href="pages/authentication/signup/illustration.html">
                                                 <span class="sidenav-mini-icon text-xs"> I </span>
                                                 <span class="sidenav-normal"> Illustration </span>
                                             </a>
@@ -532,8 +539,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link "
-                                                href="pages/authentication/reset/illustration.html">
+                                            <a class="nav-link " href="pages/authentication/reset/illustration.html">
                                                 <span class="sidenav-mini-icon text-xs"> I </span>
                                                 <span class="sidenav-normal"> Illustration </span>
                                             </a>
@@ -562,8 +568,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link "
-                                                href="pages/authentication/lock/illustration.html">
+                                            <a class="nav-link " href="pages/authentication/lock/illustration.html">
                                                 <span class="sidenav-mini-icon text-xs"> I </span>
                                                 <span class="sidenav-normal"> Illustration </span>
                                             </a>
@@ -580,15 +585,13 @@
                                 <div class="collapse " id="StepExample">
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link "
-                                                href="pages/authentication/verification/basic.html">
+                                            <a class="nav-link " href="pages/authentication/verification/basic.html">
                                                 <span class="sidenav-mini-icon text-xs"> B </span>
                                                 <span class="sidenav-normal"> Basic </span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link "
-                                                href="pages/authentication/verification/cover.html">
+                                            <a class="nav-link " href="pages/authentication/verification/cover.html">
                                                 <span class="sidenav-mini-icon text-xs"> C </span>
                                                 <span class="sidenav-normal"> Cover </span>
                                             </a>
@@ -1394,8 +1397,9 @@
                             onclick="darkMode(this)">
                     </div>
                 </div>
-                <button  class="btn bg-gradient-dark w-100" id="fullscrennbtn" onclick="openFullscreen();">Full Screen</button>
-                <button  class="btn btn-outline-dark w-100"  id="fullscrennbtn">Screen</button>
+                <button class="btn bg-gradient-dark w-100" id="fullscrennbtn" onclick="openFullscreen();">Full
+                    Screen</button>
+                <button class="btn btn-outline-dark w-100" id="fullscrennbtn">Screen</button>
             </div>
         </div>
     </div>
@@ -1483,6 +1487,10 @@
         integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
         data-cf-beacon='{"rayId":"774e5e348edb47fe","version":"2022.11.3","r":1,"token":"1b7cbb72744b40c580f8633c6b62637e","si":100}'
         crossorigin="anonymous"></script>
+    <!-- required to the preloader -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/preloader.js"></script>
+    <!-- required to the preloader -->
 </body>
 
 </html>
