@@ -4,6 +4,8 @@ const playPause = document.querySelector("#playpause");
 const playPauseBtn = document.querySelector("#playpause-btn");
 const audio = document.querySelector("#audio");
 const title = document.querySelector("#title");
+const type = document.querySelector("#typeof");
+const titlelogo = document.querySelector("#titlelogo");
 const prevBtn = document.querySelector("#prevbtn");
 const nextBtn = document.querySelector("#nextbtn");
 const progress = document.querySelector("#progress");
@@ -22,54 +24,55 @@ const listCloseBtn = document.querySelector("#listclose");
 // songs array
 
 const songs = [
-  {
-    path: 'https://raw.githubusercontent.com/ustabasiibrahim/music-player/master/assets/music/1.mp3',
-    displayName: 'Yıldız Tozu',
-    artist: 'Ozbi',
-    cover: "https://images.genius.com/ee202c6f724ffd4cf61bd01a205eeb47.1000x1000x1.jpg",
-  },
-  {
-    path: 'https://raw.githubusercontent.com/ustabasiibrahim/music-player/master/assets/music/2.mp3',
-    displayName: 'You\'re Somebody Else',
-    artist: 'flora cash',
-    cover: "https://pbs.twimg.com/media/D2NZH-2U4AAL9Xs.jpg",
-  },
-  {
-    path: 'https://raw.githubusercontent.com/ustabasiibrahim/music-player/master/assets/music/3.mp3',
-    displayName: 'Powerless',
-    artist: 'Linkin Park',
-    cover: "https://images.genius.com/c5a58cdaab9f3199214f0e3c26abbd0e.1000x1000x1.jpg",
-  },
-  {
-    path: 'https://raw.githubusercontent.com/ustabasiibrahim/music-player/master/assets/music/4.mp3',
-    displayName: 'Seni Dert Etmeler',
-    artist: 'Madrigal',
-    cover: "https://www.radyomega.fm/wp-content/uploads/2020/04/MADRIGAL-600.jpg",
-  },
-  {
-    path: 'https://raw.githubusercontent.com/ustabasiibrahim/music-player/master/assets/music/5.mp3',
-    displayName: 'Ederlezi',
-    artist: 'Solomun',
-    cover: "https://m.media-amazon.com/images/I/616t0841uvL._SS500_.jpg",
-  },
-  {
-    path: 'https://raw.githubusercontent.com/saranshbhardwaj1999/audio/main/Justin_Bieber_Anyone.mp3',
-    displayName: 'Anyone',
-    artist: 'Justin Bieber',
-    cover: "http://universalmusic.at/website2016/wp-content/uploads/2021/01/jb_anyone-single-cover_hr-1024x1024.jpg",
-  },
-  {
-    path: 'https://raw.githubusercontent.com/saranshbhardwaj1999/audio/main/Justin_Bieber_Hold_On.mp3',
-    displayName: 'Hold On',
-    artist: 'Justin Bieber',
-    cover: "https://www.36vibes.com.ng/wp-content/uploads/2021/03/Justin-bieber-hold-on.jpg",
-  },
-  {
-    path: 'https://raw.githubusercontent.com/saranshbhardwaj1999/audio/main/Jon_Bellion_All_Time_Low.mp3',
-    displayName: 'All Time Low',
-    artist: 'Jon Bellion',
-    cover: "https://www.teahub.io/photos/full/251-2512846_all-time-low-jon-bellion-album-art.jpg",
-  },
+    {
+        path: 'http://mp3.ananmanan.lk/mp3/202102/Jayasri-Tharaka-Seetha-Pathirei-Lo-Thale.mp3',
+        displayName: 'Seetha Pathiree',
+        type: 'assets/img/small-logos/logo-spotify.svg',
+        artist: 'Jayasri Tharaka',
+        cover: "https://www.teahub.io/photos/full/251-2512846_all-time-low-jon-bellion-album-art.jpg",
+      },
+      {
+        path: 'https://us10a.serverse.com/proxy/ananmanan?mp=/stream',
+        displayName: 'Ananmanan Radio',
+        type: 'assets/img/livestraem.png',
+        artist: 'Radio',
+        cover: "http://www.ananmanan.lk/assets/img/logo.png",
+      },
+      {
+        path: 'https://s9.voscast.com:9393/live',
+        displayName: 'SiyatahaFm',
+        type: 'assets/img/livestraem.png',
+        artist: 'Radio',
+        cover: "https://yt3.ggpht.com/ytc/AMLnZu8zNMKgkgpkvVVHMXNzyW6oPyBavhK9FjMaY1fQYQ=s900-c-k-c0x00ffffff-no-rj",
+      },
+      {
+        path: 'http://209.133.216.3:7018/;stream.mp3',
+        displayName: 'HiruFm',
+        type: 'assets/img/livestraem.png',
+        artist: 'Radio',
+        cover: "https://www.hirufm.lk/images/logo_large.jpg",
+      },
+      {
+        path: 'https://cp12.serverse.com/proxy/fmderana/stream',
+        displayName: 'DeranaFm',
+          artist: 'Radio',
+        type: 'assets/img/livestraem.png',
+        cover: "http://www.fmderana.lk/images/branding/fm-derana-logo.svg",
+      },
+      {
+        path: 'http://209.133.216.3:7071/;stream.mp3',
+        displayName: 'Suriyan',
+          artist: 'Radio',
+          type: 'assets/img/livestraem.png',
+        cover: "https://yt3.ggpht.com/ytc/AMLnZu_bcRN_Rg9e39AItE5oL1AR-BjrQDb6V_oATOZPaA=s900-c-k-c0x00ffffff-no-rj",
+      },
+      {
+        path: 'https://live.tnlrn.com/radio/8020/live.mp3',
+        displayName: 'LightFm',
+          artist: 'Radio',
+        type: 'assets/img/livestraem.png',
+        cover: "https://www.lite87.com/wp-content/uploads/elementor/thumbs/Lite87_logo-ppl71m8hncvlh9f9db7erretvcsisvdibfl97w0rko.png",
+      },
 ];
 
 // deafult song index 
@@ -102,6 +105,8 @@ function loadSong(song){
     img.src = song.cover;
     title.textContent = song.displayName;
     audio.src = song.path;
+    type.textContent = song.artist
+    titlelogo.src = song.type
 };
 
 // previous song 
