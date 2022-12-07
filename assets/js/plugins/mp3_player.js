@@ -157,10 +157,10 @@ function setVolume(){
     console.log("dssa"+audio.volume);
 }
 
-function repeat(){
-  repeatBtn.classList.toggle('color');
-  const repeatBtnState = repeatBtn.classList.contains("color");
-  if(repeatBtnState){
+function repeat() {
+  repeatBtn.style.color = "red";
+  const repeatBtnState = repeatBtn.style.color;
+  if(repeatBtnState =="red"){
     audio.loop = true;
     loadSong();
   }else{
@@ -171,10 +171,11 @@ function repeat(){
 }
 
 function like() {
-  if (likeBtn.classList.toggle('color')) {
-    likeIcon.classList.replace('far', 'fas');
+    // likeIcon
+  if (likeIcon.style.color=="#67748E") {
+      likeIcon.style.color == "red";
   } else {
-    likeIcon.classList.replace('fas', 'far');
+      likeIcon.style.color == "#67748E";
   }
 }
 
@@ -194,5 +195,5 @@ progress.addEventListener("input", progressSlide);
 // volume.addEventListener("click", volumeBar);
 volumeRange.addEventListener("input",setVolume);
 repeatBtn.addEventListener("click", repeat);
-likeBtn.addEventListener("click", like);
+likeIcon.addEventListener("click", like);
 songListBtn.addEventListener("click",musicList);
