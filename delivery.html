@@ -1022,7 +1022,7 @@
                 <div class="col-12">
                     <div class="card shadow-lg ">
                         <!-- the below destructs the responsivness off the mobile view -->
-                        
+
                         <!-- <img src="assets/img/shapes/pattern-left.png" alt="pattern-lines"
                             class="position-absolute overflow-hidden opacity-4 start-0 top-0 h-100 border-radius-xl"> -->
                         <img src="assets/img/shapes/pattern-right.png" alt="pattern-lines"
@@ -1249,13 +1249,13 @@
                                         <div class="position-relative">
                                             <div class="avatar avatar-lg">
                                                 <img src="assets/img/bruce-mars.jpg" alt="kal"
-                                                    class="border-radius-xl rounded-circle shadow">
+                                                    class="border-radius-xl rounded-circle shadow" id="img">
                                             </div>
                                             <img class="position-absolute w-60 end-0 bottom-0 me-n3 mb-0"
                                                 src="assets/img/small-logos/logo-spotify.svg" alt="spotify logo">
                                         </div>
                                         <div class="px-3">
-                                            <p class="text-body text-sm font-weight-bold mb-0">
+                                            <p class="text-body text-sm font-weight-bold mb-0" id="title">
                                                 You're Mines Still (feat Drake)
                                             </p>
                                             <p class="text-body text-xs mb-2 opacity-8">
@@ -1267,31 +1267,34 @@
                                 <div class="col-lg-4 col-md-6 col-12 my-auto text-center mt-3 mt-lg-0">
                                     <div class="d-flex align-items-center">
                                         <button
-                                            class="btn btn-lg btn-icon-only btn-rounded btn-outline-dark mb-0 ms-auto">
+                                            class="btn btn-lg btn-icon-only btn-rounded btn-outline-dark mb-0 ms-auto" id="prevbtn">
                                             <i class="ni ni-button-play top-0 rotate-180" aria-hidden="true"></i>
                                         </button>
-                                        <button class="btn btn-lg btn-icon-only btn-rounded btn-outline-dark mb-0 ms-4">
-                                            <i class="ni ni-button-pause top-0" aria-hidden="true"></i>
+                                        <button class="btn btn-lg btn-icon-only btn-rounded btn-outline-dark mb-0 ms-4" id="playpause">
+                                            <i class="ni ni-button-pause top-0" id="playpause-btn" aria-hidden="true"></i>
                                         </button>
                                         <button
-                                            class="btn btn-lg btn-icon-only btn-rounded btn-outline-dark mb-0 ms-4 me-auto">
+                                            class="btn btn-lg btn-icon-only btn-rounded btn-outline-dark mb-0 ms-4 me-auto" id="nextbtn">
                                             <i class="ni ni-button-play top-0" aria-hidden="true"></i>
                                         </button>
                                     </div>
                                 </div>
                                 <div class="col-lg-2 col-md-6 col-8 my-auto">
                                     <p class="text-body mb-2">Volume</p>
-                                    <div id="sliderRegular"></div>
+                                    <input type="range" name="" class="volumerange" min='0.00' max='1' value='1' step='0.01' >
+                                    <!-- <div id="sliderRegular"></div> -->
                                 </div>
                                 <div class="col-lg-1 col-md-6 col-4 my-auto ms-auto">
                                     <i class="ni ni-note-03  text-body ms-3 mt-3" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="loop"></i>
+                                    data-bs-placement="top" title="loop" id="repeat"></i>
                                     <i class="ni ni-favourite-28 ms-3 mt-3" data-bs-toggle="tooltip"
-                                        data-bs-placement="top" title="Like" style="color: #67748E;"></i>
+                                        data-bs-placement="top" title="Like" style="color: #67748E;" id="likeicon"></i>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-12 my-auto">
+                                    <audio id="audio" src="https://raw.githubusercontent.com/ustabasiibrahim/music-player/master/assets/music/1.mp3" id="audio"></audio>
                                     <br>
-                                    <div id="sliderMusic"></div>
+                                    <input type="range" name="" id="progress" style="width: 100%;" value="0" min="0" max="100">
+                                    
                                 </div>
                             </div>
                         </div>
@@ -1421,34 +1424,12 @@
     <script src="assets/js/plugins/leaflet.js"></script>
     <script src="assets/js/plugins/nouislider.min.js"></script>
     <script src="assets/js/plugins/fullscren.js"></script>
+    <script src="assets/js/plugins/mp3_player.js"></script>
 
     <script>
-       //musicslider
-       var sliderMusic = document.getElementById("sliderMusic");
-        noUiSlider.create(sliderMusic, {
-            start: 40,
-            connect: [true, false],
-            range: {
-                min: 0,
-                max: 100
-            }
-        });
-
-        // Init slider volume
-        var slider = document.getElementById("sliderRegular");
-        noUiSlider.create(slider, {
-            start: 40,
-            connect: [true, false],
-            range: {
-                min: 0,
-                max: 100
-            }
-        });
-        var d = new Date(); 
+         var d = new Date(); 
         var time = d.toLocaleTimeString();
         document.getElementById('dashtime').innerHTML=time;
-    </script>
-    <script>
         var win = navigator.platform.indexOf('Win') > -1;
         if (win && document.querySelector('#sidenav-scrollbar')) {
             var options = {
