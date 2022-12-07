@@ -72,6 +72,13 @@ const songs = [
           artist: 'Radio',
         type: 'assets/img/livestraem.png',
         cover: "https://www.lite87.com/wp-content/uploads/elementor/thumbs/Lite87_logo-ppl71m8hncvlh9f9db7erretvcsisvdibfl97w0rko.png",
+    },
+    {
+        path: 'https://stream.streema.com/?url=http://220.247.227.6:8000/Tnsstream',
+        displayName: 'TamilFm(102.1)',
+          artist: 'Radio',
+        type: 'assets/img/livestraem.png',
+        cover: "https://static-media.streema.com/media/cache/a5/24/a524d6b582a2418ad2e82f09cdd3e3e9.jpg",
       },
 ];
 
