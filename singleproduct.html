@@ -45,7 +45,7 @@
     <div class="min-height-300 bg-primary position-absolute w-100"></div>
     <aside
         class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 "
-        id="sidenav-main">
+        id="sidenav-main" style="z-index: 99;">
         <div class="sidenav-header">
             <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
                 aria-hidden="true" id="iconSidenav"></i>
@@ -1024,11 +1024,11 @@
             </div>
         </nav>
 
-        <div class="container-fluid py-4">
+        <div class="container-fluid py-4 ">
             <div class="row">
                 <div class="col-12">
-                    <div class="card">
-                        <div class="card-body">
+                    <div class="card ">
+                        <div class="card-body ">
                             <h5 class="mb-4">Product Details</h5>
                             <div class="row">
                                 <div class="col-xl-5 col-lg-6 text-center">
@@ -1187,222 +1187,706 @@
                                         <div class="col-lg-5">
                                             <button class="btn btn-primary mb-0 mt-lg-auto w-100" type="button"
                                                 name="button">Add to cart</button>
+
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <button class="btn btn-dark mb-0 mt-lg-auto w-100" type="button"
+                                                name="button">Buy Now</button>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row mt-5">
-                                <div class="col-12">
-                                    <h5 class="ms-3">Other Products</h5>
-                                    <div class="table table-responsive">
-                                        <table class="table align-items-center mb-0">
-                                            <thead>
-                                                <tr>
-                                                    <th
-                                                        class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                        Product</th>
-                                                    <th
-                                                        class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                                                        Price</th>
-                                                    <th
-                                                        class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                                                        Review</th>
-                                                    <th
-                                                        class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                        Availability</th>
-                                                    <th
-                                                        class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                        Id</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>
-                                                                <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-1.jpg"
-                                                                    class="avatar avatar-md me-3" alt="table image">
+                                <div class="col-xs-12 col-md-4">
+                                    <button class="bg-dark border-0 mb-2 text-white rounded p-2">Ratings</button>
+                                    <div class="card p-2 shadow">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="ratings text-2xl" id="first">
+                                                <i class="fa fa-star  rating-color" aria-hidden="true"></i>
+                                                <i class="fa fa-star rating-color" aria-hidden="true"></i>
+                                                <i class="fa fa-star rating-color" aria-hidden="true"></i>
+                                                <i class="fa fa-star rating-color" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </div>
+                                            <h5 class="review-count" id="counts">12 Reviews</h5>
+                                        </div>
+                                        <!-- progress bar starts -->
+                                        <div class="row mt-4">
+                                            <div class="col-1">
+                                                <h6 class="mt-1">5</h6>
+                                            </div>
+                                            <div class="col-8 xss2">
+                                                <div class="bars mt-2">
+                                                    <div class="progress ">
+                                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark"
+                                                            role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 83.34%"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 xss3">
+                                                <h6 class="mt-1">83.34%</h6>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-1 xss1">
+                                                <h6 class="mt-1">4</h6>
+                                            </div>
+                                            <div class="col-8 xss2">
+                                                <div class="bars mt-2">
+                                                    <div class="progress ">
+                                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark"
+                                                            role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 32.11%"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 xss3">
+                                                <h6 class="mt-1">32.11%</h6>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-1 xss1">
+                                                <h6 class="mt-1">3</h6>
+                                            </div>
+                                            <div class="col-8 xss2">
+                                                <div class="bars mt-2">
+                                                    <div class="progress ">
+                                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark"
+                                                            role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 9%"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 xss3">
+                                                <h6 class="mt-1">53.34%</h6>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-1 xss1">
+                                                <h6 class="mt-1">2</h6>
+                                            </div>
+                                            <div class="col-8  xss2">
+                                                <div class="bars mt-2">
+                                                    <div class="progress ">
+                                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark"
+                                                            role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 12.89%"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 xss3">
+                                                <h6 class="mt-1">12.89%</h6>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-1 xss1">
+                                                <h6 class="mt-1">1</h6>
+                                            </div>
+                                            <div class="col-8 xss2">
+                                                <div class="bars mt-2">
+                                                    <div class="progress ">
+                                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark"
+                                                            role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 53.34%"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 xss3">
+                                                <h6 class="mt-1">53.34%</h6>
+                                            </div>
+                                        </div>
+
+                                        <h5 class="mt-4">By Feature</h5>
+                                        <div class="mt-2 d-flex justify-content-between align-items-center">
+                                            <h5 class="review-stat">Quality</h5>
+                                            <div class="small-ratings">
+                                                <i class="fa fa-star rating-color" aria-hidden="true"></i>
+                                                <i class="fa fa-star rating-color" aria-hidden="true"></i>
+                                                <i class="fa fa-star rating-color" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-1 d-flex justify-content-between align-items-center">
+                                            <h5 class="review-stat">Accuracy</h5>
+                                            <div class="small-ratings">
+                                                <i class="fa fa-star rating-color" aria-hidden="true"></i>
+                                                <i class="fa fa-star rating-color" aria-hidden="true"></i>
+                                                <i class="fa fa-star rating-color" aria-hidden="true"></i>
+                                                <i class="fa fa-star rating-color" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-1 d-flex justify-content-between align-items-center">
+                                            <h5 class="review-stat">Durability</h5>
+                                            <div class="small-ratings">
+                                                <i class="fa fa-star rating-color" aria-hidden="true"></i>
+                                                <i class="fa fa-star rating-color" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-1 d-flex justify-content-between align-items-center">
+                                            <h5 class="review-stat">Shipping</h5>
+                                            <div class="small-ratings">
+                                                <i class="fa fa-star rating-color" aria-hidden="true"></i>
+                                                <i class="fa fa-star rating-color" aria-hidden="true"></i>
+                                                <i class="fa fa-star rating-color" aria-hidden="true"></i>
+                                                <i class="fa fa-star rating-color" aria-hidden="true"></i>
+                                                <i class="fa fa-star rating-color" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-1 d-flex justify-content-between align-items-center">
+                                            <h5 class="review-stat">As mentioned</h5>
+                                            <div class="small-ratings">
+                                                <i class="fa fa-star rating-color" aria-hidden="true"></i>
+                                                <i class="fa fa-star rating-color" aria-hidden="true"></i>
+                                                <i class="fa fa-star rating-color" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-1 d-flex justify-content-between align-items-center">
+                                            <h5 class="review-stat">Reliability</h5>
+                                            <div class="small-ratings">
+                                                <i class="fa fa-star rating-color" aria-hidden="true"></i>
+                                                <i class="fa fa-star rating-color" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-8">
+                                    <button class="bg-dark border-0 mb-2 text-white rounded p-2">Ratings</button>
+                                    <button class="bg-dark border-0 mb-2 text-white rounded p-2" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">Add Ratings</button>
+
+                                    <!-- modal Start -->
+                                    <div class="modal fade" id="exampleModal" style="z-index: 9999999;" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog  modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-row">
+                                                            <h5 class="ml-1 text-black" style="font-weight: 700">
+                                                                Casio565
+                                                            </h5>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="exampleFormControlTextarea1">Comments</label>
+                                                            <textarea class="form-control"
+                                                                id="exampleFormControlTextarea1" rows="5"></textarea>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <label for="inputState">Quality</label>
+                                                                <select id="inputState" class="form-control">
+                                                                    <option selected>1 STAR</option>
+                                                                    <option>2 STAR</option>
+                                                                    <option>3 STAR</option>
+                                                                    <option>4 STAR</option>
+                                                                    <option>5 STAR</option>
+                                                                </select>
                                                             </div>
-                                                            <div class="d-flex flex-column justify-content-center">
-                                                                <h6 class="mb-0 text-sm">Christopher Knight Home</h6>
+                                                            <div class="col-md-6">
+                                                                <label for="inputState">Accuracy</label>
+                                                                <select id="inputState" class="form-control">
+                                                                    <option selected>1 STAR</option>
+                                                                    <option>2 STAR</option>
+                                                                    <option>3 STAR</option>
+                                                                    <option>4 STAR</option>
+                                                                    <option>5 STAR</option>
+                                                                </select>
                                                             </div>
                                                         </div>
-                                                    </td>
-                                                    <td>
-                                                        <p class="text-sm text-secondary mb-0">$89.53</p>
-                                                    </td>
-                                                    <td>
-                                                        <div class="rating ms-lg-n4">
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star-half-alt" aria-hidden="true"></i>
-                                                        </div>
-                                                    </td>
-                                                    <td class="align-middle text-sm">
-                                                        <div class="progress mx-auto">
-                                                            <div class="progress-bar bg-gradient-success"
-                                                                role="progressbar" style="width: 80%" aria-valuenow="80"
-                                                                aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="align-middle text-center">
-                                                        <span class="text-secondary text-sm">230019</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>
-                                                                <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-2.jpg"
-                                                                    class="avatar avatar-md me-3" alt="table image">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <label for="inputState">Durability</label>
+                                                                <select id="inputState" class="form-control">
+                                                                    <option selected>1 STAR</option>
+                                                                    <option>2 STAR</option>
+                                                                    <option>3 STAR</option>
+                                                                    <option>4 STAR</option>
+                                                                    <option>5 STAR</option>
+                                                                </select>
                                                             </div>
-                                                            <div class="d-flex flex-column justify-content-center">
-                                                                <h6 class="mb-0 text-sm">Bar Height Swivel Barstool</h6>
+                                                            <div class="col-md-6">
+                                                                <label for="inputState">Shipping</label>
+                                                                <select id="inputState" class="form-control">
+                                                                    <option selected>1 STAR</option>
+                                                                    <option>2 STAR</option>
+                                                                    <option>3 STAR</option>
+                                                                    <option>4 STAR</option>
+                                                                    <option>5 STAR</option>
+                                                                </select>
                                                             </div>
                                                         </div>
-                                                    </td>
-                                                    <td>
-                                                        <p class="text-sm text-secondary mb-0">$99.99</p>
-                                                    </td>
-                                                    <td>
-                                                        <div class="rating ms-lg-n4">
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                        </div>
-                                                    </td>
-                                                    <td class="align-middle text-sm">
-                                                        <div class="progress mx-auto">
-                                                            <div class="progress-bar bg-gradient-success"
-                                                                role="progressbar" style="width: 90%" aria-valuenow="90"
-                                                                aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="align-middle text-center">
-                                                        <span class="text-secondary text-sm">87120</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>
-                                                                <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-3.jpg"
-                                                                    class="avatar avatar-md me-3" alt="table image">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <label for="inputState">As mentioned</label>
+                                                                <select id="inputState" class="form-control">
+                                                                    <option selected>1 STAR</option>
+                                                                    <option>2 STAR</option>
+                                                                    <option>3 STAR</option>
+                                                                    <option>4 STAR</option>
+                                                                    <option>5 STAR</option>
+                                                                </select>
                                                             </div>
-                                                            <div class="d-flex flex-column justify-content-center">
-                                                                <h6 class="mb-0 text-sm">Signature Design by Ashley</h6>
+                                                            <div class="col-md-6">
+                                                                <label for="inputState">Reliability</label>
+                                                                <select id="inputState" class="form-control">
+                                                                    <option selected>1 STAR</option>
+                                                                    <option>2 STAR</option>
+                                                                    <option>3 STAR</option>
+                                                                    <option>4 STAR</option>
+                                                                    <option>5 STAR</option>
+                                                                </select>
                                                             </div>
                                                         </div>
-                                                    </td>
-                                                    <td>
-                                                        <p class="text-sm text-secondary mb-0">$129.00</p>
-                                                    </td>
-                                                    <td>
-                                                        <div class="rating ms-lg-n4">
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star-half-alt" aria-hidden="true"></i>
-                                                        </div>
-                                                    </td>
-                                                    <td class="align-middle text-sm">
-                                                        <div class="progress mx-auto">
-                                                            <div class="progress-bar bg-gradient-warning"
-                                                                role="progressbar" style="width: 60%" aria-valuenow="60"
-                                                                aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="align-middle text-center">
-                                                        <span class="text-secondary text-sm">412301</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>
-                                                                <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-4.jpg"
-                                                                    class="avatar avatar-md me-3" alt="table image">
-                                                            </div>
-                                                            <div class="d-flex flex-column justify-content-center">
-                                                                <h6 class="mb-0 text-sm">Modern Square</h6>
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <label for="inputState">Product Rating</label>
+                                                                <select id="inputState" class="form-control">
+                                                                    <option selected>1 STAR</option>
+                                                                    <option>2 STAR</option>
+                                                                    <option>3 STAR</option>
+                                                                    <option>4 STAR</option>
+                                                                    <option>5 STAR</option>
+                                                                </select>
                                                             </div>
                                                         </div>
-                                                    </td>
-                                                    <td>
-                                                        <p class="text-sm text-secondary mb-0">$59.99</p>
-                                                    </td>
-                                                    <td>
-                                                        <div class="rating ms-lg-n4">
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+                                                        <div class="text-center mt-2">
+                                                            <button type="button" class="btn btn-dark rounded"
+                                                                data-bs-dismiss="modal">
+                                                                Close
+                                                            </button>
+                                                            <button type="submit"
+                                                                class="btn bg-primary text-white rounded">
+                                                                Submit
+                                                            </button>
                                                         </div>
-                                                    </td>
-                                                    <td class="align-middle text-sm">
-                                                        <div class="progress mx-auto">
-                                                            <div class="progress-bar bg-gradient-warning"
-                                                                role="progressbar" style="width: 40%" aria-valuenow="40"
-                                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- modal End -->
+                                    <div class="row mt-3">
+                                        <div class="col-lg-4 col-md-8">
+                                            <div class="card shadow">
+                                                <div class="card-body">
+                                                    <img src="assets/img/team-3.jpg" alt="..."
+                                                        class="avatar avatar-lg border-radius-lg shadow mt-n5">
+                                                    <div class="author">
+                                                        <div class="name">
+                                                            <span>Mathew Glock</span>
+                                                            <div class="stats">
+                                                                <small><i class="far fa-clock"></i> 5 min read</small>
+                                                            </div>
                                                         </div>
-                                                    </td>
-                                                    <td class="align-middle text-center">
-                                                        <span class="text-secondary text-sm">001992</span>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                                    </div>
+                                                    <div style="max-height: 100px; overflow: hidden;">
+                                                        <p class="mt-0 ">"Idfdfdfdfdfdfdfdfdff you have the opportunity
+                                                            to play
+                                                            this game sdaaaaaaadsadadof
+                                                            life you need to appxczccccccreciate every moment."</p>
+                                                    </div>
+
+                                                    <div class="rating mt-2 mb-0">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-8">
+                                            <div class="card shadow">
+                                                <div class="card-body">
+                                                    <img src="assets/img/team-3.jpg" alt="..."
+                                                        class="avatar avatar-lg border-radius-lg shadow mt-n5">
+                                                    <div class="author">
+                                                        <div class="name">
+                                                            <span>Mathew Glock</span>
+                                                            <div class="stats">
+                                                                <small><i class="far fa-clock"></i> 5 min read</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div style="max-height: 100px; overflow: hidden;">
+                                                        <p class="mt-0 ">"Idfdfdfdfdfdfdfdfdff you have the opportunity
+                                                            to play
+                                                            this game sdaaaaaaadsadadof
+                                                            life you need to appxczccccccreciate every moment."</p>
+                                                    </div>
+
+                                                    <div class="rating mt-2 mb-0">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-8">
+                                            <div class="card shadow">
+                                                <div class="card-body">
+                                                    <img src="assets/img/team-3.jpg" alt="..."
+                                                        class="avatar avatar-lg border-radius-lg shadow mt-n5">
+                                                    <div class="author">
+                                                        <div class="name">
+                                                            <span>Mathew Glock</span>
+                                                            <div class="stats">
+                                                                <small><i class="far fa-clock"></i> 5 min read</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div style="max-height: 100px; overflow: hidden;">
+                                                        <p class="mt-0 ">"Idfdfdfdfdfdfdfdfdff you have the opportunity
+                                                            to play
+                                                            this game sdaaaaaaadsadadof
+                                                            life you need to appxczccccccreciate every moment."</p>
+                                                    </div>
+
+                                                    <div class="rating mt-2 mb-0">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-5">
+                                        <div class="col-lg-4 col-md-8">
+                                            <div class="card shadow">
+                                                <div class="card-body">
+                                                    <img src="assets/img/team-3.jpg" alt="..."
+                                                        class="avatar avatar-lg border-radius-lg shadow mt-n5">
+                                                    <div class="author">
+                                                        <div class="name">
+                                                            <span>Mathew Glock</span>
+                                                            <div class="stats">
+                                                                <small><i class="far fa-clock"></i> 5 min read</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div style="max-height: 100px; overflow: hidden;">
+                                                        <p class="mt-0 ">"Idfdfdfdfdfdfdfdfdff you have the opportunity
+                                                            to play
+                                                            this game sdaaaaaaadsadadof
+                                                            life you need to appxczccccccreciate every moment."</p>
+                                                    </div>
+
+                                                    <div class="rating mt-2 mb-0">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-8">
+                                            <div class="card shadow">
+                                                <div class="card-body">
+                                                    <img src="assets/img/team-3.jpg" alt="..."
+                                                        class="avatar avatar-lg border-radius-lg shadow mt-n5">
+                                                    <div class="author">
+                                                        <div class="name">
+                                                            <span>Mathew Glock</span>
+                                                            <div class="stats">
+                                                                <small><i class="far fa-clock"></i> 5 min read</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div style="max-height: 100px; overflow: hidden;">
+                                                        <p class="mt-0 ">"Idfdfdfdfdfdfdfdfdff you have the opportunity
+                                                            to play
+                                                            this game sdaaaaaaadsadadof
+                                                            life you need to appxczccccccreciate every moment."</p>
+                                                    </div>
+
+                                                    <div class="rating mt-2 mb-0">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-8">
+                                            <div class="card shadow">
+                                                <div class="card-body">
+                                                    <img src="assets/img/team-3.jpg" alt="..."
+                                                        class="avatar avatar-lg border-radius-lg shadow mt-n5">
+                                                    <div class="author">
+                                                        <div class="name">
+                                                            <span>Mathew Glock</span>
+                                                            <div class="stats">
+                                                                <small><i class="far fa-clock"></i> 5 min read</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div style="max-height: 100px; overflow: hidden;">
+                                                        <p class="mt-0 ">"Idfdfdfdfdfdfdfdfdff you have the opportunity
+                                                            to play
+                                                            this game sdaaaaaaadsadadof
+                                                            life you need to appxczccccccreciate every moment."</p>
+                                                    </div>
+
+                                                    <div class="rating mt-2 mb-0">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-5">
+                                    <div class="col-12">
+                                        <h5 class="ms-3">Other Products</h5>
+                                        <div class="table table-responsive">
+                                            <table class="table align-items-center mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th
+                                                            class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                            Product</th>
+                                                        <th
+                                                            class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                                            Price</th>
+                                                        <th
+                                                            class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                                            Review</th>
+                                                        <th
+                                                            class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                            Availability</th>
+                                                        <th
+                                                            class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                            Id</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex px-2 py-1">
+                                                                <div>
+                                                                    <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-1.jpg"
+                                                                        class="avatar avatar-md me-3" alt="table image">
+                                                                </div>
+                                                                <div class="d-flex flex-column justify-content-center">
+                                                                    <h6 class="mb-0 text-sm">Christopher Knight Home
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="text-sm text-secondary mb-0">$89.53</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="rating ms-lg-n4">
+                                                                <i class="fas fa-star" aria-hidden="true"></i>
+                                                                <i class="fas fa-star" aria-hidden="true"></i>
+                                                                <i class="fas fa-star" aria-hidden="true"></i>
+                                                                <i class="fas fa-star" aria-hidden="true"></i>
+                                                                <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+                                                            </div>
+                                                        </td>
+                                                        <td class="align-middle text-sm">
+                                                            <div class="progress mx-auto">
+                                                                <div class="progress-bar bg-gradient-success"
+                                                                    role="progressbar" style="width: 80%"
+                                                                    aria-valuenow="80" aria-valuemin="0"
+                                                                    aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="align-middle text-center">
+                                                            <span class="text-secondary text-sm">230019</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex px-2 py-1">
+                                                                <div>
+                                                                    <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-2.jpg"
+                                                                        class="avatar avatar-md me-3" alt="table image">
+                                                                </div>
+                                                                <div class="d-flex flex-column justify-content-center">
+                                                                    <h6 class="mb-0 text-sm">Bar Height Swivel Barstool
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="text-sm text-secondary mb-0">$99.99</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="rating ms-lg-n4">
+                                                                <i class="fas fa-star" aria-hidden="true"></i>
+                                                                <i class="fas fa-star" aria-hidden="true"></i>
+                                                                <i class="fas fa-star" aria-hidden="true"></i>
+                                                                <i class="fas fa-star" aria-hidden="true"></i>
+                                                                <i class="fas fa-star" aria-hidden="true"></i>
+                                                            </div>
+                                                        </td>
+                                                        <td class="align-middle text-sm">
+                                                            <div class="progress mx-auto">
+                                                                <div class="progress-bar bg-gradient-success"
+                                                                    role="progressbar" style="width: 90%"
+                                                                    aria-valuenow="90" aria-valuemin="0"
+                                                                    aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="align-middle text-center">
+                                                            <span class="text-secondary text-sm">87120</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex px-2 py-1">
+                                                                <div>
+                                                                    <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-3.jpg"
+                                                                        class="avatar avatar-md me-3" alt="table image">
+                                                                </div>
+                                                                <div class="d-flex flex-column justify-content-center">
+                                                                    <h6 class="mb-0 text-sm">Signature Design by Ashley
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="text-sm text-secondary mb-0">$129.00</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="rating ms-lg-n4">
+                                                                <i class="fas fa-star" aria-hidden="true"></i>
+                                                                <i class="fas fa-star" aria-hidden="true"></i>
+                                                                <i class="fas fa-star" aria-hidden="true"></i>
+                                                                <i class="fas fa-star" aria-hidden="true"></i>
+                                                                <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+                                                            </div>
+                                                        </td>
+                                                        <td class="align-middle text-sm">
+                                                            <div class="progress mx-auto">
+                                                                <div class="progress-bar bg-gradient-warning"
+                                                                    role="progressbar" style="width: 60%"
+                                                                    aria-valuenow="60" aria-valuemin="0"
+                                                                    aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="align-middle text-center">
+                                                            <span class="text-secondary text-sm">412301</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex px-2 py-1">
+                                                                <div>
+                                                                    <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-4.jpg"
+                                                                        class="avatar avatar-md me-3" alt="table image">
+                                                                </div>
+                                                                <div class="d-flex flex-column justify-content-center">
+                                                                    <h6 class="mb-0 text-sm">Modern Square</h6>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="text-sm text-secondary mb-0">$59.99</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="rating ms-lg-n4">
+                                                                <i class="fas fa-star" aria-hidden="true"></i>
+                                                                <i class="fas fa-star" aria-hidden="true"></i>
+                                                                <i class="fas fa-star" aria-hidden="true"></i>
+                                                                <i class="fas fa-star" aria-hidden="true"></i>
+                                                                <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+                                                            </div>
+                                                        </td>
+                                                        <td class="align-middle text-sm">
+                                                            <div class="progress mx-auto">
+                                                                <div class="progress-bar bg-gradient-warning"
+                                                                    role="progressbar" style="width: 40%"
+                                                                    aria-valuenow="40" aria-valuemin="0"
+                                                                    aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="align-middle text-center">
+                                                            <span class="text-secondary text-sm">001992</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <footer class="footer pt-3  ">
-                <div class="container-fluid">
-                    <div class="row align-items-center justify-content-lg-between">
-                        <div class="col-lg-6 mb-lg-0 mb-4">
-                            <div class="copyright text-center text-sm text-muted text-lg-start">
-                                ©
-                                <script>
-                                    document.write(new Date().getFullYear())
-                                </script>,
-                                made with <i class="fa fa-heart"></i> by
-                                <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">GangOf8</a>
-                                for ITP.
+                <footer class="footer pt-3  ">
+                    <div class="container-fluid">
+                        <div class="row align-items-center justify-content-lg-between">
+                            <div class="col-lg-6 mb-lg-0 mb-4">
+                                <div class="copyright text-center text-sm text-muted text-lg-start">
+                                    ©
+                                    <script>
+                                        document.write(new Date().getFullYear())
+                                    </script>,
+                                    made with <i class="fa fa-heart"></i> by
+                                    <a href="https://www.creative-tim.com" class="font-weight-bold"
+                                        target="_blank">GangOf8</a>
+                                    for ITP.
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link text-muted" target="_blank">Creative Tim</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link text-muted" target="_blank">About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link text-muted" target="_blank">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link pe-0 text-muted" target="_blank">License</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <ul class="nav nav-footer justify-content-center justify-content-lg-end">
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link text-muted"
-                                        target="_blank">Creative Tim</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link text-muted"
-                                        target="_blank">About Us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link text-muted"
-                                        target="_blank">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link pe-0 text-muted"
-                                        target="_blank">License</a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
-                </div>
-            </footer>
-        </div>
+                </footer>
+            </div>
     </main>
     <div class="fixed-plugin">
         <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
