@@ -72,7 +72,7 @@
     </div>
     <!-- ends herer -->
 
-  
+
     <div class="min-height-300 bg-primary position-absolute w-100"></div>
     <aside style="z-index: 99; overflow: hidden;"
         class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 ps ps--active-y"
@@ -120,7 +120,7 @@
                         </div>
                         <span class="nav-link-text ms-1">Order Details</span>
                     </a>
-                </li>   
+                </li>
             </ul>
         </div>
 
@@ -131,7 +131,7 @@
             <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 461px;"></div>
         </div>
     </aside>
-    <main class="main-content position-relative border-radius-lg ps" >
+    <main class="main-content position-relative border-radius-lg ps">
 
         <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl z-index-sticky"
             id="navbarBlur" data-scroll="false">
@@ -250,8 +250,8 @@
 
         <div class="container-fluid p-0 p-md-2" style="overflow: hidden;">
             <div class="row mb-lg-5">
-                <div class="col-lg-8 mx-auto">
-                    <div class="card my-5">
+                <div class="col-md-8">
+                    <div class="card my-2">
                         <div class="card-header p-3 pb-0">
                             <div class="d-flex justify-content-between align-items-center">
                                 <div>
@@ -265,7 +265,8 @@
                                 </div>
                                 <a href="#" data-bs-toggle="modal" data-bs-target="#invoiceModal"
                                     class="btn bg-gradient-secondary ms-auto mb-0">Invoice</a>
-                                <div class="modal fade" id="invoiceModal" style="z-index: 9999999;" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+                                <div class="modal fade" id="invoiceModal" style="z-index: 9999999;" tabindex="-1"
+                                    data-bs-backdrop="static" data-bs-keyboard="false"
                                     aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                     <div class="modal-dialog  modal-lg modal-dialog-centered">
                                         <div class="modal-content">
@@ -280,13 +281,15 @@
                                                                         St. Independence Embankment, 050105 Bucharest,
                                                                         Romania
                                                                     </h6>
-                                                                    <p class="d-block text-secondary mb-2 mb-md-0">tel: +4 (074)
+                                                                    <p class="d-block text-secondary mb-2 mb-md-0">tel:
+                                                                        +4 (074)
                                                                         1090873</p>
                                                                 </div>
                                                                 <div class="col-lg-3 col-md-7 text-md-end text-start ">
                                                                     <h6 class="d-block mt-2 mb-0">Billed to: John Doe
                                                                     </h6>
-                                                                    <p class="text-secondary mb-0">4006 Locust View Drive<br>
+                                                                    <p class="text-secondary mb-0">4006 Locust View
+                                                                        Drive<br>
                                                                         San Francisco CA<br>
                                                                         California
                                                                     </p>
@@ -329,7 +332,8 @@
                                                             <div class="row">
                                                                 <div class="col-12">
                                                                     <div class="table-responsive ">
-                                                                        <table class="table text-right" id="tbl_exporttable_to_xls">
+                                                                        <table class="table text-right"
+                                                                            id="tbl_exporttable_to_xls">
                                                                             <thead class="bg-default">
                                                                                 <tr>
                                                                                     <th scope="col"
@@ -411,7 +415,7 @@
                                                 <div class="text-center mt-2">
                                                     <a href="#" onclick="generatepdf()"
                                                         class="btn btn-danger">Download</a>
-                                                        <a href="#" onclick="ExportToExcel('xlsx')" 
+                                                    <a href="#" onclick="ExportToExcel('xlsx')"
                                                         class="btn btn-success">Export CSV</a>
                                                     <button type="button" class="btn btn-dark rounded"
                                                         data-bs-dismiss="modal">
@@ -445,6 +449,8 @@
                                 <div class="col-lg-6 col-md-6 col-12 my-auto text-end">
                                     <a href="#" data-bs-toggle="modal" data-bs-target="#contactModal"
                                         class="btn bg-gradient-info mb-0">Inqueries</a>
+                                    <a href="#" class="btn bg-gradient-success mb-0">Refund</a>
+                                    <a href="#" class="btn bg-gradient-danger mb-0">Cancel</a>
                                     <p class="text-sm mt-2 mb-0">Do you like the product? Leave us a review <a href="#"
                                             data-bs-toggle="modal" data-bs-target="#exampleModal">here</a>.</p>
                                 </div>
@@ -739,6 +745,189 @@
                         </div>
                     </div>
                 </div>
+                <style>
+                    .dataTable-top{
+                        padding: 0% !important;
+                    }
+                    @media (max-width: 575.98px){
+                        .dataTable-search{
+                            margin-top: 0%  !important;
+                            margin-left: 5% !important;
+                        }
+                        .dataTable-dropdown{
+                            margin-left: 5% !important;
+                        }
+                    }
+                </style>
+                <div class="col-md-4">
+                    <div class="card my-2">
+                        <div class="card-header p-3 pb-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6>Previous Orders</h6>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card-body p-1 p-md-3 pt-0">
+                            <div class="row">
+                                <div class="col-12 p-0">
+                                    <div class="card-body px-0 pt-0 pb-2">
+                                        <div class="table-responsive p-0">
+                                            <table class="table align-items-center mb-0" id="datatable-search">
+                                                <thead>
+                                                    <tr>
+                                                        <th
+                                                            class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                            Author</th>
+                                                        <th
+                                                            class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                                            Function</th>
+                                                        
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex px-1 py-1">
+                                                                <div>
+                                                                    <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/smartwatch.jpg"
+                                                                        class="avatar avatar-sm me-3" alt="user1">
+                                                                </div>
+                                                                <div class="d-flex flex-column justify-content-center">
+                                                                    <h6 class="mb-0 text-sm">John Michael</h6>
+                                                                    <p class="text-xs text-secondary mb-0">
+                                                                        john@creative-tim.com</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        
+                                                        <td class="align-middle text-center">
+                                                            <a class="btn btn-link text-dark px-3 mb-0"
+                                                                href="javascript:;"><i
+                                                                    class="fas fa-pencil-alt text-dark me-2"
+                                                                    aria-hidden="true"></i>Edit</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex px-1 py-1">
+                                                                <div>
+                                                                    <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/smartwatch.jpg"
+                                                                        class="avatar avatar-sm me-3" alt="user2">
+                                                                </div>
+                                                                <div class="d-flex flex-column justify-content-center">
+                                                                    <h6 class="mb-0 text-sm">Alexa Liras</h6>
+                                                                    <p class="text-xs text-secondary mb-0">
+                                                                        alexa@creative-tim.com</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        
+                                                        <td class="align-middle text-center">
+                                                            <a class="btn btn-link text-dark px-3 mb-0"
+                                                            href="javascript:;"><i
+                                                                class="fas fa-pencil-alt text-dark me-2"
+                                                                aria-hidden="true"></i>Edit</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex px-1 py-1">
+                                                                <div>
+                                                                    <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/smartwatch.jpg"
+                                                                        class="avatar avatar-sm me-3" alt="user3">
+                                                                </div>
+                                                                <div class="d-flex flex-column justify-content-center">
+                                                                    <h6 class="mb-0 text-sm">Laurent Perrier</h6>
+                                                                    <p class="text-xs text-secondary mb-0">
+                                                                        laurent@creative-tim.com</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        
+                                                        <td class="align-middle text-center">
+                                                            <a class="btn btn-link text-dark px-3 mb-0"
+                                                            href="javascript:;"><i
+                                                                class="fas fa-pencil-alt text-dark me-2"
+                                                                aria-hidden="true"></i>Edit</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex px-1 py-1">
+                                                                <div>
+                                                                    <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/smartwatch.jpg"
+                                                                        class="avatar avatar-sm me-3" alt="user4">
+                                                                </div>
+                                                                <div class="d-flex flex-column justify-content-center">
+                                                                    <h6 class="mb-0 text-sm">Michael Levi</h6>
+                                                                    <p class="text-xs text-secondary mb-0">
+                                                                        michael@creative-tim.com</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        
+                                                        <td class="align-middle text-center">
+                                                            <a class="btn btn-link text-dark px-3 mb-0"
+                                                            href="javascript:;"><i
+                                                                class="fas fa-pencil-alt text-dark me-2"
+                                                                aria-hidden="true"></i>Edit</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex px-1 py-1">
+                                                                <div>
+                                                                    <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/smartwatch.jpg"
+                                                                        class="avatar avatar-sm me-3" alt="user5">
+                                                                </div>
+                                                                <div class="d-flex flex-column justify-content-center">
+                                                                    <h6 class="mb-0 text-sm">Richard Gran</h6>
+                                                                    <p class="text-xs text-secondary mb-0">
+                                                                        richard@creative-tim.com</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        
+                                                        <td class="align-middle text-center">
+                                                            <a class="btn btn-link text-dark px-3 mb-0"
+                                                                href="javascript:;"><i
+                                                                    class="fas fa-pencil-alt text-dark me-2"
+                                                                    aria-hidden="true"></i>Edit</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex px-1 py-1">
+                                                                <div>
+                                                                    <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/smartwatch.jpg"
+                                                                        class="avatar avatar-sm me-3" alt="user6">
+                                                                </div>
+                                                                <div class="d-flex flex-column justify-content-center">
+                                                                    <h6 class="mb-0 text-sm">Miriam Eric</h6>
+                                                                    <p class="text-xs text-secondary mb-0">
+                                                                        miriam@creative-tim.com</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        
+                                                        <td class="align-middle text-center">
+                                                            <a class="btn btn-link text-dark px-3 mb-0"
+                                                                href="javascript:;"><i
+                                                                    class="fas fa-pencil-alt text-dark me-2"
+                                                                    aria-hidden="true"></i>Edit</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <footer class="footer pt-3  ">
                 <div class="container-fluid">
@@ -758,16 +947,19 @@
                         <div class="col-lg-6">
                             <ul class="nav nav-footer justify-content-center justify-content-lg-end">
                                 <li class="nav-item">
-                                    <a href="Landing.html#contactus" target="_blank" class="nav-link text-muted" target="_blank">Contact Us</a>
+                                    <a href="Landing.html#contactus" target="_blank" class="nav-link text-muted"
+                                        target="_blank">Contact Us</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="Landing.html#abtus" class="nav-link text-muted" target="_blank">About Us</a>
+                                    <a href="Landing.html#abtus" class="nav-link text-muted" target="_blank">About
+                                        Us</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="Landing.html#faqs" class="nav-link text-muted" target="_blank">FAQs</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="Landing.html#testomono" class="nav-link pe-0 text-muted" target="_blank">Testimonials</a>
+                                    <a href="Landing.html#testomono" class="nav-link pe-0 text-muted"
+                                        target="_blank">Testimonials</a>
                                 </li>
                             </ul>
                         </div>
@@ -862,8 +1054,15 @@
     <script src="assets/js/plugins/smooth-scrollbar.min.js"></script>
     `
     <script src="assets/js/plugins/fullscren.js"></script>
+    <script src="assets/js/plugins/datatables.js"></script>
 
     <script>
+        const dataTableSearch = new simpleDatatables.DataTable("#datatable-search", {
+            searchable: true,
+            fixedHeight: false,
+            // perPageSelect: false
+        });
+
         var win = navigator.platform.indexOf('Win') > -1;
         if (win && document.querySelector('#sidenav-scrollbar')) {
             var options = {
