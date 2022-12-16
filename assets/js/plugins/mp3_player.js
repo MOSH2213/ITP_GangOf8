@@ -21,6 +21,7 @@ const likeIcon = document.querySelector("#likeicon");
 const songListBtn = document.querySelector("#list");
 const songList = document.querySelector("#songs-list");
 const listCloseBtn = document.querySelector("#listclose");
+const musicv = document.getElementById('musicv');
 // songs array
 
 const songs = [
@@ -166,7 +167,8 @@ function progressSlide(e){
 
 function setVolume(){
     audio.volume = volumeRange.value;
-    console.log("dssa"+audio.volume);
+  console.log("dssa" + audio.volume);
+  musicv.innerHTML = Math.floor(audio.volume * 100)+"/100";
 }
 
 function repeat() {
@@ -197,6 +199,15 @@ function musicList(){
     songList.classList.remove("showlist");
   })
 }
+
+//battery percentage indicator
+ 
+const BattryLevel = document.querySelector("#battry");  
+navigator.getBattery().then(function (battery) {  
+ const level = battery.level;  
+ const status = level * 100 + "%";  
+ BattryLevel.innerHTML = status;  
+});  
 
 
 playPause.addEventListener("click", () => (isPlaying ? pauseSong() : playSong())); 

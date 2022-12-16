@@ -39,7 +39,7 @@
     <div class="min-height-300 bg-primary position-absolute w-100"></div>
     <aside
         class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 "
-        id="sidenav-main">
+        id="sidenav-main" style="z-index: 99;">
         <div class="sidenav-header">
             <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
                 aria-hidden="true" id="iconSidenav"></i>
@@ -79,8 +79,8 @@
     </aside>
     <main class="main-content position-relative border-radius-lg ">
 
-        <nav class="navbar navbar-main navbar-expand-lg  px-0 mx-4 shadow-none border-radius-xl z-index-sticky "
-            id="navbarBlur" data-scroll="false">
+        <nav class="navbar navbar-main navbar-expand-lg  px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur"
+            data-scroll="false">
             <div class="container-fluid py-1 px-3">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
@@ -222,7 +222,7 @@
                                 </div>
                                 <div class="col-lg-6 col-12 text-center">
                                     <img class="w-75 w-lg-100 mt-n7 mt-lg-n8 d-none d-md-block"
-                                        src="assets/img/Maxima Z 1640 x 997_Yellow.png" alt="car image">
+                                        src="assets/img/My project (1).png" alt="car image">
                                     <div class="d-flex align-items-center">
                                         <h4 class="text-body opacity-7 ms-0 ms-md-auto">Available Range</h4>
                                         <h2 class="text-body ms-2 me-auto">47<small class="text-sm align-top"> %</small>
@@ -279,9 +279,9 @@
                             <div class="row">
                                 <div class="col-8">
                                     <div class="numbers">
-                                        <p class="text-white text-sm mb-0 text-uppercase font-weight-bold opacity-7">
+                                        <p  class="text-white text-sm mb-0 text-uppercase font-weight-bold opacity-7">
                                             Battery Health</p>
-                                        <h5 class="text-white font-weight-bolder mb-0">
+                                        <h5 id="battry" class="text-white font-weight-bolder mb-0">
                                             99 %
                                         </h5>
                                     </div>
@@ -326,7 +326,7 @@
                                     <div class="numbers">
                                         <p class="text-white text-sm mb-0 text-uppercase font-weight-bold opacity-7">
                                             Music Volume</p>
-                                        <h5 class="text-white font-weight-bolder mb-0">
+                                        <h5 class="text-white font-weight-bolder mb-0" id="musicv">
                                             15/100
                                         </h5>
                                     </div>
@@ -341,6 +341,698 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-md-8 mt-4">
+                    <div class="card ">
+                        <div class="card-header pb-0 p-3">
+                            <div class="row">
+                                <div class="col-6 d-flex align-items-center">
+                                    <h6 class="mb-0">To Deliever List</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-3">
+                            <div class="d-sm-flex justify-content-between p-0">
+                                <!-- <div>
+                                    <a href="javascript:;" class="btn btn-icon btn-outline-dark">
+                                        New order
+                                    </a>
+                                </div> -->
+                                <div class="d-flex">
+                                    <div class="dropdown d-inline">
+                                        <a href="javascript:;" class="btn btn-outline-dark dropdown-toggle "
+                                            data-bs-toggle="dropdown" id="navbarDropdownMenuLink2">
+                                            Filters
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-lg-start px-2 py-3"
+                                            aria-labelledby="navbarDropdownMenuLink2"
+                                            data-popper-placement="left-start">
+                                            <li><a class="dropdown-item border-radius-md" href="javascript:;">Status:
+                                                    Paid</a>
+                                            </li>
+                                            <li><a class="dropdown-item border-radius-md" href="javascript:;">Status:
+                                                    Refunded</a></li>
+                                            <li><a class="dropdown-item border-radius-md" href="javascript:;">Status:
+                                                    Canceled</a></li>
+                                            <li>
+                                                <hr class="horizontal dark my-2">
+                                            </li>
+                                            <li><a class="dropdown-item  border-radius-md text-danger"
+                                                    href="javascript:;">Remove
+                                                    Filter</a></li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn btn-icon btn-outline-dark ms-2 export"
+                                        onclick="ExportToExcel2('xlsx')" type="button">
+                                        <span class="btn-inner--icon"><i class="ni ni-archive-2"></i></span>
+                                        <span class="btn-inner--text">Export CSV</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="table-responsive" id="tbl_exporttable_to_xls_2">
+                                <table class="table table-flush" id="datatable-basic">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>Id</th>
+                                            <th>Date</th>
+                                            <th>Status</th>
+                                            <th>Customer</th>
+                                            <th>Product</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+
+                                                    <p class="text-xs font-weight-bold ms-2 mb-0">#10421</p>
+                                                </div>
+                                            </td>
+                                            <td class="font-weight-bold">
+                                                <span class="my-2 text-xs">1 Nov, 10:20 AM</span>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <div class="d-flex align-items-center">
+                                                    <button
+                                                        class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
+                                                            class="fas fa-check" aria-hidden="true"></i></button>
+                                                    <span>Paid</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/team-2.jpg" class="avatar avatar-xs me-2"
+                                                        alt="user image">
+                                                    <span>Orlando Imieto</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <span class="my-2 text-xs">Nike Sport V2</span>
+                                            </td>
+                                            <td class="text-xs font-weight-bold p-0 pt-1">
+                                                <button class="btn btn-outline-dark btn-xs p-1 mb-0"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#modal-delivery">Deliever</button>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+
+                                                    <p class="text-xs font-weight-bold ms-2 mb-0">#10422</p>
+                                                </div>
+                                            </td>
+                                            <td class="font-weight-bold">
+                                                <span class="my-2 text-xs">1 Nov, 10:53 AM</span>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <div class="d-flex align-items-center">
+                                                    <button
+                                                        class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
+                                                            class="fas fa-check" aria-hidden="true"></i></button>
+                                                    <span>Paid</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/team-1.jpg" class="avatar avatar-xs me-2"
+                                                        alt="user image">
+                                                    <span>Alice Murinho</span>
+                                                </div>
+                                            </td>
+                                            <td class="font-weight-bold">
+                                                <span class="my-2 text-xs">Valvet T-shirt</span>
+                                            </td>
+                                            <td class="text-xs font-weight-bold p-0 pt-1">
+                                                <button class="btn btn-outline-dark btn-xs p-1 mb-0"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#modal-delivery">Deliever</button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+
+                                                    <p class="text-xs font-weight-bold ms-2 mb-0">#10424</p>
+                                                </div>
+                                            </td>
+                                            <td class="font-weight-bold">
+                                                <span class="my-2 text-xs">1 Nov, 12:20 PM</span>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <div class="d-flex align-items-center">
+                                                    <button
+                                                        class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
+                                                            class="fas fa-check" aria-hidden="true"></i></button>
+                                                    <span>Paid</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="assets/img/team-3.jpg" class="avatar avatar-xs me-2"
+                                                            alt="user image">
+                                                        <span>Andrew Nichel</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <span class="my-2 text-xs">
+                                                    Bracelet Onu-Lino
+                                                </span>
+                                            </td>
+                                            <td class="text-xs font-weight-bold p-0 pt-1">
+                                                <button class="btn btn-outline-dark btn-xs p-1 mb-0"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#modal-delivery">Deliever</button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+
+                                                    <p class="text-xs font-weight-bold ms-2 mb-0">#10426</p>
+                                                </div>
+                                            </td>
+                                            <td class="font-weight-bold">
+                                                <span class="my-2 text-xs">1 Nov, 2:19 AM</span>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <div class="d-flex align-items-center">
+                                                    <button
+                                                        class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
+                                                            class="fas fa-check" aria-hidden="true"></i></button>
+                                                    <span>Paid</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="avatar avatar-xs me-2 bg-gradient-primary">
+                                                        <span>L</span>
+                                                    </div>
+                                                    <span>Laur Gilbert</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <span class="my-2 text-xs">
+                                                    Backpack Niver
+                                                </span>
+                                            </td>
+                                            <td class="text-xs font-weight-bold p-0 pt-1">
+                                                <button class="btn btn-outline-dark btn-xs p-1 mb-0"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#modal-delivery">Deliever</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+
+                                                    <p class="text-xs font-weight-bold ms-2 mb-0">#10427</p>
+                                                </div>
+                                            </td>
+                                            <td class="font-weight-bold">
+                                                <span class="my-2 text-xs">1 Nov, 3:42 AM</span>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <div class="d-flex align-items-center">
+                                                    <button
+                                                        class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
+                                                            class="fas fa-check" aria-hidden="true"></i></button>
+                                                    <span>Paid</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="avatar avatar-xs me-2 bg-gradient-dark">
+                                                        <span>I</span>
+                                                    </div>
+                                                    <span>Iryna Innda</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <span class="my-2 text-xs">
+                                                    Adidas Vio
+                                                </span>
+                                            </td>
+                                            <td class="text-xs font-weight-bold p-0 pt-1">
+                                                <button class="btn btn-outline-dark btn-xs p-1 mb-0"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#modal-delivery">Deliever</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+
+                                                    <p class="text-xs font-weight-bold ms-2 mb-0">#10428</p>
+                                                </div>
+                                            </td>
+                                            <td class="font-weight-bold">
+                                                <span class="my-2 text-xs">2 Nov, 9:32 AM</span>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <div class="d-flex align-items-center">
+                                                    <button
+                                                        class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
+                                                            class="fas fa-check" aria-hidden="true"></i></button>
+                                                    <span>Paid</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="avatar avatar-xs me-2 bg-gradient-dark">
+                                                        <span>A</span>
+                                                    </div>
+                                                    <span>Arrias Liunda</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <span class="my-2 text-xs">
+                                                    Airpods 2 Gen
+                                                </span>
+                                            </td>
+                                            <td class="text-xs font-weight-bold p-0 pt-1">
+                                                <button class="btn btn-outline-dark btn-xs p-1 mb-0"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#modal-delivery">Deliever</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+
+                                                    <p class="text-xs font-weight-bold ms-2 mb-0">#10429</p>
+                                                </div>
+                                            </td>
+                                            <td class="font-weight-bold">
+                                                <span class="my-2 text-xs">2 Nov, 10:14 AM</span>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <div class="d-flex align-items-center">
+                                                    <button
+                                                        class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
+                                                            class="fas fa-check" aria-hidden="true"></i></button>
+                                                    <span>Paid</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="assets/img/team-5.jpg" class="avatar avatar-xs me-2"
+                                                            alt="user image">
+                                                        <span>Rugna Ilpio</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <span class="my-2 text-xs">
+                                                    Bracelet Warret
+                                                </span>
+                                            </td>
+                                            <td class="text-xs font-weight-bold p-0 pt-1">
+                                                <button class="btn btn-outline-dark btn-xs p-1 mb-0"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#modal-delivery">Deliever</button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+
+                                                    <p class="text-xs font-weight-bold ms-2 mb-0">#10431</p>
+                                                </div>
+                                            </td>
+                                            <td class="font-weight-bold">
+                                                <span class="my-2 text-xs">2 Nov, 3:12 PM</span>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <div class="d-flex align-items-center">
+                                                    <button
+                                                        class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
+                                                            class="fas fa-check" aria-hidden="true"></i></button>
+                                                    <span>Paid</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="avatar avatar-xs me-2 bg-gradient-dark">
+                                                        <span>K</span>
+                                                    </div>
+                                                    <span>Karl Innas</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <span class="my-2 text-xs">
+                                                    Kitchen Gadgets
+                                                </span>
+                                            </td>
+                                            <td class="text-xs font-weight-bold p-0 pt-1">
+                                                <button class="btn btn-outline-dark btn-xs p-1 mb-0"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#modal-delivery">Deliever</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <p class="text-xs font-weight-bold ms-2 mb-0">#10432</p>
+                                                </div>
+                                            </td>
+                                            <td class="font-weight-bold">
+                                                <span class="my-2 text-xs">2 Nov, 5:12 PM</span>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <div class="d-flex align-items-center">
+                                                    <button
+                                                        class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
+                                                            class="fas fa-check" aria-hidden="true"></i></button>
+                                                    <span>Paid</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="avatar avatar-xs me-2 bg-gradient-info">
+                                                        <span>O</span>
+                                                    </div>
+                                                    <span>Oana Kilas</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <span class="my-2 text-xs">
+                                                    Office Papers
+                                                </span>
+                                            </td>
+                                            <td class="text-xs font-weight-bold p-0 pt-1">
+                                                <button class="btn btn-outline-dark btn-xs p-1 mb-0"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#modal-delivery">Deliever</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- modal of delivery starts -->
+                                <div class="modal fade " style="z-index: 99999;" id="modal-delivery" tabindex="-1"
+                                    role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-body p-0">
+                                                <div class="card card-plain">
+                                                    <div class="card-header pb-0 text-left">
+                                                        <h4 class="font-weight-bolder  text-primary">Assign Delivery
+                                                            Person</h4>
+                                                        <p class="mb-0">Enter Relevant Credentials</p>
+                                                    </div>
+                                                    <div class="card-body p-3">
+                                                        <form role="form text-left">
+                                                            <label>Coupon Name</label>
+                                                            <div class="input-group mb-3">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Email" aria-label="Email"
+                                                                    aria-describedby="email-addon"
+                                                                    onfocus="focused(this)"
+                                                                    onfocusout="defocused(this)">
+                                                            </div>
+                                                            <label>Value</label>
+                                                            <div class="input-group mb-3">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Password" aria-label="Password"
+                                                                    aria-describedby="password-addon"
+                                                                    onfocus="focused(this)"
+                                                                    onfocusout="defocused(this)">
+                                                            </div>
+
+                                                            <div class=" row text-center">
+                                                                <div class="col-6">
+                                                                    <button type="button" data-bs-dismiss="modal"
+                                                                        class="btn  bg-gradient-primary btn-md w-100 mt-2 mb-0">
+                                                                        Cancel</button>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <button type="submit"
+                                                                        class="btn  btn-outline-primary btn-md w-100 mt-2 mb-0">Add</button>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </form>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal of delivery  Ends -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <style>
+                    .dataTable-top {
+                        padding: 0% !important;
+                    }
+
+                    @media (max-width: 575.98px) {
+                        .dataTable-search {
+                            margin-top: 0% !important;
+                            margin-left: 5% !important;
+                        }
+
+                        .dataTable-dropdown {
+                            margin-left: 5% !important;
+                        }
+                    }
+                </style>
+                <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <div class="card-header p-3 pb-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6>Delivered List</h6>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card-body p-1 p-md-3 pt-0">
+                            <div class="row">
+                                <div class="col-12 p-0">
+                                    <div class="card-body px-3 pt-0 pb-0">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="dropdown d-inline">
+                                                <a href="javascript:;"
+                                                    class="btn btn-outline-dark btn-sm dropdown-toggle "
+                                                    data-bs-toggle="dropdown" id="navbarDropdownMenuLink2">
+                                                    Filters
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-lg-start px-2 py-3"
+                                                    aria-labelledby="navbarDropdownMenuLink2"
+                                                    data-popper-placement="left-start">
+                                                    <li><a class="dropdown-item border-radius-md"
+                                                            href="javascript:;">Status:
+                                                            Paid</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item border-radius-md"
+                                                            href="javascript:;">Status:
+                                                            Refunded</a></li>
+                                                    <li><a class="dropdown-item border-radius-md"
+                                                            href="javascript:;">Status:
+                                                            Canceled</a></li>
+                                                    <li>
+                                                        <hr class="horizontal dark my-2">
+                                                    </li>
+                                                    <li><a class="dropdown-item  border-radius-md text-danger"
+                                                            href="javascript:;">Remove
+                                                            Filter</a></li>
+                                                </ul>
+                                            </div>
+                                            <button class="btn btn-icon btn-outline-dark btn-sm ms-2 export"
+                                                onclick="ExportToExcel3('xlsx')" type="button">
+                                                <span class="btn-inner--icon"><i class="ni ni-archive-2"></i></span>
+                                                <span class="btn-inner--text">Export CSV</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive p-0" id="tbl_exporttable_to_xls_3">
+                                        <table class="table align-items-center mb-0" id="datatable-search2">
+                                            <thead>
+                                                <tr>
+                                                    <th
+                                                        class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                        Author</th>
+                                                    <th
+                                                        class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                                        Function</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex px-1 py-1">
+                                                            <div>
+                                                                <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/smartwatch.jpg"
+                                                                    class="avatar avatar-sm me-3" alt="user1">
+                                                            </div>
+                                                            <div class="d-flex flex-column justify-content-center">
+                                                                <h6 class="mb-0 text-sm">John Michael</h6>
+                                                                <p class="text-xs text-secondary mb-0">
+                                                                    john@creative-tim.com</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+
+                                                    <td class="align-middle text-center">
+                                                        <a class="btn btn-link text-dark px-0 mb-0"
+                                                            href="javascript:;"><i
+                                                                class="fas fa-pencil-alt text-dark me-2"
+                                                                aria-hidden="true"></i></a>
+                                                        <a class="btn btn-link text-dark px-0 mb-0"
+                                                            href="javascript:;"><i class="fas fa-eye text-dark me-2"
+                                                                aria-hidden="true"></i></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex px-1 py-1">
+                                                            <div>
+                                                                <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/smartwatch.jpg"
+                                                                    class="avatar avatar-sm me-3" alt="user2">
+                                                            </div>
+                                                            <div class="d-flex flex-column justify-content-center">
+                                                                <h6 class="mb-0 text-sm">Alexa Liras</h6>
+                                                                <p class="text-xs text-secondary mb-0">
+                                                                    alexa@creative-tim.com</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+
+                                                    <td class="align-middle text-center">
+                                                        <a class="btn btn-link text-dark px-0 mb-0"
+                                                            href="javascript:;"><i
+                                                                class="fas fa-pencil-alt text-dark me-2"
+                                                                aria-hidden="true"></i></a>
+                                                        <a class="btn btn-link text-dark px-0 mb-0"
+                                                            href="javascript:;"><i class="fas fa-eye text-dark me-2"
+                                                                aria-hidden="true"></i></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex px-1 py-1">
+                                                            <div>
+                                                                <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/smartwatch.jpg"
+                                                                    class="avatar avatar-sm me-3" alt="user3">
+                                                            </div>
+                                                            <div class="d-flex flex-column justify-content-center">
+                                                                <h6 class="mb-0 text-sm">Laurent Perrier</h6>
+                                                                <p class="text-xs text-secondary mb-0">
+                                                                    laurent@creative-tim.com</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+
+                                                    <td class="align-middle text-center">
+                                                        <a class="btn btn-link text-dark px-0 mb-0"
+                                                            href="javascript:;"><i
+                                                                class="fas fa-pencil-alt text-dark me-2"
+                                                                aria-hidden="true"></i></a>
+                                                        <a class="btn btn-link text-dark px-0 mb-0"
+                                                            href="javascript:;"><i class="fas fa-eye text-dark me-2"
+                                                                aria-hidden="true"></i></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex px-1 py-1">
+                                                            <div>
+                                                                <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/smartwatch.jpg"
+                                                                    class="avatar avatar-sm me-3" alt="user4">
+                                                            </div>
+                                                            <div class="d-flex flex-column justify-content-center">
+                                                                <h6 class="mb-0 text-sm">Michael Levi</h6>
+                                                                <p class="text-xs text-secondary mb-0">
+                                                                    michael@creative-tim.com</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+
+                                                    <td class="align-middle text-center">
+                                                        <a class="btn btn-link text-dark px-0 mb-0"
+                                                            href="javascript:;"><i
+                                                                class="fas fa-pencil-alt text-dark me-2"
+                                                                aria-hidden="true"></i></a>
+                                                        <a class="btn btn-link text-dark px-0 mb-0"
+                                                            href="javascript:;"><i class="fas fa-eye text-dark me-2"
+                                                                aria-hidden="true"></i></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex px-1 py-1">
+                                                            <div>
+                                                                <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/smartwatch.jpg"
+                                                                    class="avatar avatar-sm me-3" alt="user5">
+                                                            </div>
+                                                            <div class="d-flex flex-column justify-content-center">
+                                                                <h6 class="mb-0 text-sm">Richard Gran</h6>
+                                                                <p class="text-xs text-secondary mb-0">
+                                                                    richard@creative-tim.com</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+
+                                                    <td class="align-middle text-center">
+                                                        <a class="btn btn-link text-dark px-0 mb-0"
+                                                            href="javascript:;"><i
+                                                                class="fas fa-pencil-alt text-dark me-2"
+                                                                aria-hidden="true"></i></a>
+                                                        <a class="btn btn-link text-dark px-0 mb-0"
+                                                            href="javascript:;"><i class="fas fa-eye text-dark me-2"
+                                                                aria-hidden="true"></i></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex px-1 py-1">
+                                                            <div>
+                                                                <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/smartwatch.jpg"
+                                                                    class="avatar avatar-sm me-3" alt="user6">
+                                                            </div>
+                                                            <div class="d-flex flex-column justify-content-center">
+                                                                <h6 class="mb-0 text-sm">Miriam Eric</h6>
+                                                                <p class="text-xs text-secondary mb-0">
+                                                                    miriam@creative-tim.com</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+
+                                                    <td class="align-middle text-center">
+                                                        <a class="btn btn-link text-dark px-0 mb-0"
+                                                            href="javascript:;"><i
+                                                                class="fas fa-pencil-alt text-dark me-2"
+                                                                aria-hidden="true"></i></a>
+                                                        <a class="btn btn-link text-dark px-0 mb-0"
+                                                            href="javascript:;"><i class="fas fa-eye text-dark me-2"
+                                                                aria-hidden="true"></i></a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="row mt-4">
                 <div class="col-12">
                     <div class="card shadow-lg">
@@ -429,7 +1121,8 @@
                                                     class="border-radius-xl rounded-circle shadow" id="img">
                                             </div>
                                             <img class="position-absolute w-60 end-0 bottom-0 me-n3 mb-0"
-                                                src="assets/img/small-logos/logo-spotify.svg" alt="spotify logo" id="titlelogo">
+                                                src="assets/img/small-logos/logo-spotify.svg" alt="spotify logo"
+                                                id="titlelogo">
                                         </div>
                                         <div class="px-3">
                                             <p class="text-body text-sm font-weight-bold mb-0" id="title">
@@ -444,34 +1137,42 @@
                                 <div class="col-lg-4 col-md-6 col-12 my-auto text-center mt-3 mt-lg-0">
                                     <div class="d-flex align-items-center">
                                         <button
-                                            class="btn btn-lg btn-icon-only btn-rounded btn-outline-dark mb-0 ms-auto" id="prevbtn">
+                                            class="btn btn-lg btn-icon-only btn-rounded btn-outline-dark mb-0 ms-auto"
+                                            id="prevbtn">
                                             <i class="ni ni-button-play top-0 rotate-180" aria-hidden="true"></i>
                                         </button>
-                                        <button class="btn btn-lg btn-icon-only btn-rounded btn-outline-dark mb-0 ms-4" id="playpause">
-                                            <i class="ni ni-button-pause top-0" id="playpause-btn" aria-hidden="true"></i>
+                                        <button class="btn btn-lg btn-icon-only btn-rounded btn-outline-dark mb-0 ms-4"
+                                            id="playpause">
+                                            <i class="ni ni-button-pause top-0" id="playpause-btn"
+                                                aria-hidden="true"></i>
                                         </button>
                                         <button
-                                            class="btn btn-lg btn-icon-only btn-rounded btn-outline-dark mb-0 ms-4 me-auto" id="nextbtn">
+                                            class="btn btn-lg btn-icon-only btn-rounded btn-outline-dark mb-0 ms-4 me-auto"
+                                            id="nextbtn">
                                             <i class="ni ni-button-play top-0" aria-hidden="true"></i>
                                         </button>
                                     </div>
                                 </div>
                                 <div class="col-lg-2 col-md-6 col-8 my-auto">
                                     <p class="text-body mb-2">Volume</p>
-                                    <input type="range" name="" class="volumerange" min='0.00' max='1' value='1' step='0.01' >
+                                    <input type="range" name="" class="volumerange" min='0.00' max='1' value='1'
+                                        step='0.01'>
                                     <!-- <div id="sliderRegular"></div> -->
                                 </div>
                                 <div class="col-lg-1 col-md-6 col-4 my-auto ms-auto">
-                                    <i class="ni ni-note-03  ms-3 mt-3" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="loop" id="repeat" style="color: #67748E;"></i>
+                                    <i class="ni ni-note-03  ms-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        title="loop" id="repeat" style="color: #67748E;"></i>
                                     <i class="ni ni-favourite-28 ms-3 mt-3" data-bs-toggle="tooltip"
                                         data-bs-placement="top" title="Like" style="color: #67748E;" id="likeicon"></i>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-12 my-auto">
-                                    <audio id="audio" src="https://raw.githubusercontent.com/ustabasiibrahim/music-player/master/assets/music/1.mp3" id="audio"></audio>
+                                    <audio id="audio"
+                                        src="https://raw.githubusercontent.com/ustabasiibrahim/music-player/master/assets/music/1.mp3"
+                                        id="audio"></audio>
                                     <br>
-                                    <input type="range" name="" id="progress" style="width: 100%;" value="0" min="0" max="100">
-                                    
+                                    <input type="range" name="" id="progress" style="width: 100%;" value="0" min="0"
+                                        max="100">
+
                                 </div>
                             </div>
                         </div>
@@ -496,16 +1197,19 @@
                         <div class="col-lg-6">
                             <ul class="nav nav-footer justify-content-center justify-content-lg-end">
                                 <li class="nav-item">
-                                    <a href="Landing.html#contactus" target="_blank" class="nav-link text-muted" target="_blank">Contact Us</a>
+                                    <a href="Landing.html#contactus" target="_blank" class="nav-link text-muted"
+                                        target="_blank">Contact Us</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="Landing.html#abtus" class="nav-link text-muted" target="_blank">About Us</a>
+                                    <a href="Landing.html#abtus" class="nav-link text-muted" target="_blank">About
+                                        Us</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="Landing.html#faqs" class="nav-link text-muted" target="_blank">FAQs</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="Landing.html#testomono" class="nav-link pe-0 text-muted" target="_blank">Testimonials</a>
+                                    <a href="Landing.html#testomono" class="nav-link pe-0 text-muted"
+                                        target="_blank">Testimonials</a>
                                 </li>
                             </ul>
                         </div>
@@ -599,11 +1303,13 @@
     <script src="assets/js/plugins/nouislider.min.js"></script>
     <script src="assets/js/plugins/fullscren.js"></script>
     <script src="assets/js/plugins/mp3_player.js"></script>
+    <script src="assets/js/plugins/datatables.js"></script>
+
 
     <script>
-         var d = new Date(); 
+        var d = new Date();
         var time = d.toLocaleTimeString();
-        document.getElementById('dashtime').innerHTML=time;
+        document.getElementById('dashtime').innerHTML = time;
         var win = navigator.platform.indexOf('Win') > -1;
         if (win && document.querySelector('#sidenav-scrollbar')) {
             var options = {
@@ -611,6 +1317,36 @@
             }
             Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
         }
+    </script>
+
+    <script>
+        function ExportToExcel2(type, fn, dl) {
+            var elt = document.getElementById('tbl_exporttable_to_xls_2');
+            var wb = XLSX.utils.table_to_book(elt, { sheet: "sheet1" });
+            return dl ?
+                XLSX.write(wb, { bookType: type, bookSST: true, type: 'base64' }) :
+                XLSX.writeFile(wb, fn || ('To DeliverList.' + (type || 'xlsx')));
+        }
+        function ExportToExcel3(type, fn, dl) {
+            var elt = document.getElementById('tbl_exporttable_to_xls_3');
+            var wb = XLSX.utils.table_to_book(elt, { sheet: "sheet1" });
+            return dl ?
+                XLSX.write(wb, { bookType: type, bookSST: true, type: 'base64' }) :
+                XLSX.writeFile(wb, fn || ('DeliveryReport.' + (type || 'xlsx')));
+        }
+
+        const dataTableBasic = new simpleDatatables.DataTable("#datatable-basic", {
+            searchable: true,
+            fixedHeight: true,
+            //perPageSelect: false
+
+        });
+        const dataTableSearch2 = new simpleDatatables.DataTable("#datatable-search2", {
+            searchable: true,
+            fixedHeight: true,
+            //perPageSelect: false
+
+        });
     </script>
 
     <script async defer src="https://buttons.github.io/buttons.js"></script>
@@ -632,6 +1368,10 @@
         src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;language=en&amp;key=AIzaSyD61CGRsenVDXkRMrBzxQnVTtL7EZz0k_c"></script>
     <script src="assets/js/plugins/gmaps.js"></script>
     <!-- map based ends here-->
+
+    <!-- required to the excelSheet -->
+    <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+    <!-- required to the excelsheet ends herer -->
 </body>
 
 </html>
