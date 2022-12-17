@@ -45,14 +45,29 @@
       <div class="page-header min-vh-100">
         <div class="container">
           <div class="row">
-            <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0 mx-auto">
+            <div class=" col-md-5 d-flex flex-column mx-lg-0 mx-auto">
               <div class="card card-plain">
                 <div class="card-header pb-0 text-start">
+                  <h3>Welcome To Dean </h3>
+                  <div class="row justify-content-evenly">
+                    <div class="col-3 d-flex justify-content-center">
+                      <button class="btn btn-sm" onclick="adminpage();">Admin</button>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center">
+                      <button class="btn btn-sm" onclick="employeepage();">Employee</button>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center">
+                      <button class="btn btn-sm" onclick="clientpage();">Client</button>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center">
+                      <button class="btn btn-sm" onclick="deliverypage();">Delivery</button>
+                    </div>
+                  </div>
                   <h4 class="font-weight-bolder">Sign In</h4>
                   <p class="mb-0">Enter your email and password to sign in</p>
                 </div>
-                <div class="card-body">
-                  <form role="form">
+                <div class="card-body" id="divcontent">
+                  <form action="adminServlet" role="form">
                     <div class="mb-3">
                       <input type="email" class="form-control form-control-lg" placeholder="Email" aria-label="Email">
                     </div>
@@ -66,7 +81,7 @@
                     </div>
                     <div class="text-center">
                       <button type="button" class="btn btn-lg btn-dark btn-lg w-100 mt-4 mb-0"
-                        style="background-color: #F0D8C0;">Sign in</button>
+                        style="background-color: #F0D8C0;" id="signInbtn">Sign in</button>
                     </div>
                   </form>
                 </div>
@@ -83,7 +98,7 @@
               <div
                 class="position-relative h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center overflow-hidden"
                 style="background-image: url('assets/img/illustrations/adim2.jpg');
-          background-size: cover;">
+          background-size: cover;" id="wallpaperDiv">
                 <!-- <span class="mask bg-dark opacity-1"></span> -->
               </div>
             </div>
@@ -92,12 +107,111 @@
       </div>
     </section>
   </main>
+
   <!--   Core JS Files   -->
   <script src="assets/js/core/popper.min.js"></script>
   <script src="assets/js/core/bootstrap.min.js"></script>
   <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
   <script src="assets/js/plugins/smooth-scrollbar.min.js"></script>
+
   <script>
+    var divContent = document.getElementById('divcontent');
+    var wallpaperDiv = document.getElementById('wallpaperDiv');
+    var signInbtn = document.getElementById('signInbtn');
+
+    function adminpage() {
+      wallpaperDiv.style.backgroundImage = "url('assets/img/illustrations/adim2.jpg')";
+      wallpaperDiv.style.transition = "all 1s";
+      signInbtn.style.backgroundColor = "#F0D8C0";
+      divContent.innerHTML = `
+      <form action="adminServlet" role="form">
+                    <div class="mb-3">
+                      <input type="email" class="form-control form-control-lg" placeholder="Email" aria-label="Email">
+                    </div>
+                    <div class="mb-3">
+                      <input type="email" class="form-control form-control-lg" placeholder="Password"
+                        aria-label="Password">
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input " type="checkbox" id="rememberMe">
+                      <label class="form-check-label" for="rememberMe">Remember me</label>
+                    </div>
+                    <div class="text-center">
+                      <button type="button" class="btn btn-lg btn-dark btn-lg w-100 mt-4 mb-0"
+                        style="background-color: #F0D8C0;" id="signInbtn">Sign in</button>
+                    </div>
+      </form>`;
+    }
+    function employeepage() {
+      wallpaperDiv.style.backgroundImage = "url('assets/img/illustrations/employee.jpg')";
+      wallpaperDiv.style.transition = "all 1s";
+      signInbtn.style.backgroundColor = "#8597AF";
+      divContent.innerHTML = `
+      <form action="employeeServlet" role="form">
+                    <div class="mb-3">
+                      <input type="email" class="form-control form-control-lg" placeholder="Email" aria-label="Email">
+                    </div>
+                    <div class="mb-3">
+                      <input type="email" class="form-control form-control-lg" placeholder="Password"
+                        aria-label="Password">
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input " type="checkbox" id="rememberMe">
+                      <label class="form-check-label" for="rememberMe">Remember me</label>
+                    </div>
+                    <div class="text-center">
+                      <button type="button" class="btn btn-lg btn-dark btn-lg w-100 mt-4 mb-0"
+                        style="background-color: #8597AF;" id="signInbtn">Sign in</button>
+                    </div>
+      </form>`;
+    }
+    function clientpage() {
+      wallpaperDiv.style.backgroundImage = "url('assets/img/illustrations/userr.webp')";
+      wallpaperDiv.style.transition = "all 1s";
+      signInbtn.style.backgroundColor = "#C7F75E";
+      divContent.innerHTML = `
+      <form action="clientServlet" role="form">
+                    <div class="mb-3">
+                      <input type="email" class="form-control form-control-lg" placeholder="Email" aria-label="Email">
+                    </div>
+                    <div class="mb-3">
+                      <input type="email" class="form-control form-control-lg" placeholder="Password"
+                        aria-label="Password">
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input " type="checkbox" id="rememberMe">
+                      <label class="form-check-label" for="rememberMe">Remember me</label>
+                    </div>
+                    <div class="text-center">
+                      <button type="button" class="btn btn-lg btn-dark btn-lg w-100 mt-4 mb-0"
+                        style="background-color: #C7F75E;" id="signInbtn">Sign in</button>
+                    </div>
+      </form>`;
+    }
+    function deliverypage() {
+      wallpaperDiv.style.backgroundImage = "url('assets/img/illustrations/delivery.png')";
+      wallpaperDiv.style.transition = "all 1s";
+      signInbtn.style.backgroundColor = "#F9C6C5";
+      divContent.innerHTML = `
+      <form action="deliveryServlet" role="form">
+                    <div class="mb-3">
+                      <input type="email" class="form-control form-control-lg" placeholder="Email" aria-label="Email">
+                    </div>
+                    <div class="mb-3">
+                      <input type="email" class="form-control form-control-lg" placeholder="Password"
+                        aria-label="Password">
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input " type="checkbox" id="rememberMe">
+                      <label class="form-check-label" for="rememberMe">Remember me</label>
+                    </div>
+                    <div class="text-center">
+                      <button type="button" class="btn btn-lg btn-dark btn-lg w-100 mt-4 mb-0"
+                        style="background-color: #F9C6C5;" id="signInbtn">Sign in</button>
+                    </div>
+      </form>`;
+    }
+
     var win = navigator.platform.indexOf('Win') > -1;
     if (win && document.querySelector('#sidenav-scrollbar')) {
       var options = {
