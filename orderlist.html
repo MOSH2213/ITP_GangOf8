@@ -2449,28 +2449,21 @@
     <script>
         const dataTableBasic = new simpleDatatables.DataTable("#datatable-basic", {
             searchable: true,
-            fixedHeight: true,
-            //perPageSelect: false
-
+            fixedHeight: false
         });
 
         const dataTableSearch = new simpleDatatables.DataTable("#datatable-search", {
             searchable: true,
-            fixedHeight: false,
-            // perPageSelect: false
+            fixedHeight: false
         });
 
         const dataTableSearch2 = new simpleDatatables.DataTable("#datatable-search2", {
             searchable: true,
-            fixedHeight: true,
-            // perPageSelect: false,
-            // pageLength: 5
+            fixedHeight: false
         });
         const dataTableSearch3 = new simpleDatatables.DataTable("#datatable-search3", {
             searchable: true,
-            fixedHeight: true,
-            // perPageSelect: false,
-            pageLength: 5
+            fixedHeight: false
         });
 
         document.querySelectorAll(".export").forEach(function (el) {
