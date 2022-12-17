@@ -15,10 +15,13 @@
   <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-  <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
+
   <!-- CSS Files -->
-  <link id="pagestyle" href="assets/css/argon-dashboard.css?v=2.0.4" rel="stylesheet" />
+
   <link rel="stylesheet" href="assets/css/preloader.css" />
+  <!-- <link id="pagestyle" href="assets/css/argon-dashboard.css?v=2.0.4" rel="stylesheet" /> -->
+  <link id="pagestyle" href="assets/css/argon-dashboard.min.css?v=2.0.5" rel="stylesheet" />
+
 </head>
 
 <body class="g-sidenav-show bg-gray-100">
@@ -266,7 +269,7 @@
       </div>
     </div>
 
-    <div class="container-fluid py-4" id="cardconts">
+    <div class="container-fluid py-4 px-2" id="cardconts" style="overflow: hidden;">
       <div class="tab-content">
         <div class="tab-pane active" id="cardPay">
           <div class="row">
@@ -1300,7 +1303,299 @@
                 </div>
               </div>
             </div>
-            <div class="col-4"></div>
+            <div class="col-md-6">
+              <div class="row">
+                <div class=" col-md-4 mt-lg-0 mt-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="icon icon-shape bg-gradient-primary shadow text-center">
+                        <i class="ni ni-check-bold opacity-10" aria-hidden="true"></i>
+                      </div>
+                      <h5 class="mt-3 mb-0">754 <span class="text-secondary text-sm">m</span></h5>
+                      <p class="mb-0">New York City</p>
+                    </div>
+                  </div>
+                </div>
+                <div class=" col-md-4 mt-lg-0 mt-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="icon icon-shape bg-gradient-primary shadow text-center">
+                        <i class="ni ni-fat-remove opacity-10" aria-hidden="true"></i>
+                      </div>
+                      <h5 class="mt-3 mb-0">754 <span class="text-secondary text-sm">m</span></h5>
+                      <p class="mb-0">New York City</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-lg-0 mt-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <p>Steps</p>
+                      <h3>11.4K</h3>
+                      <span class="badge bg-danger">+4.3%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-md-4 mt-lg-0 mt-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <p>Steps</p>
+                      <h3>11.4K</h3>
+                      <span class="badge bg-danger">+4.3%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8 mt-lg-0 mt-4">
+                  <div class="card">
+                    <div class="card-header pb-2">
+                      <div class="d-flex">
+                        <p>Full Body</p>
+                        <div class="ms-auto">
+                          <span class="badge bg-success">Moderate</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body pt-0">
+                      <p class="mb-0">What matters is the people who are sparked by it. And the people who are liked.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3 " style="height: auto;">
+            <div class="col-md-6">
+              <div class="card">
+                <h3 class="text-center pt-3">Inqueries</h3>
+                <form role="form" id="contact-form" method="post" autocomplete="off">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label class="form-label">First Name</label>
+                        <input class="form-control" aria-label="First Name..." type="text">
+                      </div>
+                      <div class="col-md-6 ps-2">
+                        <label class="form-label">Last Name</label>
+                        <input type="text" class="form-control" placeholder="" aria-label="Last Name...">
+                      </div>
+                    </div>
+                    <div class="mb-4">
+                      <label>Email Address</label>
+                      <input type="email" class="form-control">
+                    </div>
+                    <div class="mb-4 ">
+                      <label>Your message</label>
+                      <textarea name="message" class="form-control" id="message" rows="4"></textarea>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-check form-switch mb-4 d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked="">
+                          <label class="form-check-label ms-3 mb-0" for="flexSwitchCheckDefault">I agree to the <a
+                              href="javascript:;" class="text-dark"><u>Terms and Conditions</u></a>.</label>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <button type="submit" class="btn bg-gradient-primary w-100">Submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+            </div>
+            <div class="col-6">
+              <div class="card">
+                <div class="card-header p-3 pb-0">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <h6>List Of Inqueries</h6>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="card-body p-1 p-md-3 pt-0">
+                  <div class="row">
+                    <div class="col-12 p-0">
+                      <div class="card-body px-3 pt-0 pb-0">
+                        <div class="d-flex justify-content-between">
+                          <div class="dropdown d-inline">
+                            <a href="javascript:;" class="btn btn-outline-dark btn-sm dropdown-toggle "
+                              data-bs-toggle="dropdown" id="navbarDropdownMenuLink2">
+                              Filters
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-lg-start px-2 py-3"
+                              aria-labelledby="navbarDropdownMenuLink2" data-popper-placement="left-start">
+                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Status:
+                                  Paid</a>
+                              </li>
+                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Status:
+                                  Refunded</a></li>
+                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Status:
+                                  Canceled</a></li>
+                              <li>
+                                <hr class="horizontal dark my-2">
+                              </li>
+                              <li><a class="dropdown-item  border-radius-md text-danger" href="javascript:;">Remove
+                                  Filter</a></li>
+                            </ul>
+                          </div>
+                          <button class="btn btn-icon btn-outline-dark btn-sm ms-2 export"
+                            onclick="ExportToExcel3('xlsx')" type="button">
+                            <span class="btn-inner--icon"><i class="ni ni-archive-2"></i></span>
+                            <span class="btn-inner--text">Export CSV</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="table-responsive p-0" id="tbl_exporttable_to_xls_3">
+                        <table class="table align-items-center mb-0" id="datatable-search2">
+                          <thead>
+                            <tr>
+                              <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                Author</th>
+                              <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                Function</th>
+
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="d-flex px-1 py-1">
+                                  <div>
+                                    <img
+                                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/smartwatch.jpg"
+                                      class="avatar avatar-sm me-3" alt="user1">
+                                  </div>
+                                  <div class="d-flex flex-column justify-content-center">
+                                    <h6 class="mb-0 text-sm">John Michael</h6>
+                                    <p class="text-xs text-secondary mb-0">
+                                      john@creative-tim.com</p>
+                                  </div>
+                                </div>
+                              </td>
+
+                              <td class="align-middle text-center">
+                                <a class="btn btn-link text-dark px-3 mb-0" href="javascript:;"><i
+                                    class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex px-1 py-1">
+                                  <div>
+                                    <img
+                                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/smartwatch.jpg"
+                                      class="avatar avatar-sm me-3" alt="user2">
+                                  </div>
+                                  <div class="d-flex flex-column justify-content-center">
+                                    <h6 class="mb-0 text-sm">Alexa Liras</h6>
+                                    <p class="text-xs text-secondary mb-0">
+                                      alexa@creative-tim.com</p>
+                                  </div>
+                                </div>
+                              </td>
+
+                              <td class="align-middle text-center">
+                                <a class="btn btn-link text-dark px-3 mb-0" href="javascript:;"><i
+                                    class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex px-1 py-1">
+                                  <div>
+                                    <img
+                                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/smartwatch.jpg"
+                                      class="avatar avatar-sm me-3" alt="user3">
+                                  </div>
+                                  <div class="d-flex flex-column justify-content-center">
+                                    <h6 class="mb-0 text-sm">Laurent Perrier</h6>
+                                    <p class="text-xs text-secondary mb-0">
+                                      laurent@creative-tim.com</p>
+                                  </div>
+                                </div>
+                              </td>
+
+                              <td class="align-middle text-center">
+                                <a class="btn btn-link text-dark px-3 mb-0" href="javascript:;"><i
+                                    class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex px-1 py-1">
+                                  <div>
+                                    <img
+                                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/smartwatch.jpg"
+                                      class="avatar avatar-sm me-3" alt="user4">
+                                  </div>
+                                  <div class="d-flex flex-column justify-content-center">
+                                    <h6 class="mb-0 text-sm">Michael Levi</h6>
+                                    <p class="text-xs text-secondary mb-0">
+                                      michael@creative-tim.com</p>
+                                  </div>
+                                </div>
+                              </td>
+
+                              <td class="align-middle text-center">
+                                <a class="btn btn-link text-dark px-3 mb-0" href="javascript:;"><i
+                                    class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex px-1 py-1">
+                                  <div>
+                                    <img
+                                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/smartwatch.jpg"
+                                      class="avatar avatar-sm me-3" alt="user5">
+                                  </div>
+                                  <div class="d-flex flex-column justify-content-center">
+                                    <h6 class="mb-0 text-sm">Richard Gran</h6>
+                                    <p class="text-xs text-secondary mb-0">
+                                      richard@creative-tim.com</p>
+                                  </div>
+                                </div>
+                              </td>
+
+                              <td class="align-middle text-center">
+                                <a class="btn btn-link text-dark px-3 mb-0" href="javascript:;"><i
+                                    class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex px-1 py-1">
+                                  <div>
+                                    <img
+                                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/smartwatch.jpg"
+                                      class="avatar avatar-sm me-3" alt="user6">
+                                  </div>
+                                  <div class="d-flex flex-column justify-content-center">
+                                    <h6 class="mb-0 text-sm">Miriam Eric</h6>
+                                    <p class="text-xs text-secondary mb-0">
+                                      miriam@creative-tim.com</p>
+                                  </div>
+                                </div>
+                              </td>
+
+                              <td class="align-middle text-center">
+                                <a class="btn btn-link text-dark px-3 mb-0" href="javascript:;"><i
+                                    class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1380,10 +1675,97 @@
   <script src="assets/js/core/popper.min.js"></script>
   <script src="assets/js/core/bootstrap.min.js"></script>
   <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
-  <script src="assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <!-- <script src="assets/js/plugins/smooth-scrollbar.min.js"></script> -->
   <script src="assets/js/plugins/fullscren.js"></script>
+  <script src="assets/js/plugins/chartjs.min.js"></script>
+  <script src="assets/js/plugins/datatables.js"></script>
 
   <script>
+    function ExportToExcel2(type, fn, dl) {
+      var elt = document.getElementById('tbl_exporttable_to_xls_2');
+      var wb = XLSX.utils.table_to_book(elt, { sheet: "sheet1" });
+      return dl ?
+        XLSX.write(wb, { bookType: type, bookSST: true, type: 'base64' }) :
+        XLSX.writeFile(wb, fn || ('To DeliverList.' + (type || 'xlsx')));
+    }
+    function ExportToExcel3(type, fn, dl) {
+      var elt = document.getElementById('tbl_exporttable_to_xls_3');
+      var wb = XLSX.utils.table_to_book(elt, { sheet: "sheet1" });
+      return dl ?
+        XLSX.write(wb, { bookType: type, bookSST: true, type: 'base64' }) :
+        XLSX.writeFile(wb, fn || ('DeliveryReport.' + (type || 'xlsx')));
+    }
+
+  
+    const dataTableSearch2 = new simpleDatatables.DataTable("#datatable-search2", {
+      searchable: true,
+      fixedHeight: true,
+      //perPageSelect: false
+
+    });
+  </script>
+
+  <script>
+
+    // Bar chart
+    var ctx5 = document.getElementById("bar-chart").getContext("2d");
+
+    new Chart(ctx5, {
+      type: "bar",
+      data: {
+        labels: ['16-20', '21-25', '26-30', '31-36', '36-42', '42+'],
+        datasets: [{
+          label: "Sales by age",
+          weight: 5,
+          borderWidth: 0,
+          borderRadius: 4,
+          backgroundColor: '#3A416F',
+          data: [15, 20, 12, 60, 20, 15],
+          fill: false,
+          maxBarThickness: 35
+        }],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            display: false,
+          }
+        },
+        scales: {
+          y: {
+            grid: {
+              drawBorder: false,
+              display: true,
+              drawOnChartArea: true,
+              drawTicks: false,
+              borderDash: [5, 5]
+            },
+            ticks: {
+              display: true,
+              padding: 10,
+              color: '#9ca2b7'
+            }
+          },
+          x: {
+            grid: {
+              drawBorder: false,
+              display: false,
+              drawOnChartArea: true,
+              drawTicks: true,
+            },
+            ticks: {
+              display: true,
+              color: '#9ca2b7',
+              padding: 10
+            }
+          },
+        },
+      },
+    });
+
+
     var win = navigator.platform.indexOf("Win") > -1;
     if (win && document.querySelector("#sidenav-scrollbar")) {
       var options = {
@@ -1404,6 +1786,9 @@
 
   <script src="assets/js/plugins/debit.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js"></script>
+  <!-- required to the excelSheet -->
+  <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+  <!-- required to the excelsheet ends herer -->
 </body>
 
 </html>
