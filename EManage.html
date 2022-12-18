@@ -143,28 +143,16 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link " href="#">
+                                            <a class="nav-link " href="billing.html">
                                                 <span class="sidenav-mini-icon text-xs"> E </span>
                                                 <span class="sidenav-normal"> Payment Types</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link " href="#">
-                                                <span class="sidenav-mini-icon text-xs"> P </span>
-                                                <span class="sidenav-normal"> Product Page </span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link " href="#">
-                                                <span class="sidenav-mini-icon text-xs"> P </span>
-                                                <span class="sidenav-normal"> Products List </span>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" aria-expanded="false" href="#ordersExample">
+                                <a class="nav-link" data-bs-toggle="collapse" aria-expanded="false" href="#ordersExample">
                                     <span class="sidenav-mini-icon"> O </span>
                                     <span class="sidenav-normal"> Order Management <b class="caret"></b></span>
                                 </a>
@@ -4439,7 +4427,7 @@
                 XLSX.writeFile(wb, fn || ('DeliveryReport.' + (type || 'xlsx')));
         }
         //table 6
-        function ExportToExcel5(type, fn, dl) {
+        function ExportToExcel6(type, fn, dl) {
             var elt = document.getElementById('tbl_exporttable_to_xls_6');
             var wb = XLSX.utils.table_to_book(elt, { sheet: "sheet1" });
             return dl ?
