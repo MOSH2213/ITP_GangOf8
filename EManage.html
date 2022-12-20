@@ -137,13 +137,13 @@
                                 <div class="collapse " id="productsExample">
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item ">
-                                            <a class="nav-link " href="billing.html">
+                                            <a class="nav-link " href="paymentM.html">
                                                 <span class="sidenav-mini-icon text-xs"> N </span>
                                                 <span class="sidenav-normal"> Overview </span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link " href="billing.html">
+                                            <a class="nav-link " href="paymentM.html">
                                                 <span class="sidenav-mini-icon text-xs"> E </span>
                                                 <span class="sidenav-normal"> Payment Types</span>
                                             </a>
@@ -160,13 +160,13 @@
                                 <div class="collapse " id="ordersExample">
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item active">
-                                            <a class="nav-link" href="orderlist.html">
+                                            <a class="nav-link" href="orderM.html">
                                                 <span class="sidenav-mini-icon text-xs"> O </span>
                                                 <span class="sidenav-normal"> OverView</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link " href="orderlist.html">
+                                            <a class="nav-link " href="orderM.html">
                                                 <span class="sidenav-mini-icon text-xs"> O </span>
                                                 <span class="sidenav-normal"> Order List</span>
                                             </a>
@@ -191,14 +191,21 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="orderlist.html">
                                     <span class="sidenav-mini-icon"> O </span>
-                                    <span class="sidenav-normal">Orders<b class="caret"></b></span>
+                                    <span class="sidenav-normal">OverView<b class="caret"></b></span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">
-                                    <span class="sidenav-mini-icon"> P </span>
+                                    <span class="sidenav-mini-icon"> D </span>
                                     <span class="sidenav-normal">
-                                        Payments <b class="caret"></b></span>
+                                        Driver List <b class="caret"></b></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span class="sidenav-mini-icon"> V </span>
+                                    <span class="sidenav-normal">
+                                        vehicle List <b class="caret"></b></span>
                                 </a>
                             </li>
                         </ul>
@@ -215,32 +222,32 @@
                     </a>
                     <div class="collapse " id="Employee">
                         <ul class="nav ms-4">
-                            <li class="nav-item ">
-                                <a class="nav-link active" data-bs-toggle="tab" href="#EmployeeOverview">
+                            <li class="nav-item active">
+                                <a class="nav-link active" onclick="brd1()" data-bs-toggle="tab" href="#EmployeeOverview">
                                     <span class="sidenav-mini-icon text-xs"> N </span>
                                     <span class="sidenav-normal"> Overview </span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " data-bs-toggle="tab" href="#TraineeList">
+                                <a class="nav-link " onclick="brd2()" data-bs-toggle="tab" href="#TraineeList">
                                     <span class="sidenav-mini-icon text-xs"> E </span>
                                     <span class="sidenav-normal"> Trainee </span>
                                 </a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link " data-bs-toggle="tab" href="#LeaveOverview">
+                                <a class="nav-link " onclick="brd3()" data-bs-toggle="tab" href="#LeaveOverview">
                                     <span class="sidenav-mini-icon text-xs"> N </span>
                                     <span class="sidenav-normal"> Leave </span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " data-bs-toggle="tab" href="#LeaveType">
+                                <a class="nav-link " onclick="brd4()" data-bs-toggle="tab" href="#LeaveType">
                                     <span class="sidenav-mini-icon text-xs"> P </span>
                                     <span class="sidenav-normal"> Leave Type </span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " data-bs-toggle="tab" href="#OverTime">
+                                <a class="nav-link " onclick="brd5()" data-bs-toggle="tab" href="#OverTime">
                                     <span class="sidenav-mini-icon text-xs"> O </span>
                                     <span class="sidenav-normal"> Over Time</span>
                                 </a>
@@ -260,16 +267,37 @@
                     <div class="collapse" id="Staff">
                         <ul class="nav ms-4">
                             <li class="nav-item">
-                                <a class="nav-link" href="orderlist.html">
+                                <a class="nav-link " href="StaffM.html">
                                     <span class="sidenav-mini-icon"> O </span>
-                                    <span class="sidenav-normal">Orders<b class="caret"></b></span>
+                                    <span class="sidenav-normal">OverView<b class="caret"></b></span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="StaffM.html">
                                     <span class="sidenav-mini-icon"> P </span>
                                     <span class="sidenav-normal">
-                                        Payments <b class="caret"></b></span>
+                                        Attendence <b class="caret"></b></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="StaffM.html">
+                                    <span class="sidenav-mini-icon"> P </span>
+                                    <span class="sidenav-normal">
+                                        Leave <b class="caret"></b></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="StaffM.html">
+                                    <span class="sidenav-mini-icon"> P </span>
+                                    <span class="sidenav-normal">
+                                        Designation <b class="caret"></b></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="StaffM.html">
+                                    <span class="sidenav-mini-icon"> P </span>
+                                    <span class="sidenav-normal">
+                                        Resignation <b class="caret"></b></span>
                                 </a>
                             </li>
                         </ul>
@@ -287,13 +315,19 @@
                     <div class="collapse" id="Supplier">
                         <ul class="nav ms-4">
                             <li class="nav-item">
-                                <a class="nav-link" href="orderlist.html">
+                                <a class="nav-link"  href="SupplierM.html">
+                                    <span class="sidenav-mini-icon"> O </span>
+                                    <span class="sidenav-normal">OverView<b class="caret"></b></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"  href="SupplierM.html">
                                     <span class="sidenav-mini-icon"> O </span>
                                     <span class="sidenav-normal">Orders<b class="caret"></b></span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="SupplierM.html">
                                     <span class="sidenav-mini-icon"> P </span>
                                     <span class="sidenav-normal">
                                         Payments <b class="caret"></b></span>
@@ -314,16 +348,30 @@
                     <div class="collapse" id="Inventory">
                         <ul class="nav ms-4">
                             <li class="nav-item">
-                                <a class="nav-link" href="orderlist.html">
+                                <a class="nav-link" href="Inventory.html">
                                     <span class="sidenav-mini-icon"> O </span>
-                                    <span class="sidenav-normal">Orders<b class="caret"></b></span>
+                                    <span class="sidenav-normal">OverView<b class="caret"></b></span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="Inventory.html">
                                     <span class="sidenav-mini-icon"> P </span>
                                     <span class="sidenav-normal">
-                                        Payments <b class="caret"></b></span>
+                                        Products List <b class="caret"></b></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Inventory.html">
+                                    <span class="sidenav-mini-icon"> P </span>
+                                    <span class="sidenav-normal">
+                                        Machine List <b class="caret"></b></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Inventory.html">
+                                    <span class="sidenav-mini-icon"> P </span>
+                                    <span class="sidenav-normal">
+                                        Defects<b class="caret"></b></span>
                                 </a>
                             </li>
                         </ul>
@@ -341,16 +389,23 @@
                     <div class="collapse" id="Branch">
                         <ul class="nav ms-4">
                             <li class="nav-item">
-                                <a class="nav-link" href="orderlist.html">
+                                <a class="nav-link"   href="BranchM.html">
                                     <span class="sidenav-mini-icon"> O </span>
-                                    <span class="sidenav-normal">Orders<b class="caret"></b></span>
+                                    <span class="sidenav-normal">Overview<b class="caret"></b></span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <span class="sidenav-mini-icon"> P </span>
+                                <a class="nav-link" href="BranchM.html">
+                                    <span class="sidenav-mini-icon"> F </span>
                                     <span class="sidenav-normal">
-                                        Payments <b class="caret"></b></span>
+                                        Factory <b class="caret"></b></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="BranchM.html">
+                                    <span class="sidenav-mini-icon"> M </span>
+                                    <span class="sidenav-normal">
+                                        Machine <b class="caret"></b></span>
                                 </a>
                             </li>
                         </ul>
@@ -383,9 +438,9 @@
                         </li>
                         <li class="breadcrumb-item text-sm text-white"><a class="opacity-5 text-white"
                                 href="javascript:;">Pages</a></li>
-                        <li class="breadcrumb-item text-sm text-white active" aria-current="page">Order List</li>
+                        <li class="breadcrumb-item text-sm text-white active" aria-current="page">Employee Management</li>
                     </ol>
-                    <h6 class="font-weight-bolder mb-0 text-white">Order List</h6>
+                    <h6 class="font-weight-bolder mb-0 text-white" id="BreadChng">OverView</h6>
                 </nav>
                 <div class="sidenav-toggler sidenav-toggler-inner d-xl-block d-none ">
                     <a href="javascript:;" class="nav-link p-0">
@@ -4661,8 +4716,23 @@
             x.value = randnumby;
         }
 
-
-
+        //for the breadCrumb Detail Change
+        var brd = document.getElementById('BreadChng');
+        function brd1() {
+            brd.innerHTML = "OverView";
+        }
+        function brd2() {
+            brd.innerHTML = "Trainee";
+        }
+        function brd3() {
+            brd.innerHTML = "Leave";
+        }
+        function brd4() {
+            brd.innerHTML = "Leave Type";
+        }
+        function brd5() {
+            brd.innerHTML = "Over Time";
+        }
     </script>
 </body>
 
