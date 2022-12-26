@@ -1070,8 +1070,10 @@
         integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
         data-cf-beacon="{&quot;rayId&quot;:&quot;774d298debf54c9b&quot;,&quot;version&quot;:&quot;2022.11.3&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;1b7cbb72744b40c580f8633c6b62637e&quot;,&quot;si&quot;:100}"
         crossorigin="anonymous"></script>
+
+    
     <script>
-        function generatepdf() {
+        function generateimg() {
             const imgs = document.getElementById('pdf');
             html2canvas(imgs).then((canvas) => {
                 const base = canvas.toDataURL("image/png");
@@ -1080,6 +1082,19 @@
                 anchor.setAttribute("download", "Invoice.png");
                 anchor.click();
                 anchor.remove();
+
+            });
+        }
+        //////////////////////////////
+        function generatepdf() {
+            const imgs = document.getElementById('pdf');
+            html2canvas(imgs).then((canvas) => {
+                const base = canvas.toDataURL("image/png");
+
+                //jsPDF
+                let pdf = new jsPDF('p','pt',[595.28,  841.89]);//a4size
+                pdf.addImage(base,'PNG',5,5,575,575);//content Size
+                pdf.save('test.pdf');
             });
         }
         ////////////////////////////////
@@ -1143,6 +1158,9 @@
     <script src="assets/js/preloader.js"></script>
     <!-- required to the preloader -->
     <script src="assets/js/plugins/html2canvas.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.es.js" integrity="sha512-VTufZOUx+Gc0N4JkluA0ZkVs2x4wfDI3p60gRWpHT761kMQ+hiNlYI+8MGXbLO48ymPKAeRa1wsEm3BIaxSEvw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
     <!-- required to the excelSheet -->
     <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
     <!-- required to the excelsheet ends herer -->
