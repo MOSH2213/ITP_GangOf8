@@ -402,8 +402,10 @@
                                                     </div>
                                                 </form>
                                                 <div class="text-center mt-2">
+                                                    <a href="#" onclick="generateimg()"
+                                                        class="btn btn-danger">IMG</a>
                                                     <a href="#" onclick="generatepdf()"
-                                                        class="btn btn-danger">Download</a>
+                                                        class="btn btn-danger">PDF</a>
                                                     <a href="#" onclick="ExportToExcel('xlsx')"
                                                         class="btn btn-success">Export CSV</a>
                                                     <button type="button" class="btn btn-dark rounded"
@@ -1093,8 +1095,8 @@
 
                 //jsPDF
                 let pdf = new jsPDF('p','pt',[595.28,  841.89]);//a4size
-                pdf.addImage(base,'PNG',5,5,575,575);//content Size
-                pdf.save('test.pdf');
+                pdf.addImage(base,'PNG',0,0,600,525);//content Size
+                pdf.save('Invoice.pdf');
             });
         }
         ////////////////////////////////
