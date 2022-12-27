@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="assets/img/logos/D.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../../assets/img/logos/D.png">
 
     <title>
         GangOf8
@@ -16,17 +16,17 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
 
-    <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
-    <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
+    <link href="../../assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../../assets/css/nucleo-svg.css" rel="stylesheet" />
 
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
 
 
 
-    <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
+    <link href="../../assets/css/nucleo-svg.css" rel="stylesheet" />
 
-    <link id="pagestyle" href="assets/css/argon-dashboard.min.css?v=2.0.5" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/preloader.css">
+    <link id="pagestyle" href="../../assets/css/argon-dashboard.min.css?v=2.0.5" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/css/preloader.css">
 
 </head>
 
@@ -56,7 +56,7 @@
             <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/argon-dashboard/pages/dashboard.html "
                 target="_blank">
                 <!-- the image is hidden and this therby prevents darkmode violation -->
-                <img src="assets/img/logo-ct-dark.png" class="navbar-brand-img" style="display: none;" alt="">
+                <img src="../../assets/img/logo-ct-dark.png" class="navbar-brand-img" style="display: none;" alt="">
                 <div style="
                                   width: 50px;
                                   height: 50px;
@@ -85,16 +85,16 @@
                         <span class="nav-link-text ms-1">Home</span>
                     </a>
                 </li>
-                
+
                 <li class="nav-item">
-                    <a  href="#" class="nav-link active">
+                    <a href="#" class="nav-link active">
                         <div
                             class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
                             <i class="ni ni-archive-2 text-success text-sm opacity-10"></i>
                         </div>
-                        <span class="nav-link-text ms-1">Cart</span>
+                        <span class="nav-link-text ms-1">Thank You</span>
                     </a>
-                </li>  
+                </li>
             </ul>
         </div>
     </aside>
@@ -113,7 +113,7 @@
                         
                         <li class="breadcrumb-item text-sm text-white active" aria-current="page">Page</li>
                     </ol>
-                    <h6 class="font-weight-bolder mb-0 text-white">Cart</h6>
+                    <h6 class="font-weight-bolder mb-0 text-white">Products</h6>
                 </nav>
                 <div class="sidenav-toggler sidenav-toggler-inner d-xl-block d-none ">
                     <a href="javascript:;" class="nav-link p-0">
@@ -125,7 +125,7 @@
                     </a>
                 </div>
                 <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
-                    <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+                    <div class="ms-md-auto pe-md-3 d-flex align-items-center d-none d-sm-block">
                         <div class="input-group">
                             <span class="input-group-text text-body"><i class="fas fa-search"
                                     aria-hidden="true"></i></span>
@@ -185,7 +185,7 @@
                                             </div>
                                             <div class="d-flex flex-column justify-content-center">
                                                 <h6 class="text-sm font-weight-normal mb-1">
-                                                    <span class="font-weight-bold"
+                                                    <span class="font-weight-bold text-dark"
                                                         style="margin-left: 10px;">SignIn</span>
                                                 </h6>
                                             </div>
@@ -200,7 +200,7 @@
                                             </div>
                                             <div class="d-flex flex-column justify-content-center">
                                                 <h6 class="text-sm font-weight-normal mb-1">
-                                                    <span class="font-weight-bold"
+                                                    <span class="font-weight-bold text-dark"
                                                         style="margin-left: 10px;">Logout</span>
                                                 </h6>
                                             </div>
@@ -208,6 +208,20 @@
                                     </a>
                                 </li>
                             </ul>
+                        </li>
+                        <li class="nav-item px-3 d-flex align-items-center">
+                            <a href="Cart.html" class="nav-link text-white p-0">
+                                <i class="ni ni-cart text-white text-lg opacity-10"></i>
+                                    <span class="badge badge-md badge-circle badge-floating badge-white text-dark" style="position: relative;
+                                    left: -0px; top: -0px; ">4</span>
+                            </a>
+                        </li>
+                        <li class="nav-item px-3 d-flex align-items-center">
+                            <a href="Whishlist.html" class="nav-link text-white p-0">
+                                <i class="ni ni-favourite-28 text-white text-lg opacity-10"></i>
+                                    <span class="badge badge-md badge-circle badge-floating badge-white text-dark" style="position: relative;
+                                    left: -0px; top: -0px; ">4</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -221,246 +235,18 @@
                         <div class="card-body">
                             <div class="row mt-2">
                                 <div class="col-12">
-                                    <h5 class="mb-3">Cart Items</h5>
-                                    <div class="table table-responsive">
-                                        <table class="table align-items-center mb-0">
-                                            <thead>
-                                                <tr>
-                                                    <th
-                                                        class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                        Product</th>
-                                                    <th
-                                                        class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                                                        Price</th>
-                                                    <th
-                                                        class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                                                        Review</th>
-                                                    <th
-                                                        class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                        Availability</th>
-                                                    <th
-                                                        class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                        Id</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>
-                                                                <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-1.jpg"
-                                                                    class="avatar avatar-md me-3" alt="table image">
-                                                            </div>
-                                                            <div class="d-flex flex-column justify-content-center">
-                                                                <h6 class="mb-0 text-sm">Christopher Knight Home
-                                                                </h6>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <p class="text-sm text-secondary mb-0">$89.53</p>
-                                                    </td>
-                                                    <td>
-                                                        <div class="rating ms-lg-n4">
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star-half-alt" aria-hidden="true"></i>
-                                                        </div>
-                                                    </td>
-                                                    <td class="align-middle text-sm">
-                                                        <div class="progress mx-auto">
-                                                            <div class="progress-bar bg-gradient-success"
-                                                                role="progressbar" style="width: 80%" aria-valuenow="80"
-                                                                aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="align-middle text-center">
-                                                        <span class="text-secondary text-sm">
-                                                            <a class="btn btn-link text-danger text-gradient px-3 mb-0"
-                                                                href="javascript:;"><i
-                                                                    class="far fa-trash-alt me-2"></i>Delete</a>
-                                                        </span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>
-                                                                <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-2.jpg"
-                                                                    class="avatar avatar-md me-3" alt="table image">
-                                                            </div>
-                                                            <div class="d-flex flex-column justify-content-center">
-                                                                <h6 class="mb-0 text-sm">Bar Height Swivel Barstool
-                                                                </h6>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <p class="text-sm text-secondary mb-0">$99.99</p>
-                                                    </td>
-                                                    <td>
-                                                        <div class="rating ms-lg-n4">
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                        </div>
-                                                    </td>
-                                                    <td class="align-middle text-sm">
-                                                        <div class="progress mx-auto">
-                                                            <div class="progress-bar bg-gradient-success"
-                                                                role="progressbar" style="width: 90%" aria-valuenow="90"
-                                                                aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="align-middle text-center">
-                                                        <span class="text-secondary text-sm">
-                                                            <a class="btn btn-link text-danger text-gradient px-3 mb-0"
-                                                                href="javascript:;"><i
-                                                                    class="far fa-trash-alt me-2"></i>Delete</a>
-                                                        </span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>
-                                                                <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-3.jpg"
-                                                                    class="avatar avatar-md me-3" alt="table image">
-                                                            </div>
-                                                            <div class="d-flex flex-column justify-content-center">
-                                                                <h6 class="mb-0 text-sm">Signature Design by Ashley
-                                                                </h6>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <p class="text-sm text-secondary mb-0">$129.00</p>
-                                                    </td>
-                                                    <td>
-                                                        <div class="rating ms-lg-n4">
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star-half-alt" aria-hidden="true"></i>
-                                                        </div>
-                                                    </td>
-                                                    <td class="align-middle text-sm">
-                                                        <div class="progress mx-auto">
-                                                            <div class="progress-bar bg-gradient-warning"
-                                                                role="progressbar" style="width: 60%" aria-valuenow="60"
-                                                                aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="align-middle text-center">
-                                                        <span class="text-secondary text-sm">
-                                                            <a class="btn btn-link text-danger text-gradient px-3 mb-0"
-                                                                href="javascript:;"><i
-                                                                    class="far fa-trash-alt me-2"></i>Delete</a>
-                                                        </span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>
-                                                                <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-4.jpg"
-                                                                    class="avatar avatar-md me-3" alt="table image">
-                                                            </div>
-                                                            <div class="d-flex flex-column justify-content-center">
-                                                                <h6 class="mb-0 text-sm">Modern Square</h6>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <p class="text-sm text-secondary mb-0">$59.99</p>
-                                                    </td>
-                                                    <td>
-                                                        <div class="rating ms-lg-n4">
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fas fa-star-half-alt" aria-hidden="true"></i>
-                                                        </div>
-                                                    </td>
-                                                    <td class="align-middle text-sm">
-                                                        <div class="progress mx-auto">
-                                                            <div class="progress-bar bg-gradient-warning"
-                                                                role="progressbar" style="width: 40%" aria-valuenow="40"
-                                                                aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="align-middle text-center">
-                                                        <span class="text-secondary text-sm">
-                                                            <a class="btn btn-link text-danger text-gradient px-3 mb-0"
-                                                                href="javascript:;"><i
-                                                                    class="far fa-trash-alt me-2"></i>Delete</a>
-                                                        </span>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row mt-5">
-                                <div class="col-md-6">
-                                    <div class="row mb-5">
-                                        <div class="col-md-6 mb-3 mb-md-0">
-                                            <a href="Whishlist.html" class="btn btn-primary btn-lg w-100">WishList</a>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <a href="Products.html" class="btn btn-outline-primary btn-lg">Continue
-                                                Shopping</a>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <label class="text-black h4" for="coupon">Coupons</label>
-                                            <p>Did You Know WEENA NADHA Offers Exclusive Coupons For Thier Loyality
-                                                Customers Based On The Activness Of The User Purchasing In our Store.
-                                            </p>
-                                        </div>
-                                        <div class="col-md-8 mb-3 mb-md-0">
-                                            <p>Feel Free To <a href="Landing.html#contactus" class="text-black">Contact Us</a> 24/7
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 pl-5">
-                                    <div class="row justify-content-end">
-                                        <div class="col-md-7">
+                                    <div class="site-section">
+                                        <div class="container">
                                             <div class="row">
-                                                <div class="col-md-12 text-right border-bottom mb-5 ">
-                                                    <h3 class="text-black h4 text-uppercase">Cart Totals</h3>
-                                                </div>
-                                            </div>
-                                            <div class="row mb-3">
-                                                <div class="col-md-6">
-                                                    <span class="text-black">Subtotal</span>
-                                                </div>
-                                                <div class="col-md-6 text-right">
-                                                    <strong class="text-black">Rs 1200000000</strong>
-                                                </div>
-                                            </div>
-                                            <div class="row mb-5">
-                                                <div class="col-md-6">
-                                                    <span class="text-black">Total</span>
-                                                </div>
-                                                <div class="col-md-6 text-right">
-                                                    <strong class="text-black">Rs 1200000000</strong>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <a href="Checkout.html" class="btn btn-primary btn-lg w-100">Proceed
-                                                        To Checkout</a>
+                                                <div class="col-md-12 text-center">
+                                                    <span class="ni ni-check-bold display-3  text-success"></span>
+                                                    <h2 class="display-3 text-black">Thank you!</h2>
+                                                    <p class="lead mb-5">You order was successfuly completed.</p>
+                                                    <p>
+                                                        <a href="products.html" class="btn btn-sm btn-dark shadow">Back
+                                                            to shop</a>
+                                                            <a href="orderDetails.html" class="btn btn-sm btn-dark shadow">Check Order</a>
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -581,14 +367,14 @@
         </div>
     </div>
 
-    <script src="assets/js/core/popper.min.js"></script>
-    <script src="assets/js/core/bootstrap.min.js"></script>
-    <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
-    <script src="assets/js/plugins/smooth-scrollbar.min.js"></script>
-    <script src="assets/js/plugins/choices.min.js"></script>
-    <script src="assets/js/plugins/photoswipe.min.js"></script>
-    <script src="assets/js/plugins/photoswipe-ui-default.min.js"></script>
-    <script src="assets/js/plugins/fullscren.js"></script>
+    <script src="../../assets/js/core/popper.min.js"></script>
+    <script src="../../assets/js/core/bootstrap.min.js"></script>
+    <script src="../../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="../../assets/js/plugins/choices.min.js"></script>
+    <script src="../../assets/js/plugins/photoswipe.min.js"></script>
+    <script src="../../assets/js/plugins/photoswipe-ui-default.min.js"></script>
+    <script src="../../assets/js/plugins/fullscren.js"></script>
 
 
 
@@ -834,8 +620,8 @@
         initPhotoSwipeFromDOM('.my-gallery');
     </script>
 
-    <script src="assets/js/plugins/dragula/dragula.min.js"></script>
-    <script src="assets/js/plugins/jkanban/jkanban.js"></script>
+    <script src="../../assets/js/plugins/dragula/dragula.min.js"></script>
+    <script src="../../assets/js/plugins/jkanban/jkanban.js"></script>
     <script>
         var win = navigator.platform.indexOf('Win') > -1;
         if (win && document.querySelector('#sidenav-scrollbar')) {
@@ -848,7 +634,7 @@
 
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-    <script src="assets/js/argon-dashboard.min.js?v=2.0.5"></script>
+    <script src="../../assets/js/argon-dashboard.min.js?v=2.0.5"></script>
     <script defer
         src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
         integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
@@ -856,7 +642,7 @@
         crossorigin="anonymous"></script>
     <!-- required to the preloader -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="assets/js/preloader.js"></script>
+    <script src="../../assets/js/preloader.js"></script>
     <!-- required to the preloader ends -->
 
 

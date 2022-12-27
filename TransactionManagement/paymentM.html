@@ -4,17 +4,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png" />
-  <link rel="icon" type="image/png" href="assets/img/logos/D.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" />
+  <link rel="icon" type="image/png" href="../assets/img/logos/D.png">
 
   <title>GangOf8</title>
-  <link rel="stylesheet" href="assets/css/debit.css" />
+  <link rel="stylesheet" href="../assets/css/debit.css" />
 
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
   <!-- Nucleo Icons -->
-  <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
-  <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
+  <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -22,9 +22,9 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- CSS Files -->
-  <link id="pagestyle" href="assets/css/argon-dashboard.min.css?v=2.0.5" rel="stylesheet" />
+  <link id="pagestyle" href="../assets/css/argon-dashboard.min.css?v=2.0.5" rel="stylesheet" />
 
-  <link rel="stylesheet" href="assets/css/preloader.css" />
+  <link rel="stylesheet" href="../assets/css/preloader.css" />
 </head>
 
 <body class="g-sidenav-show bg-gray-100">
@@ -53,7 +53,7 @@
       <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/argon-dashboard/pages/dashboard.html "
         target="_blank">
         <!-- the image is hidden and this therby prevents darkmode violation -->
-        <img src="assets/img/logo-ct-dark.png" class="navbar-brand-img" style="display: none" alt="" />
+        <img src="../assets/img/logo-ct-dark.png" class="navbar-brand-img" style="display: none" alt="" />
         <div style="
               width: 50px;
               height: 50px;
@@ -95,7 +95,7 @@
           <div class="collapse" id="Customer">
             <ul class="nav ms-4">
               <li class="nav-item">
-                <a class="nav-link"  href="customerM.html">
+                <a class="nav-link" href="customerM.html">
                   <span class="sidenav-mini-icon"> O </span>
                   <span class="sidenav-normal">OverView<b class="caret"></b></span>
                 </a>
@@ -118,7 +118,7 @@
           </div>
         </li>
         <li class="nav-item active">
-          <a data-bs-toggle="collapse" href="#Transaction" class="nav-link " aria-controls="ecommerceExamples"
+          <a data-bs-toggle="collapse" href="#Transaction" class="nav-link active" aria-controls="ecommerceExamples"
             role="button" aria-expanded="false">
             <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
               <i class="fa fa-sack-dollar text-primary text-sm opacity-10"></i>
@@ -127,7 +127,7 @@
           </a>
           <div class="collapse " id="Transaction">
             <ul class="nav ms-4">
-              <li class="nav-item ">
+              <li class="nav-item active">
                 <a class="nav-link" data-bs-toggle="collapse" aria-expanded="false" href="#productsExample">
                   <span class="sidenav-mini-icon"> P </span>
                   <span class="sidenav-normal"> Payment Management<b class="caret"></b></span>
@@ -135,13 +135,13 @@
                 <div class="collapse " id="productsExample">
                   <ul class="nav nav-sm flex-column">
                     <li class="nav-item ">
-                      <a class="nav-link "  href="paymentM.html">
+                      <a class="nav-link active" onclick="brd1()" data-bs-toggle="tab" href="#paymentOverview">
                         <span class="sidenav-mini-icon text-xs"> N </span>
                         <span class="sidenav-normal"> Overview </span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link " href="paymentM.html">
+                      <a class="nav-link " onclick="brd2()" data-bs-toggle="tab" href="#paymentTypes">
                         <span class="sidenav-mini-icon text-xs"> E </span>
                         <span class="sidenav-normal"> Payment Types</span>
                       </a>
@@ -175,7 +175,7 @@
           </div>
         </li>
         <li class="nav-item">
-          <a data-bs-toggle="collapse" href="#Delivery" class="nav-link active" aria-controls="Delivery" role="button"
+          <a data-bs-toggle="collapse" href="#Delivery" class="nav-link" aria-controls="Delivery" role="button"
             aria-expanded="false">
             <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
               <i class="fa fa-truck text-primary text-sm opacity-10"></i>
@@ -185,23 +185,16 @@
           <div class="collapse" id="Delivery">
             <ul class="nav ms-4">
               <li class="nav-item">
-                <a class="nav-link active" data-bs-toggle="tab" onclick="brd1()" href="#deliveryOverview">
+                <a class="nav-link" href="orderlist.html">
                   <span class="sidenav-mini-icon"> O </span>
-                  <span class="sidenav-normal">OverView<b class="caret"></b></span>
+                  <span class="sidenav-normal">Orders<b class="caret"></b></span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" onclick="brd2()" href="#driverList">
+                <a class="nav-link" href="#">
                   <span class="sidenav-mini-icon"> P </span>
                   <span class="sidenav-normal">
-                    Driver List <b class="caret"></b></span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" onclick="brd3()" href="#vehicleList">
-                  <span class="sidenav-mini-icon"> P </span>
-                  <span class="sidenav-normal">
-                    Vehicle List <b class="caret"></b></span>
+                    Payments <b class="caret"></b></span>
                 </a>
               </li>
             </ul>
@@ -440,7 +433,10 @@
               <a class="opacity-5 text-white" href="javascript:;">Pages</a>
             </li>
             <li class="breadcrumb-item text-sm text-white " aria-current="page">
-              Delivery Management
+              Transaction Management
+            </li>
+            <li class="breadcrumb-item text-sm text-white active" aria-current="page">
+              Payment Management
             </li>
           </ol>
           <h6 class="font-weight-bolder text-white mb-0" id="BreadChng">OverView</h6>
@@ -531,7 +527,7 @@
     <!-- End Navbar -->
     <div class="container-fluid py-4">
       <div class="tab-content">
-        <div class="tab-pane active" id="deliveryOverview">
+        <div class="tab-pane active" id="paymentOverview">
 
           <div class="row">
             <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
@@ -832,7 +828,7 @@
                         </td>
                         <td class="text-xs font-weight-bold">
                           <div class="d-flex align-items-center">
-                            <img src="assets/img/team-2.jpg" class="avatar avatar-xs me-2" alt="user image">
+                            <img src="../assets/img/team-2.jpg" class="avatar avatar-xs me-2" alt="user image">
                             <span>Orlando Imieto</span>
                           </div>
                         </td>
@@ -873,7 +869,7 @@
                         </td>
                         <td class="text-xs font-weight-bold">
                           <div class="d-flex align-items-center">
-                            <img src="assets/img/team-1.jpg" class="avatar avatar-xs me-2" alt="user image">
+                            <img src="../assets/img/team-1.jpg" class="avatar avatar-xs me-2" alt="user image">
                             <span>Alice Murinho</span>
                           </div>
                         </td>
@@ -960,7 +956,7 @@
                         <td class="text-xs font-weight-bold">
                           <div class="d-flex align-items-center">
                             <div class="d-flex align-items-center">
-                              <img src="assets/img/team-3.jpg" class="avatar avatar-xs me-2" alt="user image">
+                              <img src="../assets/img/team-3.jpg" class="avatar avatar-xs me-2" alt="user image">
                               <span>Andrew Nichel</span>
                             </div>
                           </div>
@@ -1004,7 +1000,7 @@
                         <td class="text-xs font-weight-bold">
                           <div class="d-flex align-items-center">
                             <div class="d-flex align-items-center">
-                              <img src="assets/img/team-4.jpg" class="avatar avatar-xs me-2" alt="user image">
+                              <img src="../assets/img/team-4.jpg" class="avatar avatar-xs me-2" alt="user image">
                               <span>Sebastian Koga</span>
                             </div>
                           </div>
@@ -1181,7 +1177,7 @@
                         <td class="text-xs font-weight-bold">
                           <div class="d-flex align-items-center">
                             <div class="d-flex align-items-center">
-                              <img src="assets/img/team-5.jpg" class="avatar avatar-xs me-2" alt="user image">
+                              <img src="../assets/img/team-5.jpg" class="avatar avatar-xs me-2" alt="user image">
                               <span>Rugna Ilpio</span>
                             </div>
                           </div>
@@ -1225,7 +1221,7 @@
                         <td class="text-xs font-weight-bold">
                           <div class="d-flex align-items-center">
                             <div class="d-flex align-items-center">
-                              <img src="assets/img/ivana-squares.jpg" class="avatar avatar-xs me-2" alt="user image">
+                              <img src="../assets/img/ivana-squares.jpg" class="avatar avatar-xs me-2" alt="user image">
                               <span>Anna Landa</span>
                             </div>
                           </div>
@@ -1328,7 +1324,7 @@
             </div>
           </div>
         </div>
-        <div class="tab-pane" id="driverList">
+        <div class="tab-pane" id="paymentTypes">
 
           <div class="row mt-4">
             <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
@@ -1647,7 +1643,7 @@
                         </td>
                         <td class="text-xs font-weight-bold">
                           <div class="d-flex align-items-center">
-                            <img src="assets/img/team-2.jpg" class="avatar avatar-xs me-2" alt="user image">
+                            <img src="../assets/img/team-2.jpg" class="avatar avatar-xs me-2" alt="user image">
                             <span>Orlando Imieto</span>
                           </div>
                         </td>
@@ -1688,7 +1684,7 @@
                         </td>
                         <td class="text-xs font-weight-bold">
                           <div class="d-flex align-items-center">
-                            <img src="assets/img/team-1.jpg" class="avatar avatar-xs me-2" alt="user image">
+                            <img src="../assets/img/team-1.jpg" class="avatar avatar-xs me-2" alt="user image">
                             <span>Alice Murinho</span>
                           </div>
                         </td>
@@ -1775,7 +1771,7 @@
                         <td class="text-xs font-weight-bold">
                           <div class="d-flex align-items-center">
                             <div class="d-flex align-items-center">
-                              <img src="assets/img/team-3.jpg" class="avatar avatar-xs me-2" alt="user image">
+                              <img src="../assets/img/team-3.jpg" class="avatar avatar-xs me-2" alt="user image">
                               <span>Andrew Nichel</span>
                             </div>
                           </div>
@@ -1819,7 +1815,7 @@
                         <td class="text-xs font-weight-bold">
                           <div class="d-flex align-items-center">
                             <div class="d-flex align-items-center">
-                              <img src="assets/img/team-4.jpg" class="avatar avatar-xs me-2" alt="user image">
+                              <img src="../assets/img/team-4.jpg" class="avatar avatar-xs me-2" alt="user image">
                               <span>Sebastian Koga</span>
                             </div>
                           </div>
@@ -1996,7 +1992,7 @@
                         <td class="text-xs font-weight-bold">
                           <div class="d-flex align-items-center">
                             <div class="d-flex align-items-center">
-                              <img src="assets/img/team-5.jpg" class="avatar avatar-xs me-2" alt="user image">
+                              <img src="../assets/img/team-5.jpg" class="avatar avatar-xs me-2" alt="user image">
                               <span>Rugna Ilpio</span>
                             </div>
                           </div>
@@ -2040,7 +2036,7 @@
                         <td class="text-xs font-weight-bold">
                           <div class="d-flex align-items-center">
                             <div class="d-flex align-items-center">
-                              <img src="assets/img/ivana-squares.jpg" class="avatar avatar-xs me-2" alt="user image">
+                              <img src="../assets/img/ivana-squares.jpg" class="avatar avatar-xs me-2" alt="user image">
                               <span>Anna Landa</span>
                             </div>
                           </div>
@@ -2143,858 +2139,6 @@
             </div>
           </div>
         </div>
-        <div class="tab-pane " id="vehicleList">
-          <div class="row">
-              <div class="col-12">
-                  <div class="card">
-                      <div class="card-header pb-0">
-                          <div class="d-lg-flex">
-                              <div>
-                                  <h5 class="mb-0">Machine</h5>
-                                  <p class="text-sm mb-0"> A lightweight, extendable, dependency-free
-                                      javascript HTML table plugin. </p>
-                              </div>
-                              <div class="ms-auto my-auto mt-lg-0 mt-4">
-                                  <div class="ms-auto my-auto">
-                                      <a href="#" class="btn bg-gradient-primary btn-sm mb-0"
-                                          data-bs-toggle="modal" data-bs-target="#AddMachine">+&nbsp; New
-                                          Product</a>
-                                      <button type="button" class="btn btn-outline-primary btn-sm mb-0"
-                                          data-bs-toggle="modal" data-bs-target="#importMachine"> Import
-                                      </button>
-
-                                      <!-- modal of add inventory starts -->
-                                      <div class="modal fade" id="AddMachine" tabindex="-1"
-                                          aria-hidden="true">
-                                          <div class="modal-dialog modal-lg mt-lg-10">
-                                              <div class="modal-content">
-
-                                                  <div class="modal-body">
-                                                      <h4>Add Details</h4>
-                                                      <form class="row g-3">
-                                                          <div class="col-md-6">
-                                                              <label for="inputEmail4"
-                                                                  class="form-label">Email</label>
-                                                              <input type="email" class="form-control"
-                                                                  id="inputEmail4">
-                                                          </div>
-                                                          <div class="col-md-6">
-                                                              <label for="inputPassword4"
-                                                                  class="form-label">Password</label>
-                                                              <input type="password" class="form-control"
-                                                                  id="inputPassword4">
-                                                          </div>
-                                                          <div class="col-12">
-                                                              <label for="inputAddress"
-                                                                  class="form-label">Address</label>
-                                                              <input type="text" class="form-control"
-                                                                  id="inputAddress"
-                                                                  placeholder="1234 Main St">
-                                                          </div>
-                                                          <div class="col-12">
-                                                              <label for="inputAddress2"
-                                                                  class="form-label">Address 2</label>
-                                                              <input type="text" class="form-control"
-                                                                  id="inputAddress2"
-                                                                  placeholder="Apartment, studio, or floor">
-                                                          </div>
-                                                          <div class="col-12">
-                                                              <input type="file" class="form-control"
-                                                                  id="inputGroupFile01">
-                                                          </div>
-                                                          <div class="col-md-6">
-                                                              <label for="inputCity"
-                                                                  class="form-label">City</label>
-                                                              <input type="text" class="form-control"
-                                                                  id="inputCity">
-                                                          </div>
-                                                          <div class="col-md-4">
-                                                              <label for="inputState"
-                                                                  class="form-label">State</label>
-                                                              <select id="inputState" class="form-select">
-                                                                  <option selected>Choose...</option>
-                                                                  <option>...</option>
-                                                              </select>
-                                                          </div>
-                                                          <div class="col-md-2">
-                                                              <label for="inputZip"
-                                                                  class="form-label">Zip</label>
-                                                              <input type="text" class="form-control"
-                                                                  id="inputZip">
-                                                          </div>
-                                                          <div class="col-12">
-                                                              <div class="form-check">
-                                                                  <input class="form-check-input"
-                                                                      type="checkbox" id="gridCheck">
-                                                                  <label class="form-check-label"
-                                                                      for="gridCheck">
-                                                                      Check me out
-                                                                  </label>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-12">
-                                                              <button type="submit"
-                                                                  class="btn btn-primary">Sign in</button>
-                                                              <button data-bs-dismiss="modal" type="submit"
-                                                                  class="btn btn-primary">Close</button>
-                                                          </div>
-                                                      </form>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <!-- modal ends herer -->
-
-                                      <!-- modal of import starts here -->
-                                      <div class="modal fade" id="importMachine" tabindex="-1"
-                                          aria-hidden="true">
-                                          <div class="modal-dialog mt-lg-10">
-                                              <div class="modal-content">
-                                                  <div class="modal-header">
-                                                      <h5 class="modal-title" id="ModalLabel">Import CSV</h5>
-                                                      <i class="fas fa-upload ms-3"></i>
-                                                      <button type="button" class="btn-close"
-                                                          data-bs-dismiss="modal" aria-label="Close"></button>
-                                                  </div>
-                                                  <div class="modal-body">
-                                                      <p>You can browse your computer for a file.</p>
-                                                      <input type="text" placeholder="Browse file..."
-                                                          class="form-control mb-3">
-                                                      <div class="form-check">
-                                                          <input class="form-check-input" type="checkbox"
-                                                              value="" id="importCheck" checked="">
-                                                          <label class="custom-control-label"
-                                                              for="importCheck">I accept the terms and
-                                                              conditions</label>
-                                                      </div>
-                                                  </div>
-                                                  <div class="modal-footer">
-                                                      <button type="button"
-                                                          class="btn bg-gradient-secondary btn-sm"
-                                                          data-bs-dismiss="modal">Close</button>
-                                                      <button type="button"
-                                                          class="btn bg-gradient-primary btn-sm">Upload</button>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <!-- modal ends herer -->
-                                      <button class="btn btn-outline-primary btn-sm export mb-0 mt-sm-0 mt-1"
-                                          onclick="ExportToExcel3('xlsx')" type="button"
-                                          name="button">Export</button>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="card-body px-0 pb-0">
-                          <div class="table-responsive" id="tbl_exporttable_to_xls_3">
-                              <table class="table" id="datatable-search3">
-                                  <thead class="thead-light">
-                                      <tr>
-                                          <th>Product</th>
-                                          <th>Category</th>
-                                          <th>Price</th>
-                                          <th>SKU</th>
-                                          <th>Quantity</th>
-                                          <th>Status</th>
-                                          <th>Action</th>
-                                      </tr>
-                                  </thead>
-                                  <tbody>
-                                      <tr>
-                                          <td>
-                                              <div class="d-flex">
-                                                  <div class="form-check my-auto">
-                                                      <input class="form-check-input" type="checkbox"
-                                                          id="customCheck1" checked>
-                                                  </div>
-                                                  <img class="w-10 ms-3"
-                                                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/adidas-hoodie.jpg"
-                                                      alt="hoodie">
-                                                  <h6 class="ms-3 my-auto">BKLGO Full Zip Hoodie</h6>
-                                              </div>
-                                          </td>
-                                          <td class="text-sm">Clothing</td>
-                                          <td class="text-sm">$1,321</td>
-                                          <td class="text-sm">243598234</td>
-                                          <td class="text-sm">0</td>
-                                          <td>
-                                              <span class="badge badge-danger badge-sm">Out of Stock</span>
-                                          </td>
-                                          <td class="text-sm">
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Preview product">
-                                                  <i class="fas fa-eye text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" class="mx-3" data-bs-toggle="modal"
-                                                  data-bs-target="#MachineEditModal">
-                                                  <i class="fas fa-user-edit text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Delete product">
-                                                  <i class="fas fa-trash text-secondary"></i>
-                                              </a>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>
-                                              <div class="d-flex">
-                                                  <div class="form-check my-auto">
-                                                      <input class="form-check-input" type="checkbox"
-                                                          id="customCheck2" checked>
-                                                  </div>
-                                                  <img class="w-10 ms-3"
-                                                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/macbook-pro.jpg"
-                                                      alt="mac">
-                                                  <h6 class="ms-3 my-auto">MacBook Pro</h6>
-                                              </div>
-                                          </td>
-                                          <td class="text-sm">Electronics</td>
-                                          <td class="text-sm">$1,869</td>
-                                          <td class="text-sm">877712</td>
-                                          <td class="text-sm">0</td>
-                                          <td>
-                                              <span class="badge badge-danger badge-sm">Out of Stock</span>
-                                          </td>
-                                          <td class="text-sm">
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Preview product">
-                                                  <i class="fas fa-eye text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" class="mx-3" data-bs-toggle="modal"
-                                                  data-bs-target="#MachineEditModal">
-                                                  <i class="fas fa-user-edit text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Delete product">
-                                                  <i class="fas fa-trash text-secondary"></i>
-                                              </a>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>
-                                              <div class="d-flex">
-                                                  <div class="form-check my-auto">
-                                                      <input class="form-check-input" type="checkbox"
-                                                          id="customCheck3">
-                                                  </div>
-                                                  <img class="w-10 ms-3"
-                                                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/metro-chair.jpg"
-                                                      alt="metro-chair">
-                                                  <h6 class="ms-3 my-auto">Metro Bar Stool</h6>
-                                              </div>
-                                          </td>
-                                          <td class="text-sm">Furniture</td>
-                                          <td class="text-sm">$99</td>
-                                          <td class="text-sm">0134729</td>
-                                          <td class="text-sm">978</td>
-                                          <td>
-                                              <span class="badge badge-success badge-sm">in Stock</span>
-                                          </td>
-                                          <td class="text-sm">
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Preview product">
-                                                  <i class="fas fa-eye text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" class="mx-3" data-bs-toggle="modal"
-                                                  data-bs-target="#MachineEditModal">
-                                                  <i class="fas fa-user-edit text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Delete product">
-                                                  <i class="fas fa-trash text-secondary"></i>
-                                              </a>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>
-                                              <div class="d-flex">
-                                                  <div class="form-check my-auto">
-                                                      <input class="form-check-input" type="checkbox"
-                                                          id="customCheck10">
-                                                  </div>
-                                                  <img class="w-10 ms-3"
-                                                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/alchimia-chair.jpg"
-                                                      alt="alchimia">
-                                                  <h6 class="ms-3 my-auto">Alchimia Chair</h6>
-                                              </div>
-                                          </td>
-                                          <td class="text-sm">Furniture</td>
-                                          <td class="text-sm">$2,999</td>
-                                          <td class="text-sm">113213</td>
-                                          <td class="text-sm">0</td>
-                                          <td>
-                                              <span class="badge badge-danger badge-sm">Out of Stock</span>
-                                          </td>
-                                          <td class="text-sm">
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Preview product">
-                                                  <i class="fas fa-eye text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" class="mx-3" data-bs-toggle="modal"
-                                                  data-bs-target="#MachineEditModal">
-                                                  <i class="fas fa-user-edit text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Delete product">
-                                                  <i class="fas fa-trash text-secondary"></i>
-                                              </a>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>
-                                              <div class="d-flex">
-                                                  <div class="form-check my-auto">
-                                                      <input class="form-check-input" type="checkbox"
-                                                          id="customCheck5">
-                                                  </div>
-                                                  <img class="w-10 ms-3"
-                                                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/fendi-coat.jpg"
-                                                      alt="fendi">
-                                                  <h6 class="ms-3 my-auto">Fendi Gradient Coat</h6>
-                                              </div>
-                                          </td>
-                                          <td class="text-sm">Clothing</td>
-                                          <td class="text-sm">$869</td>
-                                          <td class="text-sm">634729</td>
-                                          <td class="text-sm">725</td>
-                                          <td>
-                                              <span class="badge badge-success badge-sm">in Stock</span>
-                                          </td>
-                                          <td class="text-sm">
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Preview product">
-                                                  <i class="fas fa-eye text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" class="mx-3" data-bs-toggle="modal"
-                                                  data-bs-target="#MachineEditModal">
-                                                  <i class="fas fa-user-edit text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Delete product">
-                                                  <i class="fas fa-trash text-secondary"></i>
-                                              </a>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>
-                                              <div class="d-flex">
-                                                  <div class="form-check my-auto">
-                                                      <input class="form-check-input" type="checkbox"
-                                                          id="customCheck6">
-                                                  </div>
-                                                  <img class="w-10 ms-3"
-                                                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/off-white-jacket.jpg"
-                                                      alt="off_white">
-                                                  <h6 class="ms-3 my-auto">Off White Cotton Bomber</h6>
-                                              </div>
-                                          </td>
-                                          <td class="text-sm">Clothing</td>
-                                          <td class="text-sm">$1,869</td>
-                                          <td class="text-sm">634729</td>
-                                          <td class="text-sm">725</td>
-                                          <td>
-                                              <span class="badge badge-success badge-sm">in Stock</span>
-                                          </td>
-                                          <td class="text-sm">
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Preview product">
-                                                  <i class="fas fa-eye text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" class="mx-3" data-bs-toggle="modal"
-                                                  data-bs-target="#MachineEditModal">
-                                                  <i class="fas fa-user-edit text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Delete product">
-                                                  <i class="fas fa-trash text-secondary"></i>
-                                              </a>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>
-                                              <div class="d-flex">
-                                                  <div class="form-check my-auto">
-                                                      <input class="form-check-input" type="checkbox"
-                                                          id="customCheck7" checked>
-                                                  </div>
-                                                  <img class="w-10 ms-3"
-                                                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/yohji-yamamoto.jpg"
-                                                      alt="yohji">
-                                                  <h6 class="ms-3 my-auto">Y-3 Yohji Yamamoto</h6>
-                                              </div>
-                                          </td>
-                                          <td class="text-sm">Shoes</td>
-                                          <td class="text-sm">$869</td>
-                                          <td class="text-sm">634729</td>
-                                          <td class="text-sm">725</td>
-                                          <td>
-                                              <span class="badge badge-success badge-sm">In Stock</span>
-                                          </td>
-                                          <td class="text-sm">
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Preview product">
-                                                  <i class="fas fa-eye text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" class="mx-3" data-bs-toggle="modal"
-                                                  data-bs-target="#MachineEditModal">
-                                                  <i class="fas fa-user-edit text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Delete product">
-                                                  <i class="fas fa-trash text-secondary"></i>
-                                              </a>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>
-                                              <div class="d-flex">
-                                                  <div class="form-check my-auto">
-                                                      <input class="form-check-input" type="checkbox"
-                                                          id="customCheck9" checked>
-                                                  </div>
-                                                  <img class="w-10 ms-3"
-                                                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/mcqueen-shirt.jpg"
-                                                      alt="mcqueen">
-                                                  <h6 class="ms-3 my-auto">Alexander McQueen</h6>
-                                              </div>
-                                          </td>
-                                          <td class="text-sm">Clothing</td>
-                                          <td class="text-sm">$1,199</td>
-                                          <td class="text-sm">00121399</td>
-                                          <td class="text-sm">51293</td>
-                                          <td>
-                                              <span class="badge badge-success badge-sm">in Stock</span>
-                                          </td>
-                                          <td class="text-sm">
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Preview product">
-                                                  <i class="fas fa-eye text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" class="mx-3" data-bs-toggle="modal"
-                                                  data-bs-target="#MachineEditModal">
-                                                  <i class="fas fa-user-edit text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Delete product">
-                                                  <i class="fas fa-trash text-secondary"></i>
-                                              </a>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>
-                                              <div class="d-flex">
-                                                  <div class="form-check my-auto">
-                                                      <input class="form-check-input" type="checkbox"
-                                                          id="customCheck11" checked>
-                                                  </div>
-                                                  <img class="w-10 ms-3"
-                                                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/yellow-chair.jpg"
-                                                      alt="coco">
-                                                  <h6 class="ms-3 my-auto">Luin Floor Lamp</h6>
-                                              </div>
-                                          </td>
-                                          <td class="text-sm">Furniture</td>
-                                          <td class="text-sm">$1,900</td>
-                                          <td class="text-sm">434729</td>
-                                          <td class="text-sm">1100191321</td>
-                                          <td>
-                                              <span class="badge badge-success badge-sm">In Stock</span>
-                                          </td>
-                                          <td class="text-sm">
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Preview product">
-                                                  <i class="fas fa-eye text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" class="mx-3" data-bs-toggle="modal"
-                                                  data-bs-target="#MachineEditModal">
-                                                  <i class="fas fa-user-edit text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Delete product">
-                                                  <i class="fas fa-trash text-secondary"></i>
-                                              </a>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>
-                                              <div class="d-flex">
-                                                  <div class="form-check my-auto">
-                                                      <input class="form-check-input" type="checkbox"
-                                                          id="customCheck12">
-                                                  </div>
-                                                  <img class="w-10 ms-3"
-                                                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/heron-tshirt.jpg"
-                                                      alt="heron">
-                                                  <h6 class="ms-3 my-auto">Heron Preston T-shirt</h6>
-                                              </div>
-                                          </td>
-                                          <td class="text-sm">Clothing</td>
-                                          <td class="text-sm">$149</td>
-                                          <td class="text-sm">928341</td>
-                                          <td class="text-sm">0</td>
-                                          <td>
-                                              <span class="badge badge-danger badge-sm">Out of Stock</span>
-                                          </td>
-                                          <td class="text-sm">
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Preview product">
-                                                  <i class="fas fa-eye text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" class="mx-3" data-bs-toggle="modal"
-                                                  data-bs-target="#MachineEditModal">
-                                                  <i class="fas fa-user-edit text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Delete product">
-                                                  <i class="fas fa-trash text-secondary"></i>
-                                              </a>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>
-                                              <div class="d-flex">
-                                                  <div class="form-check my-auto">
-                                                      <input class="form-check-input" type="checkbox"
-                                                          id="customCheck13" checked>
-                                                  </div>
-                                                  <img class="w-10 ms-3"
-                                                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/living-chair.jpg"
-                                                      alt="coco">
-                                                  <h6 class="ms-3 my-auto">Gray Living Chair</h6>
-                                              </div>
-                                          </td>
-                                          <td class="text-sm">Furniture</td>
-                                          <td class="text-sm">$2,099</td>
-                                          <td class="text-sm">9912834</td>
-                                          <td class="text-sm">32</td>
-                                          <td>
-                                              <span class="badge badge-success badge-sm">in Stock</span>
-                                          </td>
-                                          <td class="text-sm">
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Preview product">
-                                                  <i class="fas fa-eye text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" class="mx-3" data-bs-toggle="modal"
-                                                  data-bs-target="#MachineEditModal">
-                                                  <i class="fas fa-user-edit text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Delete product">
-                                                  <i class="fas fa-trash text-secondary"></i>
-                                              </a>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>
-                                              <div class="d-flex">
-                                                  <div class="form-check my-auto">
-                                                      <input class="form-check-input" type="checkbox"
-                                                          id="customCheck4">
-                                                  </div>
-                                                  <img class="w-10 ms-3"
-                                                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/orange-sofa.jpg"
-                                                      alt="yohji">
-                                                  <h6 class="ms-3 my-auto">Derbyshire Orange Sofa</h6>
-                                              </div>
-                                          </td>
-                                          <td class="text-sm">Furniture</td>
-                                          <td class="text-sm">$2,999</td>
-                                          <td class="text-sm">561151</td>
-                                          <td class="text-sm">22</td>
-                                          <td>
-                                              <span class="badge badge-success badge-sm">in Stock</span>
-                                          </td>
-                                          <td class="text-sm">
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Preview product">
-                                                  <i class="fas fa-eye text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" class="mx-3" data-bs-toggle="modal"
-                                                  data-bs-target="#MachineEditModal">
-                                                  <i class="fas fa-user-edit text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Delete product">
-                                                  <i class="fas fa-trash text-secondary"></i>
-                                              </a>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>
-                                              <div class="d-flex">
-                                                  <div class="form-check my-auto">
-                                                      <input class="form-check-input" type="checkbox"
-                                                          id="customCheck8" checked>
-                                                  </div>
-                                                  <img class="w-10 ms-3"
-                                                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/burberry.jpg"
-                                                      alt="undercover">
-                                                  <h6 class="ms-3 my-auto">Burberry Low-Tops</h6>
-                                              </div>
-                                          </td>
-                                          <td class="text-sm">Shoes</td>
-                                          <td class="text-sm">$869</td>
-                                          <td class="text-sm">634729</td>
-                                          <td class="text-sm">725</td>
-                                          <td>
-                                              <span class="badge badge-success badge-sm">in Stock</span>
-                                          </td>
-                                          <td class="text-sm">
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Preview product">
-                                                  <i class="fas fa-eye text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" class="mx-3" data-bs-toggle="modal"
-                                                  data-bs-target="#MachineEditModal">
-                                                  <i class="fas fa-user-edit text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Delete product">
-                                                  <i class="fas fa-trash text-secondary"></i>
-                                              </a>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>
-                                              <div class="d-flex">
-                                                  <div class="form-check my-auto">
-                                                      <input class="form-check-input" type="checkbox"
-                                                          id="customCheck22">
-                                                  </div>
-                                                  <img class="w-10 ms-3"
-                                                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/d&g-skirt.jpg"
-                                                      alt="D&G">
-                                                  <h6 class="ms-3 my-auto">Dolce & Gabbana Skirt</h6>
-                                              </div>
-                                          </td>
-                                          <td class="text-sm">Designer</td>
-                                          <td class="text-sm">$999</td>
-                                          <td class="text-sm">01827391</td>
-                                          <td class="text-sm">0</td>
-                                          <td>
-                                              <span class="badge badge-danger badge-sm">Out of Stock</span>
-                                          </td>
-                                          <td class="text-sm">
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Preview product">
-                                                  <i class="fas fa-eye text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" class="mx-3" data-bs-toggle="modal"
-                                                  data-bs-target="#MachineEditModal">
-                                                  <i class="fas fa-user-edit text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Delete product">
-                                                  <i class="fas fa-trash text-secondary"></i>
-                                              </a>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>
-                                              <div class="d-flex">
-                                                  <div class="form-check my-auto">
-                                                      <input class="form-check-input" type="checkbox"
-                                                          id="customCheck23" checked>
-                                                  </div>
-                                                  <img class="w-10 ms-3"
-                                                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/undercover.jpg"
-                                                      alt="undercover">
-                                                  <h6 class="ms-3 my-auto">Undercover T-shirt</h6>
-                                              </div>
-                                          </td>
-                                          <td class="text-sm">Shoes</td>
-                                          <td class="text-sm">$869</td>
-                                          <td class="text-sm">634729</td>
-                                          <td class="text-sm">725</td>
-                                          <td>
-                                              <span class="badge badge-success badge-sm">in Stock</span>
-                                          </td>
-                                          <td class="text-sm">
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Preview product">
-                                                  <i class="fas fa-eye text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" class="mx-3" data-bs-toggle="modal"
-                                                  data-bs-target="#MachineEditModal">
-                                                  <i class="fas fa-user-edit text-secondary"></i>
-                                              </a>
-                                              <a href="javascript:;" data-bs-toggle="tooltip"
-                                                  data-bs-original-title="Delete product">
-                                                  <i class="fas fa-trash text-secondary"></i>
-                                              </a>
-                                          </td>
-                                      </tr>
-                                  </tbody>
-                              </table>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!-- edit modal strarts here -->
-          <div class="modal fade" id="MachineEditModal" tabindex="-1" role="dialog"
-              aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-xl" role="document">
-                  <div class="modal-content">
-                      <div class="modal-body p-0">
-                          <div class="row">
-                              <div class="col-lg-4">
-                                  <div class="card h-100">
-                                      <div class="card-body">
-                                          <h5 class="font-weight-bolder">Product Image</h5>
-                                          <div class="row">
-                                              <div class="col-12">
-                                                  <img class="w-100 border-radius-lg shadow-lg mt-3"
-                                                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-page.jpg"
-                                                      alt="product_image">
-                                              </div>
-                                              <div class="col-12 mt-5">
-                                                  <div class="d-flex">
-                                                      <button class="btn btn-primary btn-sm mb-0 me-2"
-                                                          type="button" name="button">Edit</button>
-                                                      <button class="btn btn-outline-dark btn-sm mb-0"
-                                                          type="button" name="button">Remove</button>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-lg-8 mt-lg-0 mt-4">
-                                  <div class="card">
-                                      <div class="card-body">
-                                          <h5 class="font-weight-bolder">Product Information</h5>
-                                          <div class="row">
-                                              <div class="col-12 col-sm-6">
-                                                  <label>Name</label>
-                                                  <input class="form-control" type="text"
-                                                      value="Minimal Bar Stool" />
-                                              </div>
-                                              <div class="col-12 col-sm-6 mt-3 mt-sm-0">
-                                                  <label>Weight</label>
-                                                  <input class="form-control" type="number" value="2" />
-                                              </div>
-                                          </div>
-                                          <div class="row">
-                                              <div class="col-3">
-                                                  <label class="mt-4">Collection</label>
-                                                  <input class="form-control" type="text" value="Summer" />
-                                              </div>
-                                              <div class="col-3">
-                                                  <label class="mt-4">Price</label>
-                                                  <input class="form-control" type="text" value="$90" />
-                                              </div>
-                                              <div class="col-3">
-                                                  <label class="mt-4">Quantity</label>
-                                                  <input class="form-control" type="number" value="50" />
-                                              </div>
-                                          </div>
-                                          <div class="row">
-                                              <div class="col-sm-6">
-                                                  <label class="mt-4">Description</label>
-                                                  <p class="form-text text-muted text-xs ms-1 d-inline">
-                                                      (optional)
-                                                  </p>
-                                                  <div id="edit-deschiption-edit" class="h-50"> Long sleeves
-                                                      black
-                                                      denim jacket with a twisted design. Contrast stitching.
-                                                      Button
-                                                      up closure. White arrow prints on the back. </div>
-                                              </div>
-                                              <div class="col-sm-6">
-                                                  <label class="mt-4">Category</label>
-                                                  <select class="form-control" name="choices-category"
-                                                      id="choices-category-edit">
-                                                      <option value="Choice 1" selected="">Furniture</option>
-                                                      <option value="Choice 2">Real Estate</option>
-                                                      <option value="Choice 3">Electronics</option>
-                                                      <option value="Choice 4">Clothing</option>
-                                                      <option value="Choice 5">Others</option>
-                                                  </select>
-                                                  <label>Color</label>
-                                                  <select class="form-control" name="choices-color"
-                                                      id="choices-color-edit">
-                                                      <option value="Choice 1" selected="">Black</option>
-                                                      <option value="Choice 2">White</option>
-                                                      <option value="Choice 3">Blue</option>
-                                                      <option value="Choice 4">Orange</option>
-                                                      <option value="Choice 5">Green</option>
-                                                  </select>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="row mt-4">
-                              <div class="col-sm-4">
-                                  <div class="card">
-                                      <div class="card-body">
-                                          <h5 class="font-weight-bolder">Socials</h5>
-                                          <label>Shoppify Handle</label>
-                                          <input class="form-control" type="text" value="@argon" />
-                                          <label class="mt-4">Facebook Account</label>
-                                          <input class="form-control" type="text" value="https://" />
-                                          <label class="mt-4">Instagram Account</label>
-                                          <input class="form-control" type="text" value="https://" />
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-sm-8 mt-sm-0 mt-4">
-                                  <div class="card">
-                                      <div class="card-body">
-                                          <div class="row">
-                                              <h5 class="font-weight-bolder">Pricing</h5>
-                                              <div class="col-3">
-                                                  <label>Price</label>
-                                                  <input class="form-control" type="number" value="99.00" />
-                                              </div>
-                                              <div class="col-4">
-                                                  <label>Currency</label>
-                                                  <select class="form-control" name="choices-sizes"
-                                                      id="choices-currency-edit">
-                                                      <option value="Choice 1" selected="">USD</option>
-                                                      <option value="Choice 2">EUR</option>
-                                                      <option value="Choice 3">GBP</option>
-                                                      <option value="Choice 4">CNY</option>
-                                                      <option value="Choice 5">INR</option>
-                                                      <option value="Choice 6">BTC</option>
-                                                  </select>
-                                              </div>
-                                              <div class="col-5">
-                                                  <label>SKU</label>
-                                                  <input class="form-control" type="text"
-                                                      value="71283476591" />
-                                              </div>
-                                          </div>
-                                          <div class="row">
-                                              <div class="col-12">
-                                                  <label class="mt-4">Tags</label>
-                                                  <select class="form-control" name="choices-tags"
-                                                      id="choices-tags-edit" multiple>
-                                                      <option value="Choice 1" selected>In Stock</option>
-                                                      <option value="Choice 2">Out of Stock</option>
-                                                      <option value="Choice 3">Sale</option>
-                                                      <option value="Choice 4">Black Friday</option>
-                                                  </select>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="modal-footer p-0 d-flex justify-content-center">
-                          <button type="button" class="btn btn-secondary"
-                              data-bs-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Save changes</button>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
       </div>
 
 
@@ -3113,13 +2257,13 @@
     </div>
   </div>
   <!--   Core JS Files   -->
-  <script src="assets/js/core/popper.min.js"></script>
-  <script src="assets/js/core/bootstrap.min.js"></script>
-  <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
-  <script src="assets/js/plugins/smooth-scrollbar.min.js"></script>
-  <script src="assets/js/plugins/fullscren.js"></script>
-  <script src="assets/js/plugins/chartjs.min.js"></script>
-  <script src="assets/js/plugins/datatables.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="../assets/js/plugins/fullscren.js"></script>
+  <script src="../assets/js/plugins/chartjs.min.js"></script>
+  <script src="../assets/js/plugins/datatables.js"></script>
   <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
 
 
@@ -3273,22 +2417,19 @@
       brd.innerHTML = "OverView";
     }
     function brd2() {
-      brd.innerHTML = "Driver List";
-    }
-    function brd3() {
-      brd.innerHTML = "Vehicle List";
+      brd.innerHTML = "Payment Type";
     }
   </script>
   <!-- Github buttons -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="assets/js/argon-dashboard.min.js?v=2.0.4"></script>
+  <script src="../assets/js/argon-dashboard.min.js?v=2.0.4"></script>
   <!-- required to the preloader -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="assets/js/preloader.js"></script>
+  <script src="../assets/js/preloader.js"></script>
   <!-- required to the preloader -->
 
-  <script src="assets/js/plugins/debit.js"></script>
+  <script src="../assets/js/plugins/debit.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js"></script>
 </body>
 

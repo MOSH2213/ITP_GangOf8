@@ -4,9 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="assets/img/logos/D.png">
-
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/logos/D.png">
     <title>
         GangOf8
     </title>
@@ -16,17 +15,17 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
 
-    <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
-    <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
 
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/preloader.css">
+    <link rel="stylesheet" href="../assets/css/preloader.css">
 
-    <link id="pagestyle" href="assets/css/argon-dashboard.min.css?v=2.0.5" rel="stylesheet" />
+    <link id="pagestyle" href="../assets/css/argon-dashboard.min.css?v=2.0.5" rel="stylesheet" />
     <style>
 
     </style>
@@ -58,7 +57,7 @@
             <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/argon-dashboard/pages/dashboard.html "
                 target="_blank">
                 <!-- the image is hidden and this therby prevents darkmode violation -->
-                <img src="assets/img/logo-ct-dark.png" class="navbar-brand-img" style="display: none" alt="" />
+                <img src="../assets/img/logo-ct-dark.png" class="navbar-brand-img" style="display: none" alt="" />
                 <div style="
               width: 50px;
               height: 50px;
@@ -103,31 +102,24 @@
                     <div class="collapse" id="Customer">
                         <ul class="nav ms-4">
                             <li class="nav-item">
-                              <a class="nav-link" href="customerM.html">
-                                <span class="sidenav-mini-icon"> O </span>
-                                <span class="sidenav-normal">OverView<b class="caret"></b></span>
-                              </a>
+                                <a class="nav-link" href="orderlist.html">
+                                    <span class="sidenav-mini-icon"> O </span>
+                                    <span class="sidenav-normal">Orders<b class="caret"></b></span>
+                                </a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="customerM.html">
-                                <span class="sidenav-mini-icon"> P </span>
-                                <span class="sidenav-normal">
-                                  Customer List <b class="caret"></b></span>
-                              </a>
+                                <a class="nav-link" href="#">
+                                    <span class="sidenav-mini-icon"> P </span>
+                                    <span class="sidenav-normal">
+                                        Payments <b class="caret"></b></span>
+                                </a>
                             </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="customerM.html">
-                                <span class="sidenav-mini-icon"> P </span>
-                                <span class="sidenav-normal">
-                                  FeedBacks <b class="caret"></b></span>
-                              </a>
-                            </li>
-                          </ul>
+                        </ul>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a data-bs-toggle="collapse" href="#Transaction" class="nav-link" aria-controls="ecommerceExamples"
-                        role="button" aria-expanded="false">
+                    <a data-bs-toggle="collapse" href="#Transaction" class="nav-link active"
+                        aria-controls="ecommerceExamples" role="button" aria-expanded="false">
                         <div
                             class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
                             <i class="fa fa-sack-dollar text-primary text-sm opacity-10"></i>
@@ -160,7 +152,7 @@
                                 </div>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" data-bs-toggle="collapse" aria-expanded="false"
+                                <a class="nav-link active" data-bs-toggle="collapse" aria-expanded="false"
                                     href="#ordersExample">
                                     <span class="sidenav-mini-icon"> O </span>
                                     <span class="sidenav-normal"> Order Management <b class="caret"></b></span>
@@ -168,13 +160,13 @@
                                 <div class="collapse " id="ordersExample">
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item active">
-                                            <a class="nav-link" href="orderM.html">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#OrderOverview">
                                                 <span class="sidenav-mini-icon text-xs"> O </span>
                                                 <span class="sidenav-normal"> OverView</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link " href="orderM.html">
+                                            <a class="nav-link " data-bs-toggle="tab" href="#OrderList">
                                                 <span class="sidenav-mini-icon text-xs"> O </span>
                                                 <span class="sidenav-normal"> Order List</span>
                                             </a>
@@ -220,42 +212,42 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a data-bs-toggle="collapse" href="#Employee" class="nav-link active"
-                        aria-controls="ecommerceExamples" role="button" aria-expanded="false">
+                    <a data-bs-toggle="collapse" href="#Employee" class="nav-link" aria-controls="Employee"
+                        role="button" aria-expanded="false">
                         <div
                             class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
                             <i class="fa fa-person-digging text-primary text-sm opacity-10"></i>
                         </div>
                         <span class="nav-link-text ms-1">Employee Management</span>
                     </a>
-                    <div class="collapse " id="Employee">
+                    <div class="collapse" id="Employee">
                         <ul class="nav ms-4">
-                            <li class="nav-item active">
-                                <a class="nav-link active" onclick="brd1()" data-bs-toggle="tab" href="#EmployeeOverview">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="EManage.html">
                                     <span class="sidenav-mini-icon text-xs"> N </span>
                                     <span class="sidenav-normal"> Overview </span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " onclick="brd2()" data-bs-toggle="tab" href="#TraineeList">
+                                <a class="nav-link " href="EManage.html">
                                     <span class="sidenav-mini-icon text-xs"> E </span>
                                     <span class="sidenav-normal"> Trainee </span>
                                 </a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link " onclick="brd3()" data-bs-toggle="tab" href="#LeaveOverview">
+                                <a class="nav-link " href="EManage.html">
                                     <span class="sidenav-mini-icon text-xs"> N </span>
                                     <span class="sidenav-normal"> Leave </span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " onclick="brd4()" data-bs-toggle="tab" href="#LeaveType">
+                                <a class="nav-link " href="EManage.html">
                                     <span class="sidenav-mini-icon text-xs"> P </span>
                                     <span class="sidenav-normal"> Leave Type </span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " onclick="brd5()" data-bs-toggle="tab" href="#OverTime">
+                                <a class="nav-link " data-bs-toggle="tab" href="EManage.html">
                                     <span class="sidenav-mini-icon text-xs"> O </span>
                                     <span class="sidenav-normal"> Over Time</span>
                                 </a>
@@ -275,7 +267,7 @@
                     <div class="collapse" id="Staff">
                         <ul class="nav ms-4">
                             <li class="nav-item">
-                                <a class="nav-link " href="StaffM.html">
+                                <a class="nav-link" href="StaffM.html">
                                     <span class="sidenav-mini-icon"> O </span>
                                     <span class="sidenav-normal">OverView<b class="caret"></b></span>
                                 </a>
@@ -323,13 +315,13 @@
                     <div class="collapse" id="Supplier">
                         <ul class="nav ms-4">
                             <li class="nav-item">
-                                <a class="nav-link"  href="SupplierM.html">
+                                <a class="nav-link" href="SupplierM.html">
                                     <span class="sidenav-mini-icon"> O </span>
                                     <span class="sidenav-normal">OverView<b class="caret"></b></span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link"  href="SupplierM.html">
+                                <a class="nav-link" href="SupplierM.html">
                                     <span class="sidenav-mini-icon"> O </span>
                                     <span class="sidenav-normal">Orders<b class="caret"></b></span>
                                 </a>
@@ -460,9 +452,9 @@
                         </li>
                         <li class="breadcrumb-item text-sm text-white"><a class="opacity-5 text-white"
                                 href="javascript:;">Pages</a></li>
-                        <li class="breadcrumb-item text-sm text-white active" aria-current="page">Employee Management</li>
+                        <li class="breadcrumb-item text-sm text-white active" aria-current="page">Order List</li>
                     </ol>
-                    <h6 class="font-weight-bolder mb-0 text-white" id="BreadChng">OverView</h6>
+                    <h6 class="font-weight-bolder mb-0 text-white">Order List</h6>
                 </nav>
                 <div class="sidenav-toggler sidenav-toggler-inner d-xl-block d-none ">
                     <a href="javascript:;" class="nav-link p-0">
@@ -565,8 +557,20 @@
 
         <div class="container-fluid p-0 p-md-4">
             <div class="tab-content">
-                <div class="tab-pane active" id="EmployeeOverview">
+                <div class="tab-pane active" id="OrderOverview">
                     <div class="row">
+                        <div class="col-md-6  mt-4">
+                            <div class="card z-index-2">
+                                <div class="card-header p-3 pb-0">
+                                    <h6>Pie chart</h6>
+                                </div>
+                                <div class="card-body p-3">
+                                    <div class="chart">
+                                        <canvas id="pie-chart" class="chart-canvas" height="300"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-md-6 mt-4">
                             <div class="row mb-3">
                                 <div class="col-4">
@@ -657,14 +661,213 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6  mt-4">
-                            <div class="card z-index-2">
-                                <div class="card-header p-3 pb-0">
-                                    <h6>Doughnut chart</h6>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7 mt-4">
+                            <div class="card ">
+                                <div class="card-header pb-0 p-3">
+                                    <div class="row">
+                                        <div class="col-6 d-flex align-items-center">
+                                            <h6 class="mb-0">coupons</h6>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <button class="btn bg-gradient-dark mb-0" data-bs-toggle="modal"
+                                                data-bs-target="#modal-form"><i class="fas fa-plus"
+                                                    aria-hidden="true"></i>&nbsp;&nbsp;Add New Coupon</button>
+
+                                        </div>
+
+                                        <!-- modal starts -->
+                                        <div class="modal fade " style="z-index: 99999;" id="modal-form" tabindex="-1"
+                                            role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-body p-0">
+                                                        <div class="card card-plain">
+                                                            <div class="card-header pb-0 text-left">
+                                                                <h4 class="font-weight-bolder  text-primary">Add Coupon
+                                                                </h4>
+                                                                <p class="mb-0">Enter Coupon Name And Value</p>
+                                                            </div>
+                                                            <div class="card-body p-3">
+                                                                <form role="form text-left">
+                                                                    <label>Coupon Name</label>
+                                                                    <div class="input-group mb-3">
+                                                                        <input type="text" class="form-control"
+                                                                            placeholder="Email" aria-label="Email"
+                                                                            aria-describedby="email-addon">
+                                                                    </div>
+                                                                    <label>Value</label>
+                                                                    <div class="input-group mb-3">
+                                                                        <input type="text" class="form-control"
+                                                                            placeholder="Password" aria-label="Password"
+                                                                            aria-describedby="password-addon">
+                                                                    </div>
+
+                                                                    <div class=" row text-center">
+                                                                        <div class="col-6">
+                                                                            <button type="button"
+                                                                                data-bs-dismiss="modal"
+                                                                                class="btn  bg-gradient-primary btn-md w-100 mt-2 mb-0">
+                                                                                Cancel</button>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                            <button type="submit"
+                                                                                class="btn  btn-outline-primary btn-md w-100 mt-2 mb-0">Add</button>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- modal Ends -->
+                                    </div>
                                 </div>
                                 <div class="card-body p-3">
-                                    <div class="chart">
-                                        <canvas id="doughnut-chart" class="chart-canvas" height="300"></canvas>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-md-2 mb-4">
+                                            <div
+                                                class="card card-body border card-plain border-radius-lg d-flex align-items-center flex-row">
+                                                <img class="w-20 me-3 mb-0" src="../assets/img/icons/COUPONS.gif"
+                                                    alt="logo">
+                                                <h7 class="mb-0">
+                                                    Coupon Name
+                                                </h7>
+                                                <i class="fas fa-pencil-alt ms-auto text-dark cursor-pointer"
+                                                    data-bs-toggle="tooltip" data-bs-placement="top" aria-hidden="true"
+                                                    aria-label="Edit Card"></i><span class="sr-only">Edit Card</span>
+                                                <i class="fas fa-trash-alt ms-auto text-dark cursor-pointer"
+                                                    data-bs-toggle="tooltip" data-bs-placement="top" aria-hidden="true"
+                                                    aria-label="Delete Card"></i><span class="sr-only">Edit Card</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-md-2 mb-4">
+                                            <div
+                                                class="card card-body border card-plain border-radius-lg d-flex align-items-center flex-row">
+                                                <img class="w-20 me-3 mb-0" src="../assets/img/icons/COUPONS.gif"
+                                                    alt="logo">
+                                                <h7 class="mb-0">
+                                                    Coupon Name
+                                                </h7>
+                                                <i class="fas fa-pencil-alt ms-auto text-dark cursor-pointer"
+                                                    data-bs-toggle="tooltip" data-bs-placement="top" aria-hidden="true"
+                                                    aria-label="Edit Card"></i><span class="sr-only">Edit Card</span>
+                                                <i class="fas fa-trash-alt ms-auto text-dark cursor-pointer"
+                                                    data-bs-toggle="tooltip" data-bs-placement="top" aria-hidden="true"
+                                                    aria-label="Delete Card"></i><span class="sr-only">Edit Card</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-md-2 mb-4">
+                                            <div
+                                                class="card card-body border card-plain border-radius-lg d-flex align-items-center flex-row">
+                                                <img class="w-20 me-3 mb-0" src="../assets/img/icons/COUPONS.gif"
+                                                    alt="logo">
+                                                <h7 class="mb-0">
+                                                    Coupon Name
+                                                </h7>
+                                                <i class="fas fa-pencil-alt ms-auto text-dark cursor-pointer"
+                                                    data-bs-toggle="tooltip" data-bs-placement="top" aria-hidden="true"
+                                                    aria-label="Edit Card"></i><span class="sr-only">Edit Card</span>
+                                                <i class="fas fa-trash-alt ms-auto text-dark cursor-pointer"
+                                                    data-bs-toggle="tooltip" data-bs-placement="top" aria-hidden="true"
+                                                    aria-label="Delete Card"></i><span class="sr-only">Edit Card</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-md-2 mb-4">
+                                            <div
+                                                class="card card-body border card-plain border-radius-lg d-flex align-items-center flex-row">
+                                                <img class="w-20 me-3 mb-0" src="../assets/img/icons/COUPONS.gif"
+                                                    alt="logo">
+                                                <h7 class="mb-0">
+                                                    Coupon Name
+                                                </h7>
+                                                <i class="fas fa-pencil-alt ms-auto text-dark cursor-pointer"
+                                                    data-bs-toggle="tooltip" data-bs-placement="top" aria-hidden="true"
+                                                    aria-label="Edit Card"></i><span class="sr-only">Edit Card</span>
+                                                <i class="fas fa-trash-alt ms-auto text-dark cursor-pointer"
+                                                    data-bs-toggle="tooltip" data-bs-placement="top" aria-hidden="true"
+                                                    aria-label="Delete Card"></i><span class="sr-only">Edit Card</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 mt-4">
+                            <div class="card">
+                                <div class="card-header p-3 pb-0">
+                                    <h6 class="mb-0">Coupons List</h6>
+                                    <p class="text-sm mb-0 text-capitalize font-weight-bold">All</p>
+                                </div>
+
+                                <div class="card-body border-radius-lg p-3 pt-2">
+                                    <div class="row">
+                                        <div class="col-6 d-flex mt-2">
+                                            <div>
+                                                <div
+                                                    class="icon icon-shape bg-info-soft shadow text-center border-radius-md shadow-none">
+                                                    <i class="ni ni-money-coins text-lg text-info text-gradient opacity-10"
+                                                        aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                            <div class="ms-3">
+                                                <div class="numbers">
+                                                    <h6 class="mb-1 text-dark text-sm">CPN25</h6>
+                                                    <span class="text-sm">25% off</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 d-flex mt-2">
+                                            <div>
+                                                <div
+                                                    class="icon icon-shape bg-info-soft shadow text-center border-radius-md shadow-none">
+                                                    <i class="ni ni-money-coins text-lg text-info text-gradient opacity-10"
+                                                        aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                            <div class="ms-3">
+                                                <div class="numbers">
+                                                    <h6 class="mb-1 text-dark text-sm">CPN50</h6>
+                                                    <span class="text-sm">50% off</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 d-flex mt-2">
+                                            <div>
+                                                <div
+                                                    class="icon icon-shape bg-info-soft shadow text-center border-radius-md shadow-none">
+                                                    <i class="ni ni-money-coins text-lg text-info text-gradient opacity-10"
+                                                        aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                            <div class="ms-3">
+                                                <div class="numbers">
+                                                    <h6 class="mb-1 text-dark text-sm">CPN75</h6>
+                                                    <span class="text-sm">75% off</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 d-flex mt-2">
+                                            <div>
+                                                <div
+                                                    class="icon icon-shape bg-info-soft shadow text-center border-radius-md shadow-none">
+                                                    <i class="ni ni-money-coins text-lg text-info text-gradient opacity-10"
+                                                        aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                            <div class="ms-3">
+                                                <div class="numbers">
+                                                    <h6 class="mb-1 text-dark text-sm">CPN100</h6>
+                                                    <span class="text-sm">100% off</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -750,7 +953,7 @@
                                                 </td>
                                                 <td class="text-xs font-weight-bold">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="assets/img/team-2.jpg" class="avatar avatar-xs me-2"
+                                                        <img src="../assets/img/team-2.jpg" class="avatar avatar-xs me-2"
                                                             alt="user image">
                                                         <span>Orlando Imieto</span>
                                                     </div>
@@ -795,7 +998,7 @@
                                                 </td>
                                                 <td class="text-xs font-weight-bold">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="assets/img/team-1.jpg" class="avatar avatar-xs me-2"
+                                                        <img src="../assets/img/team-1.jpg" class="avatar avatar-xs me-2"
                                                             alt="user image">
                                                         <span>Alice Murinho</span>
                                                     </div>
@@ -889,7 +1092,7 @@
                                                 <td class="text-xs font-weight-bold">
                                                     <div class="d-flex align-items-center">
                                                         <div class="d-flex align-items-center">
-                                                            <img src="assets/img/team-3.jpg"
+                                                            <img src="../assets/img/team-3.jpg"
                                                                 class="avatar avatar-xs me-2" alt="user image">
                                                             <span>Andrew Nichel</span>
                                                         </div>
@@ -937,7 +1140,7 @@
                                                 <td class="text-xs font-weight-bold">
                                                     <div class="d-flex align-items-center">
                                                         <div class="d-flex align-items-center">
-                                                            <img src="assets/img/team-4.jpg"
+                                                            <img src="../assets/img/team-4.jpg"
                                                                 class="avatar avatar-xs me-2" alt="user image">
                                                             <span>Sebastian Koga</span>
                                                         </div>
@@ -1127,7 +1330,7 @@
                                                 <td class="text-xs font-weight-bold">
                                                     <div class="d-flex align-items-center">
                                                         <div class="d-flex align-items-center">
-                                                            <img src="assets/img/team-5.jpg"
+                                                            <img src="../assets/img/team-5.jpg"
                                                                 class="avatar avatar-xs me-2" alt="user image">
                                                             <span>Rugna Ilpio</span>
                                                         </div>
@@ -1175,7 +1378,7 @@
                                                 <td class="text-xs font-weight-bold">
                                                     <div class="d-flex align-items-center">
                                                         <div class="d-flex align-items-center">
-                                                            <img src="assets/img/ivana-squares.jpg"
+                                                            <img src="../assets/img/ivana-squares.jpg"
                                                                 class="avatar avatar-xs me-2" alt="user image">
                                                             <span>Anna Landa</span>
                                                         </div>
@@ -1433,7 +1636,7 @@
                                                                                 <td>
                                                                                     <div class="d-flex px-2 py-1">
                                                                                         <div>
-                                                                                            <img src="assets/img/team-2.jpg"
+                                                                                            <img src="../assets/img/team-2.jpg"
                                                                                                 class="avatar avatar-sm me-3"
                                                                                                 alt="user1">
                                                                                         </div>
@@ -1480,7 +1683,7 @@
                                                                                 <td>
                                                                                     <div class="d-flex px-2 py-1">
                                                                                         <div>
-                                                                                            <img src="assets/img/team-3.jpg"
+                                                                                            <img src="../assets/img/team-3.jpg"
                                                                                                 class="avatar avatar-sm me-3"
                                                                                                 alt="user2">
                                                                                         </div>
@@ -1527,7 +1730,7 @@
                                                                                 <td>
                                                                                     <div class="d-flex px-2 py-1">
                                                                                         <div>
-                                                                                            <img src="assets/img/team-4.jpg"
+                                                                                            <img src="../assets/img/team-4.jpg"
                                                                                                 class="avatar avatar-sm me-3"
                                                                                                 alt="user3">
                                                                                         </div>
@@ -1574,7 +1777,7 @@
                                                                                 <td>
                                                                                     <div class="d-flex px-2 py-1">
                                                                                         <div>
-                                                                                            <img src="assets/img/team-3.jpg"
+                                                                                            <img src="../assets/img/team-3.jpg"
                                                                                                 class="avatar avatar-sm me-3"
                                                                                                 alt="user4">
                                                                                         </div>
@@ -1621,7 +1824,7 @@
                                                                                 <td>
                                                                                     <div class="d-flex px-2 py-1">
                                                                                         <div>
-                                                                                            <img src="assets/img/team-2.jpg"
+                                                                                            <img src="../assets/img/team-2.jpg"
                                                                                                 class="avatar avatar-sm me-3"
                                                                                                 alt="user5">
                                                                                         </div>
@@ -1668,7 +1871,7 @@
                                                                                 <td>
                                                                                     <div class="d-flex px-2 py-1">
                                                                                         <div>
-                                                                                            <img src="assets/img/team-4.jpg"
+                                                                                            <img src="../assets/img/team-4.jpg"
                                                                                                 class="avatar avatar-sm me-3"
                                                                                                 alt="user6">
                                                                                         </div>
@@ -1807,7 +2010,7 @@
                     </div>
                     <!-- modal of osrder view ends -->
                 </div>
-                <div class="tab-pane" id="TraineeList">
+                <div class="tab-pane" id="OrderList">
                     <!-- modal of delivery starts -->
                     <div class="modal fade " style="z-index: 99999;" id="modal-delivery" tabindex="-1" role="dialog"
                         aria-labelledby="modal-form" aria-hidden="true">
@@ -1857,103 +2060,6 @@
                         </div>
                     </div>
                     <!-- modal of delivery  Ends -->
-
-                    <div class="row">
-                        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-                            <div class="card">
-                                <div class="card-body p-3">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <div class="numbers">
-                                                <p class="text-sm mb-0 text-uppercase font-weight-bold">Users</p>
-                                                <h5 class="font-weight-bolder mb-0">
-                                                    930
-                                                    <span class="text-success text-sm font-weight-bolder">+55%</span>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-4 text-end">
-                                            <div
-                                                class="icon icon-shape bg-gradient-dark shadow text-center border-radius-md">
-                                                <i class="ni ni-circle-08 text-lg opacity-10" aria-hidden="true"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-                            <div class="card">
-                                <div class="card-body p-3">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <div class="numbers">
-                                                <p class="text-sm mb-0 text-uppercase font-weight-bold">New Users</p>
-                                                <h5 class="font-weight-bolder mb-0">
-                                                    744
-                                                    <span class="text-success text-sm font-weight-bolder">+3%</span>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-4 text-end">
-                                            <div
-                                                class="icon icon-shape bg-gradient-dark shadow text-center border-radius-md">
-                                                <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-                            <div class="card">
-                                <div class="card-body p-3">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <div class="numbers">
-                                                <p class="text-sm mb-0 text-uppercase font-weight-bold">Sessions</p>
-                                                <h5 class="font-weight-bolder mb-0">
-                                                    1,414
-                                                    <span class="text-danger text-sm font-weight-bolder">-2%</span>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-4 text-end">
-                                            <div
-                                                class="icon icon-shape bg-gradient-dark shadow text-center border-radius-md">
-                                                <i class="ni ni-watch-time text-lg opacity-10" aria-hidden="true"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-sm-6">
-                            <div class="card">
-                                <div class="card-body p-3">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <div class="numbers">
-                                                <p class="text-sm mb-0 text-uppercase font-weight-bold">Pages/Session
-                                                </p>
-                                                <h5 class="font-weight-bolder mb-0">
-                                                    1.76
-                                                    <span class="text-success text-sm font-weight-bolder">+5%</span>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-4 text-end">
-                                            <div
-                                                class="icon icon-shape bg-gradient-dark shadow text-center border-radius-md">
-                                                <i class="ni ni-image text-lg opacity-10" aria-hidden="true"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <div class="row">
                         <div class="col-md-8 mt-4">
                             <div class="card ">
@@ -2039,7 +2145,7 @@
                                                     </td>
                                                     <td class="text-xs font-weight-bold">
                                                         <div class="d-flex align-items-center">
-                                                            <img src="assets/img/team-2.jpg"
+                                                            <img src="../assets/img/team-2.jpg"
                                                                 class="avatar avatar-xs me-2" alt="user image">
                                                             <span>Orlando Imieto</span>
                                                         </div>
@@ -2075,7 +2181,7 @@
                                                     </td>
                                                     <td class="text-xs font-weight-bold">
                                                         <div class="d-flex align-items-center">
-                                                            <img src="assets/img/team-1.jpg"
+                                                            <img src="../assets/img/team-1.jpg"
                                                                 class="avatar avatar-xs me-2" alt="user image">
                                                             <span>Alice Murinho</span>
                                                         </div>
@@ -2112,7 +2218,7 @@
                                                     <td class="text-xs font-weight-bold">
                                                         <div class="d-flex align-items-center">
                                                             <div class="d-flex align-items-center">
-                                                                <img src="assets/img/team-3.jpg"
+                                                                <img src="../assets/img/team-3.jpg"
                                                                     class="avatar avatar-xs me-2" alt="user image">
                                                                 <span>Andrew Nichel</span>
                                                             </div>
@@ -2266,7 +2372,7 @@
                                                     <td class="text-xs font-weight-bold">
                                                         <div class="d-flex align-items-center">
                                                             <div class="d-flex align-items-center">
-                                                                <img src="assets/img/team-5.jpg"
+                                                                <img src="../assets/img/team-5.jpg"
                                                                     class="avatar avatar-xs me-2" alt="user image">
                                                                 <span>Rugna Ilpio</span>
                                                             </div>
@@ -2648,1625 +2754,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane" id="LeaveOverview">
-                    <div class="row">
-                        <div class="col-md-8 mt-md-0 mt-4">
-                            <div class="card z-index-2">
-                                <div class="card-header p-3 pb-0">
-                                    <h6>Bar chart horizontal</h6>
-                                </div>
-                                <div class="card-body p-3">
-                                    <div class="chart">
-                                        <canvas id="bar-chart-horizontal" class="chart-canvas"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p>Steps</p>
-                                            <h3>11.4K</h3>
-                                            <span class="badge badge-success">+4.3%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p>Steps</p>
-                                            <h3>11.4K</h3>
-                                            <span class="badge badge-success">+4.3%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row mt-4">
-                                <div class="col-md-12">
-                                    <div class="card">
-                                        <div class="card-header p-3 pb-0">
-                                            <h6 class="mb-0">Upcoming events</h6>
-                                            <p class="text-sm mb-0 text-capitalize font-weight-bold">Joined</p>
-                                        </div>
-                                        <div class="card-body border-radius-lg p-3">
-                                            <div class="d-flex">
-                                                <div>
-                                                    <div
-                                                        class="icon icon-shape bg-info-soft shadow text-center border-radius-md shadow-none">
-                                                        <i class="ni ni-money-coins text-lg text-info text-gradient opacity-10"
-                                                            aria-hidden="true"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="ms-3">
-                                                    <div class="numbers">
-                                                        <h6 class="mb-1 text-dark text-sm">Cyber Week</h6>
-                                                        <span class="text-sm">27 March 2020, at 12:30 PM</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex mt-4">
-                                                <div>
-                                                    <div
-                                                        class="icon icon-shape bg-primary-soft shadow text-center border-radius-md shadow-none">
-                                                        <i class="ni ni-bell-55 text-lg text-primary text-gradient opacity-10"
-                                                            aria-hidden="true"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="ms-3">
-                                                    <div class="numbers">
-                                                        <h6 class="mb-1 text-dark text-sm">Meeting with Marry</h6>
-                                                        <span class="text-sm">24 March 2020, at 10:00 PM</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-12">
-                            <!-- modal of delivery starts -->
-                            <div class="modal fade " style="z-index: 99999;" id="modal-leave" tabindex="-1"
-                                role="dialog" aria-labelledby="modal-form" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered modal-md" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-body p-0">
-                                            <div class="card card-plain">
-                                                <div class="card-header pb-0 text-left">
-                                                    <h4 class="font-weight-bolder  text-primary">Leaves</h4>
-                                                    <p class="mb-0">Enter Relevant Credentials</p>
-                                                </div>
-                                                <div class="card-body p-3">
-                                                    <form role="form text-left">
-                                                        <label>Coupon Name</label>
-                                                        <div class="input-group mb-3">
-                                                            <input type="text" class="form-control" placeholder="Email"
-                                                                aria-label="Email" aria-describedby="email-addon"
-                                                                onfocus="focused(this)" onfocusout="defocused(this)">
-                                                        </div>
-                                                        <label>Value</label>
-                                                        <div class="input-group mb-3">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Password" aria-label="Password"
-                                                                aria-describedby="password-addon"
-                                                                onfocus="focused(this)" onfocusout="defocused(this)">
-                                                        </div>
-
-                                                        <div class=" row text-center">
-                                                            <div class="col-6">
-                                                                <button type="button" data-bs-dismiss="modal"
-                                                                    class="btn  bg-gradient-primary btn-md w-100 mt-2 mb-0">
-                                                                    Cancel</button>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <button type="submit"
-                                                                    class="btn  btn-outline-primary btn-md w-100 mt-2 mb-0">Add</button>
-                                                            </div>
-
-
-                                                        </div>
-                                                    </form>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- modal of delivery  Ends -->
-                            <div class="card ">
-                                <div class="card-header pb-0 p-3">
-                                    <div class="row">
-                                        <div class="col-6 d-flex align-items-center">
-                                            <h6 class="mb-0">Delievery List</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body p-3">
-                                    <div class="d-sm-flex justify-content-between p-0">
-                                        <!-- <div>
-                                            <a href="javascript:;" class="btn btn-icon btn-outline-dark">
-                                                New order
-                                            </a>
-                                        </div> -->
-                                        <div class="d-flex">
-                                            <div class="dropdown d-inline">
-                                                <a href="javascript:;" class="btn btn-outline-dark dropdown-toggle "
-                                                    data-bs-toggle="dropdown" id="navbarDropdownMenuLink2">
-                                                    Filters
-                                                </a>
-                                                <ul class="dropdown-menu dropdown-menu-lg-start px-2 py-3"
-                                                    aria-labelledby="navbarDropdownMenuLink2"
-                                                    data-popper-placement="left-start">
-                                                    <li><a class="dropdown-item border-radius-md"
-                                                            href="javascript:;">Status:
-                                                            Paid</a>
-                                                    </li>
-                                                    <li><a class="dropdown-item border-radius-md"
-                                                            href="javascript:;">Status:
-                                                            Refunded</a></li>
-                                                    <li><a class="dropdown-item border-radius-md"
-                                                            href="javascript:;">Status:
-                                                            Canceled</a></li>
-                                                    <li>
-                                                        <hr class="horizontal dark my-2">
-                                                    </li>
-                                                    <li><a class="dropdown-item  border-radius-md text-danger"
-                                                            href="javascript:;">Remove
-                                                            Filter</a></li>
-                                                </ul>
-                                            </div>
-                                            <button class="btn btn-icon btn-outline-dark ms-2 export"
-                                                onclick="ExportToExcel4('xlsx')" type="button">
-                                                <span class="btn-inner--icon"><i class="ni ni-archive-2"></i></span>
-                                                <span class="btn-inner--text">Export CSV</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="table-responsive" id="tbl_exporttable_to_xls_4">
-                                        <table class="table table-flush" id="datatable-basic2">
-                                            <thead class="thead-light">
-                                                <tr>
-                                                    <th>Id</th>
-                                                    <th>Date</th>
-                                                    <th>Status</th>
-                                                    <th>Customer</th>
-                                                    <th>Product</th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-
-                                                            <p class="text-xs font-weight-bold ms-2 mb-0">#10421</p>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">1 Nov, 10:20 AM</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <button
-                                                                class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
-                                                                    class="fas fa-check"
-                                                                    aria-hidden="true"></i></button>
-                                                            <span>Paid</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="assets/img/team-2.jpg"
-                                                                class="avatar avatar-xs me-2" alt="user image">
-                                                            <span>Orlando Imieto</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <span class="my-2 text-xs">Nike Sport V2</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold p-0 pt-1">
-                                                        <button class="btn btn-outline-dark btn-xs p-1 mb-0"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#modal-leave">Deliever</button>
-                                                    </td>
-
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-
-                                                            <p class="text-xs font-weight-bold ms-2 mb-0">#10422</p>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">1 Nov, 10:53 AM</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <button
-                                                                class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
-                                                                    class="fas fa-check"
-                                                                    aria-hidden="true"></i></button>
-                                                            <span>Paid</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="assets/img/team-1.jpg"
-                                                                class="avatar avatar-xs me-2" alt="user image">
-                                                            <span>Alice Murinho</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">Valvet T-shirt</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold p-0 pt-1">
-                                                        <button class="btn btn-outline-dark btn-xs p-1 mb-0"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#modal-leave">Deliever</button>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-
-                                                            <p class="text-xs font-weight-bold ms-2 mb-0">#10424</p>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">1 Nov, 12:20 PM</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <button
-                                                                class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
-                                                                    class="fas fa-check"
-                                                                    aria-hidden="true"></i></button>
-                                                            <span>Paid</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="d-flex align-items-center">
-                                                                <img src="assets/img/team-3.jpg"
-                                                                    class="avatar avatar-xs me-2" alt="user image">
-                                                                <span>Andrew Nichel</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <span class="my-2 text-xs">
-                                                            Bracelet Onu-Lino
-                                                        </span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold p-0 pt-1">
-                                                        <button class="btn btn-outline-dark btn-xs p-1 mb-0"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#modal-leave">Deliever</button>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-
-                                                            <p class="text-xs font-weight-bold ms-2 mb-0">#10426</p>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">1 Nov, 2:19 AM</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <button
-                                                                class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
-                                                                    class="fas fa-check"
-                                                                    aria-hidden="true"></i></button>
-                                                            <span>Paid</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="avatar avatar-xs me-2 bg-gradient-primary">
-                                                                <span>L</span>
-                                                            </div>
-                                                            <span>Laur Gilbert</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <span class="my-2 text-xs">
-                                                            Backpack Niver
-                                                        </span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold p-0 pt-1">
-                                                        <button class="btn btn-outline-dark btn-xs p-1 mb-0"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#modal-leave">Deliever</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-
-                                                            <p class="text-xs font-weight-bold ms-2 mb-0">#10427</p>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">1 Nov, 3:42 AM</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <button
-                                                                class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
-                                                                    class="fas fa-check"
-                                                                    aria-hidden="true"></i></button>
-                                                            <span>Paid</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="avatar avatar-xs me-2 bg-gradient-dark">
-                                                                <span>I</span>
-                                                            </div>
-                                                            <span>Iryna Innda</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <span class="my-2 text-xs">
-                                                            Adidas Vio
-                                                        </span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold p-0 pt-1">
-                                                        <button class="btn btn-outline-dark btn-xs p-1 mb-0"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#modal-leave">Deliever</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-
-                                                            <p class="text-xs font-weight-bold ms-2 mb-0">#10428</p>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">2 Nov, 9:32 AM</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <button
-                                                                class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
-                                                                    class="fas fa-check"
-                                                                    aria-hidden="true"></i></button>
-                                                            <span>Paid</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="avatar avatar-xs me-2 bg-gradient-dark">
-                                                                <span>A</span>
-                                                            </div>
-                                                            <span>Arrias Liunda</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <span class="my-2 text-xs">
-                                                            Airpods 2 Gen
-                                                        </span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold p-0 pt-1">
-                                                        <button class="btn btn-outline-dark btn-xs p-1 mb-0"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#modal-leave">Deliever</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-
-                                                            <p class="text-xs font-weight-bold ms-2 mb-0">#10429</p>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">2 Nov, 10:14 AM</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <button
-                                                                class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
-                                                                    class="fas fa-check"
-                                                                    aria-hidden="true"></i></button>
-                                                            <span>Paid</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="d-flex align-items-center">
-                                                                <img src="assets/img/team-5.jpg"
-                                                                    class="avatar avatar-xs me-2" alt="user image">
-                                                                <span>Rugna Ilpio</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <span class="my-2 text-xs">
-                                                            Bracelet Warret
-                                                        </span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold p-0 pt-1">
-                                                        <button class="btn btn-outline-dark btn-xs p-1 mb-0"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#modal-leave">Deliever</button>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-
-                                                            <p class="text-xs font-weight-bold ms-2 mb-0">#10431</p>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">2 Nov, 3:12 PM</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <button
-                                                                class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
-                                                                    class="fas fa-check"
-                                                                    aria-hidden="true"></i></button>
-                                                            <span>Paid</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="avatar avatar-xs me-2 bg-gradient-dark">
-                                                                <span>K</span>
-                                                            </div>
-                                                            <span>Karl Innas</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <span class="my-2 text-xs">
-                                                            Kitchen Gadgets
-                                                        </span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold p-0 pt-1">
-                                                        <button class="btn btn-outline-dark btn-xs p-1 mb-0"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#modal-leave">Deliever</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-                                                            <p class="text-xs font-weight-bold ms-2 mb-0">#10432</p>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">2 Nov, 5:12 PM</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <button
-                                                                class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
-                                                                    class="fas fa-check"
-                                                                    aria-hidden="true"></i></button>
-                                                            <span>Paid</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="avatar avatar-xs me-2 bg-gradient-info">
-                                                                <span>O</span>
-                                                            </div>
-                                                            <span>Oana Kilas</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <span class="my-2 text-xs">
-                                                            Office Papers
-                                                        </span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold p-0 pt-1">
-                                                        <button class="btn btn-outline-dark btn-xs p-1 mb-0"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#modal-leave">Deliever</button>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <!-- modal of delivery starts -->
-                                        <div class="modal fade " style="z-index: 99999;" id="modal-delivery"
-                                            tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered modal-md" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-body p-0">
-                                                        <div class="card card-plain">
-                                                            <div class="card-header pb-0 text-left">
-                                                                <h4 class="font-weight-bolder  text-primary">Assign
-                                                                    Delivery
-                                                                    Person</h4>
-                                                                <p class="mb-0">Enter Relevant Credentials</p>
-                                                            </div>
-                                                            <div class="card-body p-3">
-                                                                <form role="form text-left">
-                                                                    <label>Coupon Name</label>
-                                                                    <div class="input-group mb-3">
-                                                                        <input type="text" class="form-control"
-                                                                            placeholder="Email" aria-label="Email"
-                                                                            aria-describedby="email-addon"
-                                                                            onfocus="focused(this)"
-                                                                            onfocusout="defocused(this)">
-                                                                    </div>
-                                                                    <label>Value</label>
-                                                                    <div class="input-group mb-3">
-                                                                        <input type="text" class="form-control"
-                                                                            placeholder="Password" aria-label="Password"
-                                                                            aria-describedby="password-addon"
-                                                                            onfocus="focused(this)"
-                                                                            onfocusout="defocused(this)">
-                                                                    </div>
-
-                                                                    <div class=" row text-center">
-                                                                        <div class="col-6">
-                                                                            <button type="button"
-                                                                                data-bs-dismiss="modal"
-                                                                                class="btn  bg-gradient-primary btn-md w-100 mt-2 mb-0">
-                                                                                Cancel</button>
-                                                                        </div>
-                                                                        <div class="col-6">
-                                                                            <button type="submit"
-                                                                                class="btn  btn-outline-primary btn-md w-100 mt-2 mb-0">Add</button>
-                                                                        </div>
-
-
-                                                                    </div>
-                                                                </form>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- modal of delivery  Ends -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane" id="LeaveType">
-                    <div class="row">
-                        <div class="col-12">
-                            <!-- modal of delivery starts -->
-                            <div class="modal fade " style="z-index: 99999;" id="modal-leavetype" tabindex="-1"
-                                role="dialog" aria-labelledby="modal-form" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered modal-md" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-body p-0">
-                                            <div class="card card-plain">
-                                                <div class="card-header pb-0 text-left">
-                                                    <h4 class="font-weight-bolder  text-primary">Leaves</h4>
-                                                    <p class="mb-0">Enter Relevant Credentials</p>
-                                                </div>
-                                                <div class="card-body p-3">
-                                                    <form role="form text-left">
-                                                        <label>Coupon Name</label>
-                                                        <div class="input-group mb-3">
-                                                            <input type="text" class="form-control" placeholder="Email"
-                                                                aria-label="Email" aria-describedby="email-addon"
-                                                                onfocus="focused(this)" onfocusout="defocused(this)">
-                                                        </div>
-                                                        <label>Value</label>
-                                                        <div class="input-group mb-3">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Password" aria-label="Password"
-                                                                aria-describedby="password-addon"
-                                                                onfocus="focused(this)" onfocusout="defocused(this)">
-                                                        </div>
-
-                                                        <div class=" row text-center">
-                                                            <div class="col-6">
-                                                                <button type="button" data-bs-dismiss="modal"
-                                                                    class="btn  bg-gradient-primary btn-md w-100 mt-2 mb-0">
-                                                                    Cancel</button>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <button type="submit"
-                                                                    class="btn  btn-outline-primary btn-md w-100 mt-2 mb-0">Add</button>
-                                                            </div>
-
-
-                                                        </div>
-                                                    </form>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- modal of delivery  Ends -->
-                            <div class="card ">
-                                <div class="card-header pb-0 p-3">
-                                    <div class="row">
-                                        <div class="col-6 d-flex align-items-center">
-                                            <h6 class="mb-0">Delievery List</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body p-3">
-                                    <div class="d-sm-flex justify-content-between p-0">
-                                        <div>
-                                            <a href="javascript:;" class="btn btn-icon btn-outline-dark">
-                                                New order
-                                            </a>
-                                        </div>
-                                        <div class="d-flex">
-                                            <div class="dropdown d-inline">
-                                                <a href="javascript:;" class="btn btn-outline-dark dropdown-toggle "
-                                                    data-bs-toggle="dropdown" id="navbarDropdownMenuLink2">
-                                                    Filters
-                                                </a>
-                                                <ul class="dropdown-menu dropdown-menu-lg-start px-2 py-3"
-                                                    aria-labelledby="navbarDropdownMenuLink2"
-                                                    data-popper-placement="left-start">
-                                                    <li><a class="dropdown-item border-radius-md"
-                                                            href="javascript:;">Status:
-                                                            Paid</a>
-                                                    </li>
-                                                    <li><a class="dropdown-item border-radius-md"
-                                                            href="javascript:;">Status:
-                                                            Refunded</a></li>
-                                                    <li><a class="dropdown-item border-radius-md"
-                                                            href="javascript:;">Status:
-                                                            Canceled</a></li>
-                                                    <li>
-                                                        <hr class="horizontal dark my-2">
-                                                    </li>
-                                                    <li><a class="dropdown-item  border-radius-md text-danger"
-                                                            href="javascript:;">Remove
-                                                            Filter</a></li>
-                                                </ul>
-                                            </div>
-                                            <button class="btn btn-icon btn-outline-dark ms-2 export"
-                                                onclick="ExportToExcel5('xlsx')" type="button">
-                                                <span class="btn-inner--icon"><i class="ni ni-archive-2"></i></span>
-                                                <span class="btn-inner--text">Export CSV</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="table-responsive" id="tbl_exporttable_to_xls_5">
-                                        <table class="table table-flush" id="datatable-basic3">
-                                            <thead class="thead-light">
-                                                <tr>
-                                                    <th>Id</th>
-                                                    <th>Date</th>
-                                                    <th>Status</th>
-                                                    <th>Customer</th>
-                                                    <th>Product</th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-
-                                                            <p class="text-xs font-weight-bold ms-2 mb-0">#10421</p>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">1 Nov, 10:20 AM</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <button
-                                                                class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
-                                                                    class="fas fa-check"
-                                                                    aria-hidden="true"></i></button>
-                                                            <span>Paid</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="assets/img/team-2.jpg"
-                                                                class="avatar avatar-xs me-2" alt="user image">
-                                                            <span>Orlando Imieto</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <span class="my-2 text-xs">Nike Sport V2</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold p-0 pt-1">
-                                                        <button class="btn btn-outline-dark btn-xs p-1 mb-0"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#modal-leavetype">Deliever</button>
-                                                    </td>
-
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-
-                                                            <p class="text-xs font-weight-bold ms-2 mb-0">#10422</p>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">1 Nov, 10:53 AM</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <button
-                                                                class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
-                                                                    class="fas fa-check"
-                                                                    aria-hidden="true"></i></button>
-                                                            <span>Paid</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="assets/img/team-1.jpg"
-                                                                class="avatar avatar-xs me-2" alt="user image">
-                                                            <span>Alice Murinho</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">Valvet T-shirt</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold p-0 pt-1">
-                                                        <button class="btn btn-outline-dark btn-xs p-1 mb-0"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#modal-leavetype">Deliever</button>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-
-                                                            <p class="text-xs font-weight-bold ms-2 mb-0">#10424</p>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">1 Nov, 12:20 PM</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <button
-                                                                class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
-                                                                    class="fas fa-check"
-                                                                    aria-hidden="true"></i></button>
-                                                            <span>Paid</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="d-flex align-items-center">
-                                                                <img src="assets/img/team-3.jpg"
-                                                                    class="avatar avatar-xs me-2" alt="user image">
-                                                                <span>Andrew Nichel</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <span class="my-2 text-xs">
-                                                            Bracelet Onu-Lino
-                                                        </span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold p-0 pt-1">
-                                                        <button class="btn btn-outline-dark btn-xs p-1 mb-0"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#modal-leavetype">Deliever</button>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-
-                                                            <p class="text-xs font-weight-bold ms-2 mb-0">#10426</p>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">1 Nov, 2:19 AM</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <button
-                                                                class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
-                                                                    class="fas fa-check"
-                                                                    aria-hidden="true"></i></button>
-                                                            <span>Paid</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="avatar avatar-xs me-2 bg-gradient-primary">
-                                                                <span>L</span>
-                                                            </div>
-                                                            <span>Laur Gilbert</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <span class="my-2 text-xs">
-                                                            Backpack Niver
-                                                        </span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold p-0 pt-1">
-                                                        <button class="btn btn-outline-dark btn-xs p-1 mb-0"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#modal-leavetype">Deliever</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-
-                                                            <p class="text-xs font-weight-bold ms-2 mb-0">#10427</p>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">1 Nov, 3:42 AM</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <button
-                                                                class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
-                                                                    class="fas fa-check"
-                                                                    aria-hidden="true"></i></button>
-                                                            <span>Paid</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="avatar avatar-xs me-2 bg-gradient-dark">
-                                                                <span>I</span>
-                                                            </div>
-                                                            <span>Iryna Innda</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <span class="my-2 text-xs">
-                                                            Adidas Vio
-                                                        </span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold p-0 pt-1">
-                                                        <button class="btn btn-outline-dark btn-xs p-1 mb-0"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#modal-leavetype">Deliever</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-
-                                                            <p class="text-xs font-weight-bold ms-2 mb-0">#10428</p>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">2 Nov, 9:32 AM</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <button
-                                                                class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
-                                                                    class="fas fa-check"
-                                                                    aria-hidden="true"></i></button>
-                                                            <span>Paid</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="avatar avatar-xs me-2 bg-gradient-dark">
-                                                                <span>A</span>
-                                                            </div>
-                                                            <span>Arrias Liunda</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <span class="my-2 text-xs">
-                                                            Airpods 2 Gen
-                                                        </span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold p-0 pt-1">
-                                                        <button class="btn btn-outline-dark btn-xs p-1 mb-0"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#modal-leavetype">Deliever</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-
-                                                            <p class="text-xs font-weight-bold ms-2 mb-0">#10429</p>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">2 Nov, 10:14 AM</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <button
-                                                                class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
-                                                                    class="fas fa-check"
-                                                                    aria-hidden="true"></i></button>
-                                                            <span>Paid</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="d-flex align-items-center">
-                                                                <img src="assets/img/team-5.jpg"
-                                                                    class="avatar avatar-xs me-2" alt="user image">
-                                                                <span>Rugna Ilpio</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <span class="my-2 text-xs">
-                                                            Bracelet Warret
-                                                        </span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold p-0 pt-1">
-                                                        <button class="btn btn-outline-dark btn-xs p-1 mb-0"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#modal-leavetype">Deliever</button>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-
-                                                            <p class="text-xs font-weight-bold ms-2 mb-0">#10431</p>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">2 Nov, 3:12 PM</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <button
-                                                                class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
-                                                                    class="fas fa-check"
-                                                                    aria-hidden="true"></i></button>
-                                                            <span>Paid</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="avatar avatar-xs me-2 bg-gradient-dark">
-                                                                <span>K</span>
-                                                            </div>
-                                                            <span>Karl Innas</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <span class="my-2 text-xs">
-                                                            Kitchen Gadgets
-                                                        </span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold p-0 pt-1">
-                                                        <button class="btn btn-outline-dark btn-xs p-1 mb-0"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#modal-leavetype">Deliever</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-                                                            <p class="text-xs font-weight-bold ms-2 mb-0">#10432</p>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">2 Nov, 5:12 PM</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <button
-                                                                class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
-                                                                    class="fas fa-check"
-                                                                    aria-hidden="true"></i></button>
-                                                            <span>Paid</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="avatar avatar-xs me-2 bg-gradient-info">
-                                                                <span>O</span>
-                                                            </div>
-                                                            <span>Oana Kilas</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <span class="my-2 text-xs">
-                                                            Office Papers
-                                                        </span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold p-0 pt-1">
-                                                        <button class="btn btn-outline-dark btn-xs p-1 mb-0"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#modal-leavetype">Deliever</button>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane" id="OverTime">
-                    <div class="row">
-                        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-                            <div class="card">
-                                <div class="card-body p-3">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <div class="numbers">
-                                                <p class="text-sm mb-0 text-uppercase font-weight-bold">Users</p>
-                                                <h5 class="font-weight-bolder mb-0">
-                                                    930
-                                                    <span class="text-success text-sm font-weight-bolder">+55%</span>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-4 text-end">
-                                            <div
-                                                class="icon icon-shape bg-gradient-dark shadow text-center border-radius-md">
-                                                <i class="ni ni-circle-08 text-lg opacity-10" aria-hidden="true"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-                            <div class="card">
-                                <div class="card-body p-3">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <div class="numbers">
-                                                <p class="text-sm mb-0 text-uppercase font-weight-bold">New Users</p>
-                                                <h5 class="font-weight-bolder mb-0">
-                                                    744
-                                                    <span class="text-success text-sm font-weight-bolder">+3%</span>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-4 text-end">
-                                            <div
-                                                class="icon icon-shape bg-gradient-dark shadow text-center border-radius-md">
-                                                <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-                            <div class="card">
-                                <div class="card-body p-3">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <div class="numbers">
-                                                <p class="text-sm mb-0 text-uppercase font-weight-bold">Sessions</p>
-                                                <h5 class="font-weight-bolder mb-0">
-                                                    1,414
-                                                    <span class="text-danger text-sm font-weight-bolder">-2%</span>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-4 text-end">
-                                            <div
-                                                class="icon icon-shape bg-gradient-dark shadow text-center border-radius-md">
-                                                <i class="ni ni-watch-time text-lg opacity-10" aria-hidden="true"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-sm-6">
-                            <div class="card">
-                                <div class="card-body p-3">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <div class="numbers">
-                                                <p class="text-sm mb-0 text-uppercase font-weight-bold">Pages/Session
-                                                </p>
-                                                <h5 class="font-weight-bolder mb-0">
-                                                    1.76
-                                                    <span class="text-success text-sm font-weight-bolder">+5%</span>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-4 text-end">
-                                            <div
-                                                class="icon icon-shape bg-gradient-dark shadow text-center border-radius-md">
-                                                <i class="ni ni-image text-lg opacity-10" aria-hidden="true"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-12">
-                            <!-- modal of delivery starts -->
-                            <div class="modal fade " style="z-index: 99999;" id="modal-OverTime" tabindex="-1"
-                                role="dialog" aria-labelledby="modal-form" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered modal-md" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-body p-0">
-                                            <div class="card card-plain">
-                                                <div class="card-header pb-0 text-left">
-                                                    <h4 class="font-weight-bolder  text-primary">Leaves</h4>
-                                                    <p class="mb-0">Enter Relevant Credentials</p>
-                                                </div>
-                                                <div class="card-body p-3">
-                                                    <form role="form text-left">
-                                                        <label>Coupon Name</label>
-                                                        <div class="input-group mb-3">
-                                                            <input type="text" class="form-control" placeholder="Email"
-                                                                aria-label="Email" aria-describedby="email-addon"
-                                                                onfocus="focused(this)" onfocusout="defocused(this)">
-                                                        </div>
-                                                        <label>Value</label>
-                                                        <div class="input-group mb-3">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Password" aria-label="Password"
-                                                                aria-describedby="password-addon"
-                                                                onfocus="focused(this)" onfocusout="defocused(this)">
-                                                        </div>
-
-                                                        <div class=" row text-center">
-                                                            <div class="col-6">
-                                                                <button type="button" data-bs-dismiss="modal"
-                                                                    class="btn  bg-gradient-primary btn-md w-100 mt-2 mb-0">
-                                                                    Cancel</button>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <button type="submit"
-                                                                    class="btn  btn-outline-primary btn-md w-100 mt-2 mb-0">Add</button>
-                                                            </div>
-
-
-                                                        </div>
-                                                    </form>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- modal of delivery  Ends -->
-                            <div class="card ">
-                                <div class="card-header pb-0 p-3">
-                                    <div class="row">
-                                        <div class="col-6 d-flex align-items-center">
-                                            <h6 class="mb-0">Delievery List</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body p-3">
-                                    <div class="d-sm-flex justify-content-between p-0">
-                                        <div>
-                                            <a href="javascript:;" class="btn btn-icon btn-outline-dark">
-                                                New order
-                                            </a>
-                                        </div>
-                                        <div class="d-flex">
-                                            <div class="dropdown d-inline">
-                                                <a href="javascript:;" class="btn btn-outline-dark dropdown-toggle "
-                                                    data-bs-toggle="dropdown" id="navbarDropdownMenuLink2">
-                                                    Filters
-                                                </a>
-                                                <ul class="dropdown-menu dropdown-menu-lg-start px-2 py-3"
-                                                    aria-labelledby="navbarDropdownMenuLink2"
-                                                    data-popper-placement="left-start">
-                                                    <li><a class="dropdown-item border-radius-md"
-                                                            href="javascript:;">Status:
-                                                            Paid</a>
-                                                    </li>
-                                                    <li><a class="dropdown-item border-radius-md"
-                                                            href="javascript:;">Status:
-                                                            Refunded</a></li>
-                                                    <li><a class="dropdown-item border-radius-md"
-                                                            href="javascript:;">Status:
-                                                            Canceled</a></li>
-                                                    <li>
-                                                        <hr class="horizontal dark my-2">
-                                                    </li>
-                                                    <li><a class="dropdown-item  border-radius-md text-danger"
-                                                            href="javascript:;">Remove
-                                                            Filter</a></li>
-                                                </ul>
-                                            </div>
-                                            <button class="btn btn-icon btn-outline-dark ms-2 export"
-                                                onclick="ExportToExcel6('xlsx')" type="button">
-                                                <span class="btn-inner--icon"><i class="ni ni-archive-2"></i></span>
-                                                <span class="btn-inner--text">Export CSV</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="table-responsive" id="tbl_exporttable_to_xls_6">
-                                        <table class="table table-flush" id="datatable-search4">
-                                            <thead class="thead-light">
-                                                <tr>
-                                                    <th>Id</th>
-                                                    <th>Date</th>
-                                                    <th>Status</th>
-                                                    <th>Customer</th>
-                                                    <th>Product</th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-
-                                                            <p class="text-xs font-weight-bold ms-2 mb-0">#10421</p>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">1 Nov, 10:20 AM</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <button
-                                                                class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
-                                                                    class="fas fa-check"
-                                                                    aria-hidden="true"></i></button>
-                                                            <span>Paid</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="assets/img/team-2.jpg"
-                                                                class="avatar avatar-xs me-2" alt="user image">
-                                                            <span>Orlando Imieto</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <span class="my-2 text-xs">Nike Sport V2</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold p-0 pt-1">
-                                                        <button class="btn btn-outline-dark btn-xs p-1 mb-0"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#modal-OverTime">Deliever</button>
-                                                    </td>
-
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-
-                                                            <p class="text-xs font-weight-bold ms-2 mb-0">#10422</p>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">1 Nov, 10:53 AM</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <button
-                                                                class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
-                                                                    class="fas fa-check"
-                                                                    aria-hidden="true"></i></button>
-                                                            <span>Paid</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="assets/img/team-1.jpg"
-                                                                class="avatar avatar-xs me-2" alt="user image">
-                                                            <span>Alice Murinho</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">Valvet T-shirt</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold p-0 pt-1">
-                                                        <button class="btn btn-outline-dark btn-xs p-1 mb-0"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#modal-OverTime">Deliever</button>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-
-                                                            <p class="text-xs font-weight-bold ms-2 mb-0">#10424</p>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">1 Nov, 12:20 PM</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <button
-                                                                class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
-                                                                    class="fas fa-check"
-                                                                    aria-hidden="true"></i></button>
-                                                            <span>Paid</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="d-flex align-items-center">
-                                                                <img src="assets/img/team-3.jpg"
-                                                                    class="avatar avatar-xs me-2" alt="user image">
-                                                                <span>Andrew Nichel</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <span class="my-2 text-xs">
-                                                            Bracelet Onu-Lino
-                                                        </span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold p-0 pt-1">
-                                                        <button class="btn btn-outline-dark btn-xs p-1 mb-0"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#modal-OverTime">Deliever</button>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-
-                                                            <p class="text-xs font-weight-bold ms-2 mb-0">#10426</p>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">1 Nov, 2:19 AM</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <button
-                                                                class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
-                                                                    class="fas fa-check"
-                                                                    aria-hidden="true"></i></button>
-                                                            <span>Paid</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="avatar avatar-xs me-2 bg-gradient-primary">
-                                                                <span>L</span>
-                                                            </div>
-                                                            <span>Laur Gilbert</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <span class="my-2 text-xs">
-                                                            Backpack Niver
-                                                        </span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold p-0 pt-1">
-                                                        <button class="btn btn-outline-dark btn-xs p-1 mb-0"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#modal-OverTime">Deliever</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-
-                                                            <p class="text-xs font-weight-bold ms-2 mb-0">#10427</p>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">1 Nov, 3:42 AM</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <button
-                                                                class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
-                                                                    class="fas fa-check"
-                                                                    aria-hidden="true"></i></button>
-                                                            <span>Paid</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="avatar avatar-xs me-2 bg-gradient-dark">
-                                                                <span>I</span>
-                                                            </div>
-                                                            <span>Iryna Innda</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <span class="my-2 text-xs">
-                                                            Adidas Vio
-                                                        </span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold p-0 pt-1">
-                                                        <button class="btn btn-outline-dark btn-xs p-1 mb-0"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#modal-OverTime">Deliever</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-
-                                                            <p class="text-xs font-weight-bold ms-2 mb-0">#10428</p>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">2 Nov, 9:32 AM</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <button
-                                                                class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
-                                                                    class="fas fa-check"
-                                                                    aria-hidden="true"></i></button>
-                                                            <span>Paid</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="avatar avatar-xs me-2 bg-gradient-dark">
-                                                                <span>A</span>
-                                                            </div>
-                                                            <span>Arrias Liunda</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <span class="my-2 text-xs">
-                                                            Airpods 2 Gen
-                                                        </span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold p-0 pt-1">
-                                                        <button class="btn btn-outline-dark btn-xs p-1 mb-0"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#modal-OverTime">Deliever</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-
-                                                            <p class="text-xs font-weight-bold ms-2 mb-0">#10429</p>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">2 Nov, 10:14 AM</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <button
-                                                                class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
-                                                                    class="fas fa-check"
-                                                                    aria-hidden="true"></i></button>
-                                                            <span>Paid</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="d-flex align-items-center">
-                                                                <img src="assets/img/team-5.jpg"
-                                                                    class="avatar avatar-xs me-2" alt="user image">
-                                                                <span>Rugna Ilpio</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <span class="my-2 text-xs">
-                                                            Bracelet Warret
-                                                        </span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold p-0 pt-1">
-                                                        <button class="btn btn-outline-dark btn-xs p-1 mb-0"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#modal-OverTime">Deliever</button>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-
-                                                            <p class="text-xs font-weight-bold ms-2 mb-0">#10431</p>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">2 Nov, 3:12 PM</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <button
-                                                                class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
-                                                                    class="fas fa-check"
-                                                                    aria-hidden="true"></i></button>
-                                                            <span>Paid</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="avatar avatar-xs me-2 bg-gradient-dark">
-                                                                <span>K</span>
-                                                            </div>
-                                                            <span>Karl Innas</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <span class="my-2 text-xs">
-                                                            Kitchen Gadgets
-                                                        </span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold p-0 pt-1">
-                                                        <button class="btn btn-outline-dark btn-xs p-1 mb-0"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#modal-OverTime">Deliever</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-                                                            <p class="text-xs font-weight-bold ms-2 mb-0">#10432</p>
-                                                        </div>
-                                                    </td>
-                                                    <td class="font-weight-bold">
-                                                        <span class="my-2 text-xs">2 Nov, 5:12 PM</span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <button
-                                                                class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
-                                                                    class="fas fa-check"
-                                                                    aria-hidden="true"></i></button>
-                                                            <span>Paid</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="avatar avatar-xs me-2 bg-gradient-info">
-                                                                <span>O</span>
-                                                            </div>
-                                                            <span>Oana Kilas</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold">
-                                                        <span class="my-2 text-xs">
-                                                            Office Papers
-                                                        </span>
-                                                    </td>
-                                                    <td class="text-xs font-weight-bold p-0 pt-1">
-                                                        <button class="btn btn-outline-dark btn-xs p-1 mb-0"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#modal-OverTime">Deliever</button>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -4306,7 +2793,7 @@
                 </div>
             </div>
         </footer>
-
+        </div>
     </main>
     <div class="fixed-plugin">
         <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
@@ -4390,27 +2877,17 @@
         </div>
     </div>
 
-    <script src="assets/js/core/popper.min.js"></script>
-    <script src="assets/js/core/bootstrap.min.js"></script>
-    <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
-    <script src="assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
 
-    <script src="assets/js/plugins/dragula/dragula.min.js"></script>
-    <script src="assets/js/plugins/jkanban/jkanban.js"></script>
-    <script src="assets/js/plugins/datatables.js"></script>
-    <script src="assets/js/plugins/fullscren.js"></script>
+    <script src="../assets/js/plugins/dragula/dragula.min.js"></script>
+    <script src="../assets/js/plugins/jkanban/jkanban.js"></script>
+    <script src="../assets/js/plugins/datatables.js"></script>
+    <script src="../assets/js/plugins/fullscren.js"></script>
     <script>
         const dataTableBasic = new simpleDatatables.DataTable("#datatable-basic", {
-            searchable: true,
-            fixedHeight: false
-        });
-
-        const dataTableBasic2 = new simpleDatatables.DataTable("#datatable-basic2", {
-            searchable: true,
-            fixedHeight: false
-        });
-
-        const dataTableBasic3 = new simpleDatatables.DataTable("#datatable-basic3", {
             searchable: true,
             fixedHeight: false
         });
@@ -4425,10 +2902,6 @@
             fixedHeight: false
         });
         const dataTableSearch3 = new simpleDatatables.DataTable("#datatable-search3", {
-            searchable: true,
-            fixedHeight: false
-        });
-        const dataTableSearch4 = new simpleDatatables.DataTable("#datatable-search4", {
             searchable: true,
             fixedHeight: false
         });
@@ -4487,52 +2960,27 @@
                 XLSX.write(wb, { bookType: type, bookSST: true, type: 'base64' }) :
                 XLSX.writeFile(wb, fn || ('DeliveryReport.' + (type || 'xlsx')));
         }
-
-        //table 4
-        function ExportToExcel4(type, fn, dl) {
-            var elt = document.getElementById('tbl_exporttable_to_xls_4');
-            var wb = XLSX.utils.table_to_book(elt, { sheet: "sheet1" });
-            return dl ?
-                XLSX.write(wb, { bookType: type, bookSST: true, type: 'base64' }) :
-                XLSX.writeFile(wb, fn || ('DeliveryReport.' + (type || 'xlsx')));
-        }
-        //table 5
-        function ExportToExcel5(type, fn, dl) {
-            var elt = document.getElementById('tbl_exporttable_to_xls_5');
-            var wb = XLSX.utils.table_to_book(elt, { sheet: "sheet1" });
-            return dl ?
-                XLSX.write(wb, { bookType: type, bookSST: true, type: 'base64' }) :
-                XLSX.writeFile(wb, fn || ('DeliveryReport.' + (type || 'xlsx')));
-        }
-        //table 6
-        function ExportToExcel6(type, fn, dl) {
-            var elt = document.getElementById('tbl_exporttable_to_xls_6');
-            var wb = XLSX.utils.table_to_book(elt, { sheet: "sheet1" });
-            return dl ?
-                XLSX.write(wb, { bookType: type, bookSST: true, type: 'base64' }) :
-                XLSX.writeFile(wb, fn || ('DeliveryReport.' + (type || 'xlsx')));
-        }
     </script>
 
     <!-- required to the excelsheet ends -->
-    <script src="assets/js/plugins/chartjs.min.js"></script>
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
     <script>
-        // Doughnut chart
-        var ctx3 = document.getElementById("doughnut-chart").getContext("2d");
+        // Pie chart
+        var ctx4 = document.getElementById("pie-chart").getContext("2d");
 
-        new Chart(ctx3, {
-            type: "doughnut",
+        new Chart(ctx4, {
+            type: "pie",
             data: {
-                labels: ['Creative Tim', 'Github', 'Bootsnipp', 'Dev.to', 'Codeinwp'],
+                labels: ['Facebook', 'Direct', 'Organic', 'Referral'],
                 datasets: [{
                     label: "Projects",
                     weight: 9,
-                    cutout: 60,
+                    cutout: 0,
                     tension: 0.9,
                     pointRadius: 2,
                     borderWidth: 2,
-                    backgroundColor: ['#2152ff', '#3A416F', '#f53939', '#a8b8d8', '#5e72e4'],
-                    data: [15, 20, 12, 60, 20],
+                    backgroundColor: ['#17c1e8', '#5e72e4', '#3A416F', '#a8b8d8'],
+                    data: [15, 20, 12, 60],
                     fill: false
                 }],
             },
@@ -4574,17 +3022,16 @@
                 },
             },
         });
-
         //order bar
-        var ctx4 = document.getElementById("chart-line-widgets").getContext("2d");
+        var ctx3 = document.getElementById("chart-line-widgets").getContext("2d");
 
-        var gradientStroke3 = ctx4.createLinearGradient(0, 230, 0, 50);
+        var gradientStroke3 = ctx3.createLinearGradient(0, 230, 0, 50);
 
         gradientStroke3.addColorStop(1, 'rgba(94, 114, 228, 0.1)');
         gradientStroke3.addColorStop(0.2, 'rgba(94, 114, 228, 0.0)');
         gradientStroke3.addColorStop(0, 'rgba(94, 114, 228, 0)'); //primary colors
 
-        new Chart(ctx4, {
+        new Chart(ctx3, {
             type: "line",
             data: {
                 labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
@@ -4640,70 +3087,11 @@
                 },
             },
         });
-
-        // Bar chart horizontal
-        var ctx6 = document.getElementById("bar-chart-horizontal").getContext("2d");
-
-        new Chart(ctx6, {
-            type: "bar",
-            data: {
-                labels: ['16-20', '21-25', '26-30', '31-36', '36-42', '42+'],
-                datasets: [{
-                    label: "Sales by age",
-                    weight: 5,
-                    borderWidth: 0,
-                    borderRadius: 4,
-                    backgroundColor: '#3A416F',
-                    data: [15, 20, 12, 60, 20, 15],
-                    fill: false
-                }],
-            },
-            options: {
-                indexAxis: 'y',
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: {
-                        display: false,
-                    }
-                },
-                scales: {
-                    y: {
-                        grid: {
-                            drawBorder: false,
-                            display: true,
-                            drawOnChartArea: true,
-                            drawTicks: false,
-                            borderDash: [5, 5]
-                        },
-                        ticks: {
-                            display: true,
-                            padding: 10,
-                            color: '#9ca2b7'
-                        }
-                    },
-                    x: {
-                        grid: {
-                            drawBorder: false,
-                            display: false,
-                            drawOnChartArea: true,
-                            drawTicks: true,
-                        },
-                        ticks: {
-                            display: true,
-                            color: '#9ca2b7',
-                            padding: 10
-                        }
-                    },
-                },
-            },
-        });
-
     </script>
 
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-    <script src="assets/js/argon-dashboard.min.js?v=2.0.5"></script>
+    <script src="../assets/js/argon-dashboard.min.js?v=2.0.5"></script>
     <script defer
         src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
         integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
@@ -4712,7 +3100,7 @@
     <!-- required to the preloader -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!-- required to the preloader -->
-    <script src="assets/js/preloader.js"></script>
+    <script src="../assets/js/preloader.js"></script>
     <!-- required to the preloader ends-->
 
     <!-- required to the excelSheet -->
@@ -4720,7 +3108,7 @@
     <!-- required to the excelsheet ends herer -->
 
     <!-- barcode js -->
-    <script src="assets/js/plugins/jsBarcode_min.js"></script>
+    <script src="../assets/js/plugins/jsBarcode_min.js"></script>
     <script>
 
         function generateRand() {
@@ -4738,23 +3126,8 @@
             x.value = randnumby;
         }
 
-        //for the breadCrumb Detail Change
-        var brd = document.getElementById('BreadChng');
-        function brd1() {
-            brd.innerHTML = "OverView";
-        }
-        function brd2() {
-            brd.innerHTML = "Trainee";
-        }
-        function brd3() {
-            brd.innerHTML = "Leave";
-        }
-        function brd4() {
-            brd.innerHTML = "Leave Type";
-        }
-        function brd5() {
-            brd.innerHTML = "Over Time";
-        }
+
+
     </script>
 </body>
 
