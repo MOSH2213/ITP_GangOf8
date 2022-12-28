@@ -602,8 +602,7 @@
                             <div class="row">
                                 <div class="col-lg-4 col-12 mt-4 mt-lg-0">
                                     <div class="card z-index-2 ">
-                                        <div
-                                            class="card-header p-0 mt-2 mx-3 z-index-2 bg-transparent">
+                                        <div class="card-header p-0 mt-2 mx-3 z-index-2 bg-transparent">
                                             <div class="bg-gradient-dark shadow-dark border-radius-lg py-3 pe-1">
                                                 <div class="chart">
                                                     <canvas id="chart-line-tasks" class="chart-canvas" height="212"
@@ -615,7 +614,7 @@
                                         <div class="card-body p-4 pb-0">
                                             <h6 class="mb-0 ">Completed Tasks</h6>
                                             <p class="text-sm ">Last Campaign Performance</p>
-                                           
+
                                         </div>
                                     </div>
                                 </div>
@@ -4442,30 +4441,28 @@
     <script src="../assets/js/plugins/chartjs.min.js"></script>
     <script>
 
-        var ctx1 = document.getElementById("chart-line").getContext("2d");
 
 
-        var gradientStroke1 = ctx1.createLinearGradient(0, 230, 0, 50);
+        var ctx3 = document.getElementById("chart-line-tasks").getContext("2d");
 
-        gradientStroke1.addColorStop(1, 'rgba(33,82,255,0.1)');
-        gradientStroke1.addColorStop(0.2, 'rgba(33,82,255,0.0)');
-        gradientStroke1.addColorStop(0, 'rgba(33,82,255,0)'); //purple colors
-
-        new Chart(ctx1, {
+        new Chart(ctx3, {
             type: "line",
             data: {
                 labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
                 datasets: [{
-                    label: "Tasks",
-                    tension: 0.3,
-                    pointRadius: 2,
-                    pointBackgroundColor: "#2152ff",
-                    borderColor: "#2152ff",
-                    borderWidth: 2,
-                    backgroundColor: gradientStroke1,
-                    data: [40, 45, 42, 41, 40, 43, 40, 42, 39],
-                    maxBarThickness: 6,
-                    fill: true
+                    label: "Mobile apps",
+                    tension: 0,
+                    borderWidth: 0,
+                    pointRadius: 5,
+                    pointBackgroundColor: "rgba(255, 255, 255, .8)",
+                    pointBorderColor: "transparent",
+                    borderColor: "rgba(255, 255, 255, .8)",
+                    borderWidth: 4,
+                    backgroundColor: "transparent",
+                    fill: true,
+                    data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
+                    maxBarThickness: 6
+
                 }],
             },
             options: {
@@ -4484,12 +4481,23 @@
                     y: {
                         grid: {
                             drawBorder: false,
-                            display: false,
-                            drawOnChartArea: false,
+                            display: true,
+                            drawOnChartArea: true,
                             drawTicks: false,
+                            borderDash: [5, 5],
+                            color: 'rgba(255, 255, 255, .2)'
                         },
                         ticks: {
-                            display: false
+                            display: true,
+                            padding: 10,
+                            color: '#f8f9fa',
+                            font: {
+                                size: 14,
+                                weight: 300,
+                                family: "Roboto",
+                                style: 'normal',
+                                lineHeight: 2
+                            },
                         }
                     },
                     x: {
@@ -4498,38 +4506,19 @@
                             display: false,
                             drawOnChartArea: false,
                             drawTicks: false,
-                        },
-                        ticks: {
-                            color: '#252f40',
-                            padding: 10
-                        }
-                    },
-                    y: {
-                        grid: {
-                            drawBorder: false,
-                            display: false,
-                            drawOnChartArea: true,
-                            drawTicks: false,
                             borderDash: [5, 5]
                         },
                         ticks: {
                             display: true,
+                            color: '#f8f9fa',
                             padding: 10,
-                            color: '#9ca2b7'
-                        }
-                    },
-                    x: {
-                        grid: {
-                            drawBorder: false,
-                            display: true,
-                            drawOnChartArea: true,
-                            drawTicks: false,
-                            borderDash: [5, 5]
-                        },
-                        ticks: {
-                            display: true,
-                            padding: 10,
-                            color: '#9ca2b7'
+                            font: {
+                                size: 14,
+                                weight: 300,
+                                family: "Roboto",
+                                style: 'normal',
+                                lineHeight: 2
+                            },
                         }
                     },
                 },
